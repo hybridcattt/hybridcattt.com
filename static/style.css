@@ -1,0 +1,125 @@
+/***** General Styles *****/
+html, body {
+	font-size: 16px;
+	line-height: 1;
+	font-style: normal;
+	font-weight: 400;
+    height: 100%;
+	background-color: #f9f9f9;
+	padding: 0;
+	margin: 0;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+a {
+	text-decoration: none;
+}
+
+/***** Styles *****/
+main.container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main.container section.content h1 {
+	color: #21211f;
+	font-size: 4rem;
+	padding: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	font-style: normal;
+}
+main.container section.content p {
+	color: #21211f;
+	font-size: 0.9rem;
+	line-height: 0;
+	letter-spacing: 0.135rem;
+	margin: -0.35rem 0 0 0;
+	padding: 0 0 0 15rem;
+	font-family: monospace;
+	font-style: normal;
+	font-weight: 400;
+}
+main.container section.content a {
+	text-align: center;
+	margin: 0 auto;
+	display: inline-block;
+	width: auto;
+	font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	font-style: normal;
+	font-weight: 300;
+	background: #e22a25;
+	border-radius: 50px;
+	padding: 0.75rem 1.5rem;
+	font-size: 0.9rem;
+	letter-spacing: 0.25rem;
+	text-transform: uppercase;
+	color: #fff;
+	transition: all 0.5s ease;
+}
+main.container section.content a:hover {
+	background: #21211f;
+	transition: all 0.5s ease;
+}
+
+/***** Footer *****/
+footer {
+	position: absolute;
+	bottom: 35px;
+	text-align: center;
+	display: block;
+	float: left;
+	width: 100%;
+}
+footer a {
+	padding: 0 0.5rem;
+	transition: all 0.5s ease;
+}
+footer a img {
+	width: 2rem;
+	height: 2rem;
+}
+
+/***** Responsiveness *****/
+@media all and (max-width: 740px) {
+	html, body {
+		font-size: 10px;
+	}
+	main.container section.content a {
+		margin: 40px auto;
+		display: block;
+		padding: 1.35rem 1.5rem;
+		font-size: 1.4rem;
+	}
+}
+@media all and (max-width: 600px) {
+	html, body {
+		font-size: 9px;
+	}
+	main.container section.content a {
+		padding: 1.45rem 1.5rem;
+		font-size: 1.5rem;
+	}
+	footer a {
+		font-size: 28px;
+	}
+}
+@media all and (max-width: 480px) {
+	html, body {
+		font-size: 8px;
+	}
+	main.container section.content a {
+		padding: 1.55rem 1.5rem;
+		font-size: 1.6rem;
+	}
+	footer a {
+		font-size: 25px;
+	}
+}

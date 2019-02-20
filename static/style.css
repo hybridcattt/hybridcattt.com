@@ -43,10 +43,14 @@ main.container section.content p {
 	font-size: 0.9rem;
 	line-height: 0;
 	letter-spacing: 0.135rem;
-	text-align: center;
+	/* text-align: center; */
 	font-family: "Menlo", monospace;
 	font-style: normal;
 	font-weight: 400;
+}
+main.container section.content p a {
+	color: #41B645;
+	text-decoration: underline;
 }
 
 /***** Footer *****/

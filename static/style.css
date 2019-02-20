@@ -5,7 +5,7 @@ html, body {
 	font-style: normal;
 	font-weight: 400;
     height: 100%;
-	background-color: #f9f9f9;
+	background-color: #1E2028;
 	padding: 0;
 	margin: 0;
 }
@@ -30,43 +30,23 @@ main.container {
     justify-content: center;
 }
 main.container section.content h1 {
-	color: #21211f;
+	color: #00A0BE;
 	font-size: 4rem;
 	padding: 0;
+	-webkit-margin-after: 0.5em;
 	font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
 	font-style: normal;
+	text-align: center;
 }
 main.container section.content p {
-	color: #21211f;
+	color: #41B645;
 	font-size: 0.9rem;
 	line-height: 0;
 	letter-spacing: 0.135rem;
-	margin: -0.35rem 0 0 0;
-	padding: 0 0 0 15rem;
-	font-family: monospace;
+	text-align: center;
+	font-family: "Menlo", monospace;
 	font-style: normal;
 	font-weight: 400;
-}
-main.container section.content a {
-	text-align: center;
-	margin: 0 auto;
-	display: inline-block;
-	width: auto;
-	font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
-	font-style: normal;
-	font-weight: 300;
-	background: #e22a25;
-	border-radius: 50px;
-	padding: 0.75rem 1.5rem;
-	font-size: 0.9rem;
-	letter-spacing: 0.25rem;
-	text-transform: uppercase;
-	color: #fff;
-	transition: all 0.5s ease;
-}
-main.container section.content a:hover {
-	background: #21211f;
-	transition: all 0.5s ease;
 }
 
 /***** Footer *****/

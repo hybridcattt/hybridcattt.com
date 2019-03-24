@@ -25,11 +25,10 @@
 	</script>
 	<script>
 	function handleOutboundLinkClick(a) {
-  	ga('send', 'event', {
-    	eventCategory: 'Outbound Link',
-    	eventAction: 'click',
-    	eventLabel: a.href
-  	});
+		gtag('event', 'Click', {
+  		'event_category': 'Outbound Link',
+  		'event_label': a.href
+		});
 	}
 	</script>
 

@@ -1,0 +1,54 @@
+
+
+@mixin scheme-light {
+
+    $brand-color:           #00A0BE;
+    $brand-color-light:     lighten($brand-color, 40%);
+    $brand-color-dark:      darken($brand-color, 25%) ;
+    
+    $site-title-color:      $brand-color-dark;
+    
+    $text-color:            #111111;
+    $background-color:      #fdfdfd;
+    $code-background-color: #eeeeff;
+    
+    $link-base-color:       #2a7ae2;
+    $link-visited-color:    darken($link-base-color, 15%);
+    $link-hover-color:      $text-color;
+    
+    $border-color-01:       $brand-color-light;
+    $border-color-02:       lighten($brand-color, 35%);
+    $border-color-03:       $brand-color-dark;
+    
+    $table-text-color:      lighten($text-color, 18%);
+    $table-zebra-color:     lighten($brand-color, 46%);
+    $table-header-bg-color: lighten($brand-color, 43%);
+    $table-header-border:   lighten($brand-color, 37%);
+    $table-border-color:    $border-color-01;
+
+    :root {
+        --brand-color:           #{$brand-color};
+        --brand-color-light:     #{$brand-color-light};
+        --brand-color-dark:      #{$brand-color-dark};
+
+        --site-title-color:      #{$site-title-color};
+
+        --text-color:            #{$text-color};
+        --background-color:      #{$background-color};
+        --code-background-color: #{$code-background-color};
+
+        --link-base-color:       #{$link-base-color};
+        --link-visited-color:    #{$link-visited-color};
+        --link-hover-color:      #{$link-hover-color};
+
+        --border-color-01:       #{$border-color-01};
+        --border-color-02:       #{$border-color-02};
+        --border-color-03:       #{$border-color-03};
+
+        --table-text-color:      #{$table-text-color};
+        --table-zebra-color:     #{$table-zebra-color};
+        --table-header-bg-color: #{$table-header-bg-color};
+        --table-header-border:   #{$table-header-border};
+        --table-border-color:    #{$table-border-color};
+    }
+}

@@ -1,0 +1,40 @@
+@import "syntax_dark", "syntax_light", "scheme_dark", "scheme_light"; 
+
+// corresponds to minima/classic
+@media (prefers-color-scheme: light) {
+    @include scheme-light;
+    @include syntax-light;
+}
+
+
+// corresponds to minima/dark
+@media (prefers-color-scheme: dark) {
+    @include scheme-dark;
+    @include syntax_dark;
+}
+
+// All customizable colors
+
+$brand-color:           var(--brand-color) !default;
+$brand-color-light:     var(--brand-color-light) !default;
+$brand-color-dark:      var(--brand-color-dark) !default;
+
+$site-title-color:      var(--site-title-color) !default;
+
+$text-color:            var(--text-color) !default;
+$background-color:      var(--background-color) !default;
+$code-background-color: var(--code-background-color) !default;
+
+$link-base-color:       var(--link-base-color) !default;
+$link-visited-color:    var(--link-visited-color) !default;
+$link-hover-color:      var(--link-hover-color) !default;
+
+$border-color-01:       var(--border-color-01) !default;
+$border-color-02:       var(--border-color-02) !default;
+$border-color-03:       var(--border-color-03) !default;
+
+$table-text-color:      var(--table-text-color) !default;
+$table-zebra-color:     var(--table-zebra-color) !default;
+$table-header-bg-color: var(--table-header-bg-color) !default;
+$table-header-border:   var(--table-header-border) !default;
+$table-border-color:    var(--table-border-color) !default;

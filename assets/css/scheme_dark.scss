@@ -1,0 +1,63 @@
+
+
+@mixin scheme-dark {
+
+    // $brand-color: #00A0BE;
+    // $brand-color-light-5: lighten($brand-color, 5%);
+    // $brand-color-dark-35: darken($brand-color, 35%);
+    // $text-color: #bbbbbb;
+    // $background-color: #181818;
+    // $code-background-color: #212121;
+
+    // $l:  lighten($dark-scheme-brand-color, 5%);
+
+    $brand-color:           #00A0BE !default;
+    $brand-color-light:     lighten($brand-color, 5%) !default;
+    $brand-color-dark:      darken($brand-color, 35%) !default;
+
+    $site-title-color:      $brand-color-light !default;
+
+    $text-color:            #bbbbbb !default;
+    $background-color:      #181818 !default;
+    $code-background-color: #212121 !default;
+
+    $link-base-color:       #79b8ff !default;
+    $link-visited-color:    $link-base-color !default;
+    $link-hover-color:      $text-color !default;
+
+    $border-color-01:       $brand-color-dark !default;
+    $border-color-02:       $brand-color-light !default;
+    $border-color-03:       $brand-color !default;
+
+    $table-text-color:      $text-color !default;
+    $table-zebra-color:     lighten($background-color, 4%) !default;
+    $table-header-bg-color: lighten($background-color, 10%) !default;
+    $table-header-border:   lighten($background-color, 21%) !default;
+    $table-border-color:    $border-color-01 !default;
+
+    :root {
+        --brand-color:           #{$brand-color};
+        --brand-color-light:     #{$brand-color-light};
+        --brand-color-dark:      #{$brand-color-dark};
+
+        --site-title-color:      #{$site-title-color};
+
+        --text-color:            #{$text-color};
+        --background-color:      #{$background-color};
+        --code-background-color: #{$code-background-color};
+
+        --link-base-color:       #{$link-base-color};
+        --link-visited-color:    #{$link-visited-color};
+        --link-hover-color:      #{$link-hover-color};
+
+        --border-color-01:       #{$border-color-01};
+        --border-color-02:       #{$border-color-02};
+        --border-color-03:       #{$border-color-03};
+
+        --table-text-color:      #{$table-text-color};
+        --table-zebra-color:     #{$table-zebra-color};
+        --table-header-bg-color: #{$table-header-bg-color};
+        --table-header-border:   #{$table-header-border};
+        --table-border-color:    #{$table-border-color};
+    }
+}

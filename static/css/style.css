@@ -1,11 +1,11 @@
 /***** General Styles *****/
 html, body {
 	font-size: 16px;
-	line-height: 1;
+	/* line-height: 1; */
 	font-style: normal;
 	font-weight: 400;
   height: 100%;
-	background-color: #1E2028;
+	/* background-color: #1E2028; */
 	padding: 0;
 	margin: 0;
 }

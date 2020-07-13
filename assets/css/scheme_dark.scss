@@ -1,15 +1,4 @@
-
-
 @mixin scheme-dark {
-
-    // $brand-color: #00A0BE;
-    // $brand-color-light-5: lighten($brand-color, 5%);
-    // $brand-color-dark-35: darken($brand-color, 35%);
-    // $text-color: #bbbbbb;
-    // $background-color: #181818;
-    // $code-background-color: #212121;
-
-    // $l:  lighten($dark-scheme-brand-color, 5%);
 
     $brand-color:           #00A0BE !default;
     $brand-color-light:     lighten($brand-color, 5%) !default;

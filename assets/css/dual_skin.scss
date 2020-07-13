@@ -6,11 +6,10 @@
     @include syntax-light;
 }
 
-
 // corresponds to minima/dark
 @media (prefers-color-scheme: dark) {
     @include scheme-dark;
-    @include syntax_dark;
+    @include syntax-dark;
 }
 
 // All customizable colors

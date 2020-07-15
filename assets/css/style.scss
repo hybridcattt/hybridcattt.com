@@ -5,4 +5,15 @@
 @import
 //   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "assets/css/dual_skin",
-  "minima/initialize";
+  "minima/initialize",
+  "assets/css/footer";
+
+  .site-header {
+    border-top: 5px solid $border-color-03;
+    border-bottom: 0px solid $border-color-01;
+    min-height: $spacing-unit * 1.865;
+    line-height: $base-line-height * $base-font-size * 2.25;
+  
+    // Positioning context for the mobile navigation icon
+    position: relative;
+  }

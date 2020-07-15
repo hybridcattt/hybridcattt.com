@@ -4,8 +4,7 @@ html, body {
 	/* line-height: 1; */
 	font-style: normal;
 	font-weight: 400;
-  height: 100%;
-	/* background-color: #1E2028; */
+    height: 100%;
 	padding: 0;
 	margin: 0;
 }
@@ -73,7 +72,7 @@ main.container section.content p a {
 }
 
 /***** Footer *****/
-footer {
+/* footer {
 	bottom: 35px;
 	display: flex;
 	width: 100%;
@@ -90,7 +89,7 @@ footer a img {
 	border-right: 1.5rem solid transparent;
 	border-top: 1.5rem solid transparent;
 	border-bottom: 1.5rem solid transparent;
-}
+} */
 
 /***** Responsiveness *****/
 @media all and (max-width: 600px) {
@@ -101,9 +100,9 @@ footer a img {
 		font-size: 1.2rem;
 		line-height: 1.4rem;
 	}
-	footer a img {
+	/* footer a img {
 		width: 44px;
-		height: 44px;
+		height: 44px; */
 	}
 }
 @media all and (max-width: 480px) {
@@ -114,8 +113,8 @@ footer a img {
 		font-size: 1.2rem;
 		line-height: 1.4rem;
 	}
-	footer a img {
+	/* footer a img {
 		width: 44px;
 		height: 44px;
-	}
+	} */
 }

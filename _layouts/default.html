@@ -45,7 +45,9 @@ layout: compress
 
         {% include footer.html %}
       </div>
-      {% include search-results.html %}
+      {% if page.hide_search != true %}
+        {% include search-results.html %}
+      {% endif %}
 
     </div> <!-- #main-wrapper -->
 
@@ -59,7 +61,10 @@ layout: compress
       {% include google-analytics.html %}
     {% endif %}
 
-    {% include search-loader.html %}
+    {% if page.hide_search != true %}
+      {% include search-loader.html %}
+    {% endif %}
+
 
   </body>
 

@@ -5,26 +5,36 @@
 #  MIT Licensed
 
 
--
-  name: Home
-  icon: "fas fa-home"
--
-  name: Categories
-  icon: "fas fa-stream"
-  path: tabs
-  url: categories
--
-  name: "Tags"
-  icon: "fas fa-tags"
-  path: tabs
-  url: tags
--
-  name: "Archives"
-  path: tabs
-  url: archives
-  icon: "fas fa-archive"
+# -
+#   name: Home
+#   icon: "fas fa-home"
+# -
+#   name: Categories
+#   icon: "fas fa-stream"
+#   path: tabs
+#   url: categories
+# -
+#   name: "Tags"
+#   icon: "fas fa-tags"
+#   path: tabs
+#   url: tags
+# -
+#   name: "Archives"
+#   path: tabs
+#   url: archives
+#   icon: "fas fa-archive"
 -
   name: "About"
   icon: "fas fa-info"
   path: tabs
   url: about
+-
+  name: "Community"
+  icon: "fas fa-microphone-alt"
+  path: tabs
+  url: community
+-
+  name: "Mentorship"
+  icon: "fas fa-user-astronaut"
+  path: tabs
+  url: mentorship

@@ -44,8 +44,10 @@ include:
   - _pages/
 
 header_pages:
-  - pages/blog.html
-  - about.markdown
+  - pages/mentorship.md
+  - pages/community.md
+  - pages/blog.md
+  - pages/about.md
 
 # minima:
 #   skin: dark

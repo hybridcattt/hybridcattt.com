@@ -9,12 +9,12 @@ to a seasoned developer who have held lead positions in multiple companies.
 At my last job, I lead a team of dozen iOS developers in a 500-people international company.
 
 Two years ago I decided to actively give back to the community by mentoring and coaching
-developers in my free time. Within the last year, I've mentored four people in my spare time,
+iOS developers in my free time. Within the last year, I've mentored four people in my spare time,
 and currently, I have three mentees.
 
-I try to focus on underrepresented groups because I believe that diversity is
+I try to focus on underrepresented folks because I believe that diversity is
 key to solving the world's problems.
-I also coach junior developers, who have a hard time finding their first full-time job.
+I also coach junior developers who have a hard time finding their first full-time job.
 
 I'm not taking new mentees at the moment, but don't hezitate to reach out
 and I will do my best to help!

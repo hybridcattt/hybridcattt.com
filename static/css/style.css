@@ -92,7 +92,7 @@ footer a img {
 } */
 
 /***** Responsiveness *****/
-@media all and (max-width: 600px) {
+/* @media all and (max-width: 600px) {
 	html, body {
 		font-size: 11px;
 	}
@@ -103,7 +103,7 @@ footer a img {
 	/* footer a img {
 		width: 44px;
 		height: 44px; */
-	}
+	/* }
 }
 @media all and (max-width: 480px) {
 	html, body {
@@ -117,4 +117,4 @@ footer a img {
 		width: 44px;
 		height: 44px;
 	} */
-}
+/* } */ 

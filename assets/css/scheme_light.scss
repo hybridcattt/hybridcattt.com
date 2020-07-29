@@ -1,28 +1,37 @@
 @mixin scheme-light {
+    
+    $tart-orange:           #FF3333;
+    $raisin-black:          #23282F;
+    $almost-white:          #FDFDFD;
+    $cultured:              #F3F5F7;
+    $honeydew:              #F1FAEE;
+    $mint-cream:            #F0F9F9; // unused
+    
+    $border:                rgba(190, 190, 190, 0.1);
 
-    $brand-color:           #00A0BE;
+    $brand-color:           $tart-orange;
     $brand-color-light:     lighten($brand-color, 40%);
     $brand-color-dark:      darken($brand-color, 25%) ;
     
-    $site-title-color:      $brand-color-dark;
+    $site-title-color:      $brand-color;
     
-    $text-color:            #111111;
-    $background-color:      #fdfdfd;
-    $code-background-color: #eeeeff;
+    $text-color:            $raisin-black;
+    $background-color:      $almost-white;
+    $code-background-color: $cultured;
     
-    $link-base-color:       #2a7ae2;
-    $link-visited-color:    darken($link-base-color, 15%);
-    $link-hover-color:      $text-color;
+    $link-base-color:       $brand-color;
+    $link-visited-color:    $link-base-color;
+    $link-hover-color:      $link-base-color;
     
-    $border-color-01:       $brand-color-light;
-    $border-color-02:       lighten($brand-color, 35%);
-    $border-color-03:       $brand-color-dark;
+    $border-color-01:       $border;
+    $border-color-02:       $border;
+    $border-color-03:       $border;
     
     $table-text-color:      lighten($text-color, 18%);
-    $table-zebra-color:     lighten($brand-color, 46%);
-    $table-header-bg-color: lighten($brand-color, 43%);
-    $table-header-border:   lighten($brand-color, 37%);
-    $table-border-color:    $border-color-01;
+    $table-zebra-color:     lighten($honeydew, 2%);
+    $table-header-bg-color: $honeydew;
+    $table-header-border:   $border;
+    $table-border-color:    $table-header-border;
 
     $menu-background-color: $background-color !default;
     $menu-shadow-color:     rgba(190, 190, 190, 0.5);

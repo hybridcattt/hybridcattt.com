@@ -1,30 +1,41 @@
 @mixin scheme-dark {
 
-    $brand-color:           #00A0BE !default;
+  // $tart-orange:           #FF3333;
+  $raisin-black:          #23282F;
+  $almost-white:          #FDFDFD;
+  $cultured:              #F3F5F7;
+  $honeydew:              #F1FAEE;
+  $mint-cream:            #F0F9F9; // unused
+
+  $border:                rgba(190, 190, 190, 0.1);
+
+    $brand-color:           #FF5C5C !default;
     $brand-color-light:     lighten($brand-color, 5%) !default;
     $brand-color-dark:      darken($brand-color, 35%) !default;
 
     $site-title-color:      $brand-color-light !default;
 
     $text-color:            #ffdddd !default;
-    $background-color:      #1E2028 !default;
-    $code-background-color: #212121 !default;
+    $background-color:      $raisin-black !default;
+    $secondary-background:  lighten($raisin-black, 4%);
+    $tertiary-background:   lighten($raisin-black, 8%);
+    $code-background-color: $secondary-background !default;
 
-    $link-base-color:       #79b8ff !default;
+    $link-base-color:       $brand-color !default;
     $link-visited-color:    $link-base-color !default;
-    $link-hover-color:      $text-color !default;
+    $link-hover-color:      $link-base-color !default;
 
-    $border-color-01:       $brand-color-dark !default;
-    $border-color-02:       $brand-color-light !default;
-    $border-color-03:       $brand-color !default;
+    $border-color-01:       $border !default;
+    $border-color-02:       $border !default;
+    $border-color-03:       $border !default;
 
     $table-text-color:      $text-color !default;
-    $table-zebra-color:     lighten($background-color, 4%) !default;
-    $table-header-bg-color: lighten($background-color, 10%) !default;
-    $table-header-border:   lighten($background-color, 21%) !default;
-    $table-border-color:    $border-color-01 !default;
+    $table-zebra-color:     $secondary-background !default;
+    $table-header-bg-color: $tertiary-background !default;
+    $table-header-border:   $border !default;
+    $table-border-color:    $table-header-border !default;
 
-    $menu-background-color: lighten($background-color, 4%) !default;
+    $menu-background-color: $secondary-background !default;
     $menu-shadow-color:     darken($menu-background-color, 10%) !default;
 
     :root {

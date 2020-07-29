@@ -115,12 +115,13 @@
     margin-left: 20px;
 
     text-decoration: none;
+
     border-bottom: solid;
     border-color: transparent;
     border-width: 4px;
 
     &:hover {
-      border-color: $brand-color;
+      border-bottom-color: $brand-color;
     }
   }
 
@@ -133,9 +134,10 @@
     background-color: inherit;
 
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
 
     .trigger {
+      padding: 0px;
       display: flex;
       flex-direction: row;
       justify-items: left;
@@ -156,10 +158,16 @@
  
     .page-link {
       display: inline;
-      padding-top: 0px;
+      
+      padding-top: 5px;
       padding-bottom: 5px;
       padding-left: 0px;
       padding-right: 0px;
+
+      // to achieve vertical centering
+      border-top: solid;
+      border-top-color: transparent;
+      border-width: 4px;
 
       &:not(:last-child) {
         margin-right: 30px;

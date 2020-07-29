@@ -7,7 +7,11 @@
     {%- assign show_title = page.show_title -%}
 
     {%- if page.hide_title != true -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <!-- <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a> -->
+
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}"><img class="avatar"
+        src="/static/media/photo_square_for_circle.jpg"></img></a>
+
     {%- endif -%}
 
     <span></span> <!-- Needed for elements to always be correctly aligned regardless if title is hidden  -->

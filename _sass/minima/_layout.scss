@@ -48,8 +48,8 @@
   right: $spacing-unit / 2;
 
   background-color: $background-color;
-  border: 1px solid $border-color-01;
   border-radius: 5px;
+  box-shadow: 0px 0px 5px $border-color-01;
   text-align: right;
 
   display: flex;
@@ -96,8 +96,6 @@
 
   input:checked ~ .trigger {
     display: flex;
-    // padding-bottom: 5px;
-    // top: 9px;
   }
 
   .page-link {
@@ -132,7 +130,7 @@
     top: initial;
     right: initial;
 
-    border: none;
+    box-shadow: none;
     background-color: inherit;
 
     flex-direction: row;

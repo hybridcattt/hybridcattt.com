@@ -24,6 +24,9 @@
     $table-header-border:   lighten($background-color, 21%) !default;
     $table-border-color:    $border-color-01 !default;
 
+    $menu-background-color: lighten($background-color, 4%) !default;
+    $menu-shadow-color:     darken($menu-background-color, 10%) !default;
+
     :root {
         --brand-color:           #{$brand-color};
         --brand-color-light:     #{$brand-color-light};
@@ -48,5 +51,8 @@
         --table-header-bg-color: #{$table-header-bg-color};
         --table-header-border:   #{$table-header-border};
         --table-border-color:    #{$table-border-color};
+
+        --menu-background-color: #{$menu-background-color};
+        --menu-shadow-color: #{$menu-shadow-color};
     }
 }

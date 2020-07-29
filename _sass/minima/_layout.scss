@@ -47,9 +47,9 @@
 
   right: $spacing-unit / 2;
 
-  background-color: $background-color;
+  background-color: $menu-background-color;
   border-radius: 5px;
-  box-shadow: 0px 0px 5px $border-color-01;
+  box-shadow: 0px 0px 5px $menu-shadow-color;
   text-align: right;
 
   display: flex;

@@ -198,16 +198,16 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: calc(#{$content-width} - (#{$spacing-unit}));
+  max-width: calc(#{$content-width} - (#{$page-padding * 2}));
   margin-right: auto;
   margin-left: auto;
-  padding-right: $spacing-unit / 2;
-  padding-left: $spacing-unit / 2;
+  padding-right: $page-padding;
+  padding-left: $page-padding;
 
   @media screen and (min-width: $on-large) {
-    max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
+    max-width: calc(#{$content-width} - (#{$page-padding-large} * 2));
+    padding-right: $page-padding-large;
+    padding-left: $page-padding-large;
   }
 }
 

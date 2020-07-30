@@ -10,11 +10,13 @@ $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
+$page-padding:     $spacing-unit;
+$page-padding-large: $page-padding * 2;
 
 $table-text-align: left !default;
 
 // Width of the content area
-$content-width:    800px !default;
+$content-width:    950px !default;
 
 $on-palm:          600px !default;
 $on-laptop:        800px !default;

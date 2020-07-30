@@ -2,107 +2,30 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-<!-- layout: landing -->
+layout: default
 <!-- hide_title: true -->
 ---
 
-<!DOCTYPE html>
-<html dir="ltr" lang="en-US">
+<div class="main_page">
 
-<head>
-    {%- include common_head.html -%}
+  <main class="container">
 
-    <title>Marina Gornostaeva</title>
+    <section class="content">
 
-    <meta name="description"
-        content="Marina Gornostaeva / iOS engineer / mobile development expert / mentor / based in Copenhagen. Professionally building apps and leading teams since 2011.">
-    <meta name="keywords"
-        content="Marina Gornostaeva, iOS development, developer, app development, Swift, Objective-C, Apple, Copenhagen, Denmark, UX, usability, user experience, user interface">
-    <meta name="author" content="Marina Gornostaeva">
-    <meta name="robots" content="index, follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:creator" content="@hybridcattt" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://hybridcattt.com" />
-    <meta property="og:title" content="Marina Gornostaeva" />
-    <meta property="og:description"
-        content="Marina is an experienced iOS developer, speaker and mentor based in Copenhagen" />
-    <meta property="og:image" content="https://hybridcattt.com/static/media/photo_full.jpg" />
-    <meta property="og:image:alt" content="Marina Gornostaeva's profile picture" />
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134936978-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-134936978-1');
-    </script>
-    <script>
-        function handleOutboundLinkClick(a) {
-            gtag('event', 'Click', {
-                'event_category': 'Outbound Link',
-                'event_label': a.href
-            });
-        }
-    </script>
-
-</head>
-
-<body>
-    {%- include header.html -%}
-
-    <div class="page">
-
-        <main class="container">
-
-            <section class="content">
-                <h1>Marina Gornostaeva</h1>
-                <p>
-                    // iOS engineer, mobile development expert, mentor<br>
-                    // MSc in Applied Mathematics and Computer Science<br>
-                    // Professionally building apps and leading teams since 2011<br>
-                    // Co-organizer of <a href="https://www.meetup.com/CopenhagenCocoa/" target="_blank"
-                        onclick='handleOutboundLinkClick(this)'>Copenhagen Cocoa</a><br>
-                    // Past:
-                    <a href="https://www.storytel.com" target="_blank"
-                        onclick='handleOutboundLinkClick(this)'>Storytel</a>,
-                    <a href="https://get.gotoassist.com" target="_blank"
-                        onclick='handleOutboundLinkClick(this)'>Citrix/GetGo</a>,
-                    <a href="https://id-east.ru" target="_blank" onclick='handleOutboundLinkClick(this)'>iD EAST</a>
-                </p>
-            </section>
-        </main>
-
-        <!-- <footer>
-            <a href="https://twitter.com/hybridcattt" title="Marina on Twitter" target="_blank"
-                onclick='handleOutboundLinkClick(this)'><img src="./static/media/twitter.svg"></a>
-            <a href="https://github.com/hybridcattt" title="Marina on GitHub" target="_blank"
-                onclick='handleOutboundLinkClick(this)'><img src="./static/media/github.svg"></a>
-            <a href="https://medium.com/@hybridcattt" title="Marina on Medium" target="_blank"
-                onclick='handleOutboundLinkClick(this)'><img src="./static/media/medium.svg"></a>
-            <a href="https://speakerdeck.com/hybridcattt/" title="Marina on Speaker Deck" target="_blank"
-                onclick='handleOutboundLinkClick(this)'><img src="./static/media/speakerdeck.svg"></a>
-            <a href="https://stackoverflow.com/users/2153762/hybridcattt" title="Marina on Stack Overflow"
-                target="_blank" onclick='handleOutboundLinkClick(this)'><img src="./static/media/stackoverflow.svg"></a>
-            <a href="https://forums.swift.org/u/hybridcattt/summary" title="Marina on Swift Forums" target="_blank"
-                onclick='handleOutboundLinkClick(this)'><img src="./static/media/swift.svg"></a>
-            <a href="https://www.meetup.com/members/184073817/" title="Marina on Meetup" target="_blank"
-                onclick='handleOutboundLinkClick(this)'><img src="./static/media/meetup.svg"></a>
-            <a href="https://www.linkedin.com/in/hybridcattt" title="Marina on LinkedIn" target="_blank"
-                onclick='handleOutboundLinkClick(this)'><img src="./static/media/linkedin.svg"></a>
-        </footer> -->
+      <h1 class="hello" style="line-height: 0.93;">Hi there, <br>my name is Marina 👋</h1>
+      <p>
+        // iOS engineer, mobile development expert, mentor<br>
+        // MSc in Applied Mathematics and Computer Science<br>
+        // Professionally building apps and leading teams since 2011<br>
+        // Co-organizer of <a href="https://www.meetup.com/CopenhagenCocoa/" target="_blank"
+          onclick='handleOutboundLinkClick(this)'>Copenhagen Cocoa</a><br>
+        // Past:
+        <a href="https://www.storytel.com" target="_blank" onclick='handleOutboundLinkClick(this)'>Storytel</a>,
+        <a href="https://get.gotoassist.com" target="_blank" onclick='handleOutboundLinkClick(this)'>Citrix/GetGo</a>,
+        <a href="https://id-east.ru" target="_blank" onclick='handleOutboundLinkClick(this)'>iD EAST</a>
+      </p>
+    </section>
+  </main>
 
 
-    </div>
-
-    {%- include footer.html -%}
-
-</body>
-
-
-
-</html>
+</div>

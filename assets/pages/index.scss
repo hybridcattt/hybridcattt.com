@@ -1,22 +1,5 @@
-/***** General Styles *****/
-html, body {
-	font-size: 16px;
-	/* line-height: 1; */
-	font-style: normal;
-	font-weight: 400;
-    height: 100%;
-	padding: 0;
-	margin: 0;
-}
-*, *:before, *:after {
-	box-sizing: inherit;
-}
-a {
-	text-decoration: none;
-}
-
 /***** Styles *****/
-div.page {
+div.main_page {
 	height: 100%;
 	padding: 0;
 	margin: 0;
@@ -26,7 +9,7 @@ div.page {
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: justify;
 }
 main.container {
@@ -46,10 +29,10 @@ main.container section.content {
 	flex-direction: column;
 	align-items: left;
 	justify-content: flex-start;
-	padding: 2rem;
+	padding: 2rem 0px;
 }
 main.container section.content h1 {
-	color: #00A0BE;
+	color: #FF5C5C;
 	font-size: 4rem;
 	padding: 0;
 	-webkit-margin-after: 0.5em;
@@ -58,63 +41,33 @@ main.container section.content h1 {
 	text-align: left;
 }
 main.container section.content p {
-	color: #41B645;
+	color: #A8DADC;
 	font-size: 0.9rem;
-	line-height: 1.2rem;
+	line-height: 1.4rem;
 	letter-spacing: 0.13rem;
 	font-family: "Menlo", monospace;
 	font-style: normal;
 	font-weight: 400;
 }
 main.container section.content p a {
-	color: #41B645;
+	color: #A8DADC;
 	text-decoration: underline;
 }
 
-/***** Footer *****/
-/* footer {
-	bottom: 35px;
-	display: flex;
-	width: 100%;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-}
-footer a {
-}
-footer a img {
-	width: 2rem;
-	height: 2rem;
-	border-left: 1.5rem solid transparent;
-	border-right: 1.5rem solid transparent;
-	border-top: 1.5rem solid transparent;
-	border-bottom: 1.5rem solid transparent;
-} */
-
 /***** Responsiveness *****/
-/* @media all and (max-width: 600px) {
-	html, body {
-		font-size: 11px;
-	}
+@media all and (max-width: 800px) {
+
 	main.container section.content p {
 		font-size: 1.2rem;
 		line-height: 1.4rem;
 	}
-	/* footer a img {
-		width: 44px;
-		height: 44px; */
-	/* }
+
 }
 @media all and (max-width: 480px) {
-	html, body {
-		font-size: 9px;
-	}
+
 	main.container section.content p {
 		font-size: 1.2rem;
 		line-height: 1.4rem;
 	}
-	/* footer a img {
-		width: 44px;
-		height: 44px;
-	} */
-/* } */ 
+
+ } 

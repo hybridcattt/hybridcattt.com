@@ -21,7 +21,7 @@ I occasionally speak at meetups/conferences and host workshops. See my past and 
 
 👩‍💻 TBD Workshop @ [try! Swift World 🌍 ](), 2020 
 
-🎤 Detail-oriented UI with Layout Margins @ [NSSpain 2019]() \| [Slides](), [Video]() 
+🎤 Detail-oriented UI with Layout Margins @ [NSSpain 2019]() \| [Slides](), [Video](), [Code on Github]()
 
 👩‍💻 Collection Views - Diffable Data Sources and Compositional Layout @ [Swift Island 2019]() \| [Slides](), [Code on Github]()
 

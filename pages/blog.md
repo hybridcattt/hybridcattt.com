@@ -1,8 +1,10 @@
 ---
 layout: home
-title: Marina's dev blog
+# title: Marina's dev blog
 tab_title: Blog
 permalink: /blog/
 ---
 
-This is blog page woot
+Welcome to my blog. Here I write about iOS development, Swift, git, and occasionally something else.
+
+<hr>

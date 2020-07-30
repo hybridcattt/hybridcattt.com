@@ -46,8 +46,8 @@ include:
 
 header_pages:
   - pages/mentorship.md
-  - pages/community.md
-  - pages/blog.md
+  # - pages/community.md
+  # - pages/blog.md
   - pages/about.md
 
 # minima:

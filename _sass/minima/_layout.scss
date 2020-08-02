@@ -301,9 +301,16 @@
   color: $brand-color;
 }
 
-.post-link {
+a.post-link {
   display: block;
-  @include relative-font-size(1.5);
+  @include relative-font-size(2.5);
+
+  color: $text-color;
+
+  &:hover {
+    color: $brand-color;
+    text-decoration: none;
+  }
 }
 
 
@@ -320,6 +327,10 @@
   @include relative-font-size(2.625);
   letter-spacing: -1px;
   line-height: 1.15;
+
+  &:hover {
+    color: $brand-color;
+  }
 
   @media screen and (min-width: $on-large) {
     @include relative-font-size(2.625);

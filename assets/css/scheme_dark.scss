@@ -1,21 +1,20 @@
 @mixin scheme-dark {
 
-  // $tart-orange:           #FF3333;
+  $orange-red-crayola:    #FF5C5C;
   $raisin-black:          #23282F;
   $almost-white:          #FDFDFD;
-  $cultured:              #F3F5F7;
-  $honeydew:              #F1FAEE;
-  $mint-cream:            #F0F9F9; // unused
+  $snow:                  #FFF3F3;
+  $powder-blue:           #A8DADC;
 
   $border:                rgba(190, 190, 190, 0.1);
 
-    $brand-color:           #FF5C5C !default;
+    $brand-color:           $orange-red-crayola !default;
     $brand-color-light:     lighten($brand-color, 5%) !default;
     $brand-color-dark:      darken($brand-color, 35%) !default;
 
     $site-title-color:      $brand-color-light !default;
 
-    $text-color:            #ffdddd !default;
+    $text-color:            $snow !default;
     $background-color:      $raisin-black !default;
     $secondary-background:  lighten($raisin-black, 4%);
     $tertiary-background:   lighten($raisin-black, 8%);
@@ -37,6 +36,7 @@
 
     $menu-background-color: $secondary-background !default;
     $menu-shadow-color:     darken($menu-background-color, 10%) !default;
+    $subtitle-color:        $powder-blue;
 
     :root {
         --brand-color:           #{$brand-color};
@@ -64,6 +64,7 @@
         --table-border-color:    #{$table-border-color};
 
         --menu-background-color: #{$menu-background-color};
-        --menu-shadow-color: #{$menu-shadow-color};
+        --menu-shadow-color:     #{$menu-shadow-color};
+        --subtitle-color:        #{$subtitle-color}
     }
 }

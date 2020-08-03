@@ -4,23 +4,23 @@ footer {
 	width: 100%;
 	align-items: center;
 	justify-content: center;
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .footer_icon {
-    width: 2rem;
+  width: 2rem;
 	height: 2rem;
 	margin-left: 1.5rem;
 	margin-right: 1.5rem;
 	margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 
-    mask-size: contain;
-    -webkit-mask-size: contain;
-    mask-repeat: round;
-    -webkit-mask-repeat: round;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-repeat: round;
+  -webkit-mask-repeat: round;
 
-    background-color: $text-color;
+  background-color: $text-color;
 }
 
 .footer_icon:hover,

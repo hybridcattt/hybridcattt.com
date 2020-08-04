@@ -279,6 +279,14 @@
   flex: 1 0 auto;
 }
 
+.page-content-100 {
+  display: flex;
+  .wrapper {
+    min-height: 100%;
+    flex-grow: 1;
+  }
+}
+
 .page-heading {
   @include relative-font-size(2);
 }

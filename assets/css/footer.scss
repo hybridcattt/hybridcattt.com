@@ -10,10 +10,8 @@ footer {
 .footer_icon {
   width: 2rem;
 	height: 2rem;
-	margin-left: 1.5rem;
-	margin-right: 1.5rem;
-	margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+
+  margin: 1.2rem;
 
   mask-size: contain;
   -webkit-mask-size: contain;
@@ -21,6 +19,10 @@ footer {
   -webkit-mask-repeat: round;
 
   background-color: $text-color;
+
+  @media all and (max-width: $on-medium) {
+    margin: 0.8rem;
+  }
 }
 
 .footer_icon:hover,

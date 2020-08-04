@@ -50,6 +50,10 @@ header_pages:
   # - pages/blog.md
   - pages/about.md
 
+custom_data:
+  twitter_link: https://twitter.com/hybridcattt
+  contact_email_text: marinag at hey dot com
+
 # minima:
 #   skin: dark
 

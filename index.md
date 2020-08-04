@@ -9,7 +9,7 @@ layout: default-100-height
 <div class="main_page">
   <h1>Hi there, <br>my name is Marina 👋</h1>
   <p>
-    // iOS engineer, mobile development expert, mentor<br>
+    // iOS engineer, mobile development expert, <a href="/mentorship/">mentor</a><br>
     // MSc in Applied Mathematics and Computer Science<br>
     // Professionally building apps and leading teams since 2011<br>
     // Co-organizer of <a href="https://www.meetup.com/CopenhagenCocoa/" target="_blank"

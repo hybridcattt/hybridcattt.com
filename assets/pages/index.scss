@@ -1,73 +1,45 @@
-/***** Styles *****/
 div.main_page {
+
 	height: 100%;
 	padding: 0;
 	margin: 0;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
+  display: flex;
+  
 	flex-direction: column;
-	align-items: flex-start;
-	justify-content: justify;
-}
-main.container {
+	align-items: stretch;
+  justify-content: center;
+  
+  p {
+    color: $subtitle-color;
+	  font-size: 1rem;
+	  line-height: 1.5rem;
+	  letter-spacing: 0.13rem;
+	  font-family: "Menlo", monospace;
+	  font-style: normal;
+    font-weight: 400;
+  
+    a {
+      color: $subtitle-color;
+      text-decoration: underline;
+    }
+
+    @media all and (max-width: $on-medium) {
+      font-size: 1rem;
+      line-height: 1.4rem;
+    }
+  }
+
+  h1 {
+    color: $brand-color;
+    font-size: 4rem;
     padding: 0;
-    margin: 0;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-		flex-grow: 1;
-    align-items: center;
-    justify-content: center;
-}
-main.container section.content {
-	display: flex;
-	flex-direction: column;
-	align-items: left;
-	justify-content: flex-start;
-	padding: 2rem 0px;
-}
-main.container section.content h1 {
-	color: $brand-color;
-	font-size: 4rem;
-	padding: 0;
-	-webkit-margin-after: 0.5em;
-	// font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
-	font-style: normal;
-	text-align: left;
-}
-main.container section.content p {
-	color: $subtitle-color;
-	font-size: 0.9rem;
-	line-height: 1.4rem;
-	letter-spacing: 0.13rem;
-	font-family: "Menlo", monospace;
-	font-style: normal;
-	font-weight: 400;
-}
-main.container section.content p a {
-	color: $subtitle-color;
-	text-decoration: underline;
-}
+    margin-bottom: 0.5em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1;
 
-/***** Responsiveness *****/
-@media all and (max-width: 800px) {
-
-	main.container section.content p {
-		font-size: 1.2rem;
-		line-height: 1.4rem;
-	}
-
+    @media all and (max-width: $on-medium) {
+      font-size: 2.5rem;
+    }
+  }
 }
-@media all and (max-width: 480px) {
-
-	main.container section.content p {
-		font-size: 1.2rem;
-		line-height: 1.4rem;
-	}
-
- } 

@@ -6,7 +6,7 @@ permalink: /about/
 
 Hi there,
 
-My name is Marina, a software engineer focusing on development for Apple platforms, living in Copenhagen 🇩🇰 I've been
+My name is Marina, I'm a software developer focusing on development for Apple platforms, living in Copenhagen 🇩🇰 I've been
 in tech for over ten years, and nine years with iOS, leading teams and building apps & SDKs.
 
 I'm a Unix geek turned Apple nerd 🤓

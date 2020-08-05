@@ -24,24 +24,6 @@
 
 	<link rel="stylesheet" href="./static/css/style.css" type="text/css" media="screen">
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134936978-1"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-
-	gtag('config', 'UA-134936978-1');
-	</script>
-	<script>
-	function handleOutboundLinkClick(a) {
-		gtag('event', 'Click', {
-  		'event_category': 'Outbound Link',
-  		'event_label': a.href
-		});
-	}
-	</script>
-
 </head>
 
 <body>
@@ -53,7 +35,9 @@
 					// iOS engineer, mobile development expert, mentor<br>
 					// MSc in Applied Mathematics and Computer Science<br>
 					// Professionally building apps and leading teams since 2011<br>
-					// Co-organizer of <a href="https://www.meetup.com/CopenhagenCocoa/" target="_blank" onclick='handleOutboundLinkClick(this)'>Copenhagen Cocoa</a><br>
+					// Co-organizer of <a href="https://www.meetup.com/CopenhagenCocoa/" target="_blank"
+						onclick='handleOutboundLinkClick(this)' data-goatcounter-click="meetup-desc">Copenhagen
+						Cocoa</a><br>
 					// Past:
 					<a href="https://www.storytel.com" target="_blank" onclick='handleOutboundLinkClick(this)'>Storytel</a>,
 					<a href="https://get.gotoassist.com" target="_blank" onclick='handleOutboundLinkClick(this)'>Citrix/GetGo</a>,
@@ -75,4 +59,7 @@
 		</footer>
 	</div>
 </body>
+
+<script data-goatcounter="https://hybridcattt.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
 </html>

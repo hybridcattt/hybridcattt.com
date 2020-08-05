@@ -45,13 +45,12 @@
   position: relative;
   
   border-radius: 50%;
-  border-width: 2px;
-  border: solid $menu-background-color;
+  border: solid ($spacing-unit * 0.15) $menu-background-color;
 
   box-shadow: 0px 0px 5px $menu-shadow-color;
   
   width: $spacing-unit * 1.7;
-  height: auto;
+  height: $spacing-unit * 1.7;
 }
 
 .site-nav {

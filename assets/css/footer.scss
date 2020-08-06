@@ -1,15 +1,36 @@
 footer {
-	bottom: 35px;
-	display: flex;
-	width: 100%;
-	align-items: center;
-	justify-content: center;
+  bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
+}
+
+div.footer-row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+footer > p {
+  text-align: center;
+  font-size: 80%;
+  color: $subtle-text-color;
+  a {
+    color: $subtle-text-color;
+    &:visited {
+      color: $subtle-text-color;
+    }
+  }
 }
 
 .footer_icon {
   width: 2rem;
-	height: 2rem;
+  height: 2rem;
 
   margin: 1.2rem;
 

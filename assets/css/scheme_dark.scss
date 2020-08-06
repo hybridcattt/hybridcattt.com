@@ -2,7 +2,6 @@
 
   $orange-red-crayola:    #FF5C5C;
   $raisin-black:          #23282F;
-  $almost-white:          #FDFDFD;
   $snow:                  #FFF3F3;
   $powder-blue:           #A8DADC;
 
@@ -37,6 +36,7 @@
     $menu-background-color: $secondary-background !default;
     $menu-shadow-color:     darken($menu-background-color, 10%) !default;
     $subtitle-color:        $powder-blue;
+    $subtle-text-color:     rgba($text-color, 0.3)
 
     :root {
         --brand-color:           #{$brand-color};
@@ -65,6 +65,7 @@
 
         --menu-background-color: #{$menu-background-color};
         --menu-shadow-color:     #{$menu-shadow-color};
-        --subtitle-color:        #{$subtitle-color}
+        --subtitle-color:        #{$subtitle-color};
+        --subtle-text-color:     #{$subtle-text-color};
     }
 }

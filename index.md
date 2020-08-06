@@ -12,11 +12,10 @@ layout: default-100-height
     // iOS engineer, mobile development expert, <a href="/mentorship/">mentor</a><br>
     // MSc in Applied Mathematics and Computer Science<br>
     // Professionally building apps and leading teams since 2011<br>
-    // Co-organizer of <a href="https://www.meetup.com/CopenhagenCocoa/" target="_blank"
-      onclick='handleOutboundLinkClick(this)'>Copenhagen Cocoa</a><br>
+    // Co-organizer of <a href="https://www.meetup.com/CopenhagenCocoa/">Copenhagen Cocoa</a><br>
     // Past:
-    <a href="https://www.storytel.com" target="_blank" onclick='handleOutboundLinkClick(this)'>Storytel</a>,
-    <a href="https://get.gotoassist.com" target="_blank" onclick='handleOutboundLinkClick(this)'>Citrix/GetGo</a>,
-    <a href="https://id-east.ru" target="_blank" onclick='handleOutboundLinkClick(this)'>iD EAST</a>
+    <a href="https://www.storytel.com">Storytel</a>,
+    <a href="https://get.gotoassist.com">Citrix/GetGo</a>,
+    <a href="https://id-east.ru">iD EAST</a>
   </p>
 </div>

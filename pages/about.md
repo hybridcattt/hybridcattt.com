@@ -6,18 +6,21 @@ permalink: /about/
 
 Hi there,
 
-My name is Marina, I'm a software developer focusing on development for Apple platforms, living in Copenhagen 🇩🇰 I've been
+My name is Marina, I'm a software developer focusing on development for Apple platforms, living in Copenhagen.
+I've been
 in tech for over ten years, and nine years with iOS, leading teams and building apps & SDKs.
 
-I'm a Unix geek turned Apple nerd 🤓
+I'm a Unix geek turned Apple nerd 🤓 I deeply care about privacy, equal opportunity, and climate change 💚
 
 You can find me in the core iOS team at [Say Their Names project ✊🏿](https://saytheirnames.io), co-organizing
 [CopenhagenCocoa](https://www.meetup.com/CopenhagenCocoa/) meetups, and [mentoring folks](/mentorship/). I also offer
-consulting services, as well as focus on my own apps.
+consulting services.
 
 My latest 9-to-5 adventure was leading the iOS team at [Storytel](https://storytel.com) for 4 years, supporting
 company's growth from a small startup to a 500-people company.
-I've also worked at Citrix/GetGo, PrimeApp and iD East.
+I've also worked at [Citrix/GetGo](https://get.gotoassist.com), [PrimeApp](https://vk.com/primeapp) and [iD East](https://id-east.ru). 
+My CV and references can be found on 
+[LinkedIn](https://www.linkedin.com/in/hybridcattt).
 
 <hr>
 

@@ -25,6 +25,10 @@ footer > p {
     &:visited {
       color: $subtle-text-color;
     }
+    &:hover {
+      color: $brand-color;
+      text-decoration: none;
+    }
   }
 }
 

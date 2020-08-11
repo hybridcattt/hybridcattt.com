@@ -24,7 +24,7 @@ My CV and references can be found on
 
 <hr>
 
-I occasionally speak at meetups/conferences and host workshops. See my past and future speaking engagements below:
+I occasionally speak at meetups/conferences and host workshops. Here's the list of my past and future speaking engagements:
 
 👩‍💻 TBD Workshop @ [try! Swift World 🌍](https://www.tryswift.co/world/), 2020
 

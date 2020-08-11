@@ -1,0 +1,91 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Marina Gornostaeva
+tagline: iOS engineer / mobile development expert / mentor / based in Copenhagen
+description: >- # this means to ignore newlines until "baseurl:"
+  Marina Gornostaeva / iOS engineer / mobile development expert / mentor / based in Copenhagen. 
+  Professionally building apps and leading teams since 2011.
+  Consulting and mentorship services within software development from an industry expert. 
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://hybridcattt.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: hybridcattt
+github_username:  hybridcattt
+
+twitter:
+  username: hybridcattt
+  card: summary
+
+author: hybridcattt
+
+show_excerpts: true
+
+# Build settings
+# theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Additional config
+
+permalink: /blog/:title/
+
+include:
+  - _pages/
+
+header_pages:
+  - pages/mentorship.md
+  # - pages/community.md
+  # - pages/blog.md
+  - pages/about.md
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /static/media/photo_square_for_circle_small.jpg
+
+custom_data:
+  twitter_link: https://twitter.com/hybridcattt
+  contact_email_text: marinag at hey dot com
+
+goatcounter_id: hybridcattt
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - _posts/
+  - pages/blog.md
+  - pages/community.md

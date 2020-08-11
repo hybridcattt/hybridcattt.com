@@ -1,0 +1,45 @@
+div.main_page {
+
+	height: 100%;
+	padding: 0;
+	margin: 0;
+  display: flex;
+  
+	flex-direction: column;
+	align-items: stretch;
+  justify-content: center;
+  
+  p {
+    color: $subtitle-color;
+	  font-size: 1rem;
+	  line-height: 1.5rem;
+	  letter-spacing: 0.13rem;
+	  font-family: "Menlo", monospace;
+	  font-style: normal;
+    font-weight: 400;
+  
+    a {
+      color: $subtitle-color;
+      text-decoration: underline;
+    }
+
+    @media all and (max-width: $on-medium) {
+      font-size: 1rem;
+      line-height: 1.4rem;
+    }
+  }
+
+  h1 {
+    color: $brand-color;
+    font-size: 4rem;
+    padding: 0;
+    margin-bottom: 0.5em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1;
+
+    @media all and (max-width: $on-medium) {
+      font-size: 2.5rem;
+    }
+  }
+}

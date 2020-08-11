@@ -12,7 +12,7 @@ in tech for over ten years, and nine years with iOS, leading teams and building 
 
 I'm a Unix geek turned Apple nerd 🤓 I deeply care about privacy, equal opportunity, and climate change 💚
 
-You can find me in the core iOS team at [Say Their Names project ✊🏿](https://saytheirnames.io), co-organizing
+You can find me in the core iOS team at [Say Their Names project ✊🏽](https://saytheirnames.io), co-organizing
 [CopenhagenCocoa](https://www.meetup.com/CopenhagenCocoa/) meetups, and [mentoring folks](/mentorship/). I also offer
 consulting services.
 

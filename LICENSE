@@ -3,13 +3,13 @@ License
 Copyright (c) 2020, Marina Gornostaeva
 All rights reserved.
 
-Redistribution of contents of this repository and use in source and binary forms, with or without
-modification, are not permitted.
+It is permitted to use parts of CSS, HTML, and YAML code with or without modification, 
+or as inspiration for similar work.
 
-It is permitted to use parts of CSS HTML, and YML code as inspiration for similar work.
-
-It is not permitted to re-distribute any text content, including content 
-within the markdown (.md) files, with or without modification. 
+It is not permitted to re-distribute any textual content, including content 
+within the markdown (.md) files, with or without modification. If the source 
+code of this repository is copied, the textual content in the copy (markdown files)
+is expected to be deleted from the copy as soon as possible. 
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
 AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE

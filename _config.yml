@@ -51,9 +51,9 @@ include:
   - _pages/
 
 header_pages:
+  - pages/blog.md
   - pages/mentorship.md
   # - pages/community.md
-  # - pages/blog.md
   - pages/about.md
 
 defaults:
@@ -86,6 +86,4 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - README.md
-  - _posts/
-  - pages/blog.md
   - pages/community.md

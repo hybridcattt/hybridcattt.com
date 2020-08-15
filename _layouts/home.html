@@ -33,7 +33,7 @@ layout: default
           </h3>
           <p class="post-meta">{{ post.date | date: date_format }}</p>
           {%- if site.show_excerpts -%}
-            <p>{{ post.excerpt | strip_html }}</p>
+            <p>{{ post.excerpt }}</p>
           {%- endif -%}
           <a class="post-read-more" href="{{ post.url | relative_url }}">Read more</a>
         </li>

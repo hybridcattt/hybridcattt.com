@@ -247,6 +247,23 @@ pre {
 
 
 /**
+* Text
+*/
+.subtle-text {
+  color: $subtle-text-color;
+  a {
+    color: $subtle-text-color;
+    &:visited {
+      color: $subtle-text-color;
+    }
+    &:hover {
+      color: $brand-color;
+      text-decoration: none;
+    }
+  }
+}
+
+/**
  * Tables
  */
 table {

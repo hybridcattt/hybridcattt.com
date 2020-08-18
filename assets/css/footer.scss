@@ -19,17 +19,6 @@ div.footer-row {
 footer > p {
   text-align: center;
   font-size: 80%;
-  color: $subtle-text-color;
-  a {
-    color: $subtle-text-color;
-    &:visited {
-      color: $subtle-text-color;
-    }
-    &:hover {
-      color: $brand-color;
-      text-decoration: none;
-    }
-  }
 }
 
 .footer_icon {

@@ -3,7 +3,13 @@ layout: post
 title:  "How To Test Throwing Code In Swift"
 date:   2017-10-10 21:00:16 +0200
 excerpt: All you need to know about testing throwing functions with XCTest and keeping test code clean & robust in the process.
+draft: true
 ---
+
+<aside>
+* TOC
+{:toc}
+</aside>
 
 How many times have you had to take over a project where there were unit tests, but they were hard to grasp, desperately failing, or the test target wouldn’t even build?
 
@@ -16,9 +22,11 @@ Code that throws can be tricky to test sometimes, and the resulting test code ca
 ---
 
 XCTest is a powerful framework. In Xcode 8.3 Apple introduced few new XCTAssert functions in addition to a couple dozen existing ones. While features they provide allow to do most things a developer would desire, some things still require boilerplate code on top of natively provided features.
-Let’s take a look at a few cases and how we solve them.
+Let’s take a look at a few cases and how to solve them.
 
 ## Comparing results of throwing functions
+
+### Functions with `Equatable` return types
 
 This one is easy. All of existing `XCTAssert` functions already take throwing arguments. If the result is `Equatable`, a line like this will do the job:
 
@@ -29,9 +37,12 @@ XCTAssertEqual(try x.calculateValue(), expectedValue)
 If `calculateValue()` throws an error, the test with fail with a message _“XCTAssertEqual failed: threw error …”_. 
 If the call did not throw and two values are not equal, the test with fail with message _“XCTAssertEqual failed: a is not equal to b”_, where _‘a’_ and _‘b’_ are descriptions of left and right arguments respectively, produced by `String(describing:)`.
 
-Simply speaking, all `XCTAssert*` value-checking functions verify that a call does not throw any error *and* returns expected result. Very convenient.
+It's quite convenient - all `XCTAssert*` value-checking functions verify that a call does not throw any error *and* returns expected result.
 
-## Functions with non-Equatable return types
+### Functions returning `Void`
+
+
+### Functions with non-`Equatable` return types
 
 Often `XCTAssertEqual` and its value-checking siblings are not enough.
 

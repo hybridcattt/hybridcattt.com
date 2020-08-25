@@ -32,8 +32,14 @@ layout: default
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
+    <br>
+    <hr>
     {%- include after-post.html -%}
   </div>
+
+  {%- include sharing.html -%}
+
+  <hr>
 
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}

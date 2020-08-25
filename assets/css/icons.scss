@@ -1,0 +1,65 @@
+.icon {
+  width: 1rem;
+  height: 1rem;
+
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-repeat: round;
+  -webkit-mask-repeat: round;
+
+  background-color: $text-color;
+}
+
+.subtle-text .icon {
+    background-color: $subtle-text-color;
+}
+
+.icon:hover,
+.icon:focus {
+  background: $brand-color;
+}
+
+.icon-twitter {
+    -webkit-mask-image: url(/static/media/twitter.svg);
+    mask-image: url(/static/media/twitter.svg);
+}
+.icon-github {
+    -webkit-mask-image: url(/static/media/github.svg);
+    mask-image: url(/static/media/github.svg);
+}
+.icon-medium {
+    -webkit-mask-image: url(/static/media/medium.svg);
+    mask-image: url(/static/media/medium.svg);
+}
+.icon-stackoverflow {
+    -webkit-mask-image: url(/static/media/stackoverflow.svg);
+    mask-image: url(/static/media/stackoverflow.svg);
+}
+.icon-speakerdeck {
+    -webkit-mask-image: url(/static/media/speakerdeck.svg);
+    mask-image: url(/static/media/speakerdeck.svg);
+}
+.icon-swift {
+    -webkit-mask-image: url(/static/media/swift.svg);
+    mask-image: url(/static/media/swift.svg);
+}
+.icon-meetup {
+    -webkit-mask-image: url(/static/media/meetup.svg);
+    mask-image: url(/static/media/meetup.svg);
+}
+.icon-linkedin {
+    -webkit-mask-image: url(/static/media/linkedin.svg);
+    mask-image: url(/static/media/linkedin.svg);
+}
+.icon-bmac {
+  -webkit-mask-image: url(/static/media/buymeacoffee.svg);
+  mask-image: url(/static/media/buymeacoffee.svg);
+}
+.icon-telegram {
+  -webkit-mask-image: url(/static/media/telegram.svg);
+  mask-image: url(/static/media/telegram.svg);
+}
+.icon-reddit {
+  -webkit-mask-image: url(/static/media/reddit.svg);
+  mask-image: url(/static/media/reddit.svg);
+}

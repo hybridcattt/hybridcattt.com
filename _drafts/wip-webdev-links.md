@@ -2,7 +2,8 @@
 layout: post
 title:  "Building A Static Website: Essentials"
 date:   2017-10-10 21:00:16 +0200
-# excerpt: All you need to know about testing throwing functions with XCTest and keeping test code clean & robust in the process.
+# excerpt: All you need to know about testing throwing functions with XCTest and keeping test code clean & robust in the process.//!
+medium_link: https://google.com
 ---
 
 

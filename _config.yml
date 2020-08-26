@@ -61,6 +61,7 @@ defaults:
       path: ""
     values:
       image: /static/media/photo_square_for_circle_small.jpg
+      author: Marina Gornostaeva
 
 custom_data:
   twitter_link: https://twitter.com/hybridcattt

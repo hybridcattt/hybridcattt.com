@@ -27,7 +27,7 @@ All linked resources are free to use.
 
 Table-based layouts turned out to be are a thing of the past. 
 I found that Flexbox is the most common way to layout web UIs these days. 
-[This guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) ended up being one of the resources I get back to the most. 
+[A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) ended up being one of the resources I get back to the most. 
 
 ### CSS Selectors
 

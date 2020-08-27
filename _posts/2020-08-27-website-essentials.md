@@ -3,7 +3,7 @@ layout: post
 title:  "Building a Well-Rounded Website: Essentials"
 # date:   2020-10-10 21:00:16 +0200
 medium_link: ''
-excerpt: My personal collection of essential links useful for building a well-rounded website, regardless of the stack. During the last two years, I've gathered 20+ resources that I regularly get back to, and I'm hoping this list will help others who are following a similar path. 
+excerpt: A collection of essential links useful for building a well-rounded website, regardless of the stack. While building my personal website, I've gathered 20+ resources that I regularly get back to, and I'm hoping this list will help others who are following a similar path. 
 ---
 
 I first learned the basics of web development in the 2000s. I mainly had transactional experiences with that platform, 

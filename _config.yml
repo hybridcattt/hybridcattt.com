@@ -43,6 +43,9 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+feed:
+  excerpt_only: true
+
 # Additional config
 
 permalink: /blog/:title/

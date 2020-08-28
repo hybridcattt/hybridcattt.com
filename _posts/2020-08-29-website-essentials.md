@@ -1,23 +1,20 @@
 ---
 layout: post
 title:  "Building a Well-Rounded Website: Essentials"
-# date:   2020-10-10 21:00:16 +0200
 medium_link: ''
 excerpt: A collection of essential links useful for building a well-rounded website, regardless of the stack. While building my personal website, I've gathered 20+ resources that I regularly get back to, and I'm hoping this list will help others who are following a similar path. 
 ---
 
-I first learned the basics of web development in the 2000s. I mainly had transactional experiences with that platform, 
-until I decided to build the first version of my personal site two years ago. It was a single `index.html` with a static layout and very little content.
-The blog you're reading now has much more to it and is built with a static site generator. 
+I first learned the basics of web development in the 2000s, and have since contributed to web applications code in my corporate jobs and worked with HTML&CSS in the context of ebooks. 
+But the first real website I made and published from scratch was the first version of my personal site that I built two years ago. 
+It was a single `index.html` with a static layout and very little content.
+The blog that you are reading right now is built with a static site generator. 
 
-Building a website in 2020 turned out to be a much more exciting experience than expected. 
-I discovered so many new things as web development has advanced by a lot in the past decade.
+During the last couple of years, I have accumulated a large collection of bookmarks that I find helpful when making websites. 
+I regularly keep referring to many of them. 
 
-During the last couple of years, I've gathered a large collection of useful bookmarks. 
-Many of those links I keep referring back to all the time. 
-
-All of the resources are relevant to most websites regardless of what stack or framework is used.
-If you are building a website, I hope this collection will be useful to you.
+All of these resources are relevant to most kinds of websites, regardless of what stack or framework you use.
+If you are building a website on your own, I hope this collection will prove to be useful.
 
 > All links are from my personal collection. I have no affiliation with any of the linked resources. 
 All linked resources are free to use. 

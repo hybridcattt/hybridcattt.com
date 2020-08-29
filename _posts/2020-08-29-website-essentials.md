@@ -3,7 +3,15 @@ layout: post
 title:  "Building a Well-Rounded Website: Essentials"
 medium_link: https://medium.com/@hybridcattt/building-a-well-rounded-website-essentials-822a27a46cad
 excerpt: A collection of essential links useful for building a well-rounded website, regardless of the stack. While building my personal website, I've gathered 20+ resources that I regularly get back to, and I'm hoping this list will help others who are following a similar path. 
+image: /assets/posts/website-essentials/img.jpg
+twitter: 
+  card: summary_large_image
 ---
+
+![Woman coding in an IDE](/assets/posts/website-essentials/img.jpg)
+<i class="subtle-text">Photo by <a href="https://unsplash.com/@crew?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Crew</a> on <a href="https://unsplash.com/s/photos/website?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></i>
+<br>
+<br>
 
 I first learned the basics of web development in the 2000s, and have since contributed to web applications code in my corporate jobs and worked with HTML&CSS in the context of ebooks. 
 But the first real website I made and published from scratch was the first version of my personal site that I built two years ago. 

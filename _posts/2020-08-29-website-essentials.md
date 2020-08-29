@@ -3,7 +3,15 @@ layout: post
 title:  "Building a Well-Rounded Website: Essentials"
 medium_link: https://medium.com/@hybridcattt/building-a-well-rounded-website-essentials-822a27a46cad
 excerpt: A collection of essential links useful for building a well-rounded website, regardless of the stack. While building my personal website, I've gathered 20+ resources that I regularly get back to, and I'm hoping this list will help others who are following a similar path. 
+image: /assets/posts/website-essentials/img.jpg
+twitter: 
+  card: summary_large_image
 ---
+
+![Woman coding in an IDE](/assets/posts/website-essentials/img.jpg)
+<i class="subtle-text">Photo by <a href="https://unsplash.com/@crew?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Crew</a> on <a href="https://unsplash.com/s/photos/website?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></i>
+<br>
+<br>
 
 I first learned the basics of web development in the 2000s, and have since contributed to web applications code in my corporate jobs and worked with HTML&CSS in the context of ebooks. 
 But the first real website I made and published from scratch was the first version of my personal site that I built two years ago. 
@@ -22,7 +30,7 @@ All linked resources are free to use.
 <br>
 <a href="#tldr">TL;DR: Just give me the links!</a>
 
-# Page Layout
+## Page Layout
 
 ### Flexbox
 
@@ -39,7 +47,7 @@ I love the [CSS selector reference from w3schools](https://www.w3schools.com/css
 While browsing Twitter one day I stumbled upon an article recommendation from [@ReyTheDev](https://twitter.com/ReyTheDev/status/1294148221992935424) for [structuring HTML semantically](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML) to achieve low-effort accessibility and reader mode support. 
 It's a gold-mine when it comes to the basics of modern HTML.
 
-# Navigation
+## Navigation
 
 ### Opening external links
 
@@ -48,14 +56,14 @@ This is usually achieved with `target="_blank"` on links.
 I've never looked at it in such a way that the user can always opt-in to open something in a new tab, but they can never opt-out. 
 [UX Collective wrote a comprehensive article on opening links](https://uxdesign.cc/linking-to-a-new-tab-vs-same-tab-f88b495d2187).
 
-# SEO
+## SEO
 
 To make a site searchable through search engines, it is essential to get several meta properties right. 
 Shout out to [@MarinaHuber](https://twitter.com/SerinnahHuber) for introducing me to this comprehensive [SEO check tool](https://www.seobility.net/en/seocheck/). It checks not only the technical side, but also the content itself.
 
 _Canonical URLs_ help avoid duplicate content on the web. They are useful even if you post only in one place. Check out [rel=canonical: the ultimate guide](https://yoast.com/rel-canonical/).
 
-# Art 
+## Art 
 
 It's hard to avoid needing graphic resources, even when building a simple website. 
 There are many copyright-free collections out there, for example [Unsplash](https://unsplash.com), [Undraw](https://undraw.co/illustrations) and [Black Illustrations](https://www.blackillustrations.com). 
@@ -77,7 +85,7 @@ Files will be ready-to-go along with a code snippet.
 I've tried several color scheme generators before ending up with [Coolors](https://coolors.co). 
 You can pick a palette from a large catalog, modify or create your own, even based on an uploaded image. 
 
-# Social Sharing 
+## Social Sharing 
 
 ### Buttons
 
@@ -108,18 +116,18 @@ Card metadata is heavily cached on the social network's side, so they don't have
 Card validators have a hidden perk: they also invalidate the respective caches.
 This article goes in-depth on cards and caching: [How to Clear Facebook Cache, Twitter Cache, and LinkedIn Cache so Your Content Looks Right](https://www.socialmediaexaminer.com/how-to-clear-facebook-cache-twitter-cache-linkedin-cache/).
 
-# Tracking
+## Tracking
 
 I care about privacy, so having Google Analytics on the previous version of my site was bugging me. 
 Once I randomly stumbled upon [GoatCounter](https://www.goatcounter.com) - privacy-friendly open source web analytics.
 [GoatCounter's rationale](https://github.com/zgoat/goatcounter/blob/master/docs/rationale.markdown) resonated with me, and now it is my go-to analytics service. By the way, it is completely free for non-commercial use. 
 
-# Inspiration
+## Inspiration
 
 [humans.fyi](https://humans.fyi) is a huge catalog of personal websites, where you can browse by platform, dominant color, and even occupation. Exploring other people's sites gives endless inspiration for layouts, color schemes, and fonts. And a little bit of FOMO.
 
 <a name="tldr"></a> 
-# TL;DR 
+## TL;DR 
 
   - [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
   - [CSS selector reference from w3schools](https://www.w3schools.com/cssref/css_selectors.asp)

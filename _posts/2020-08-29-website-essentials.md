@@ -119,7 +119,7 @@ Once I randomly stumbled upon [GoatCounter](https://www.goatcounter.com) - priva
 [humans.fyi](https://humans.fyi) is a huge catalog of personal websites, where you can browse by platform, dominant color, and even occupation. Exploring other people's sites gives endless inspiration for layouts, color schemes, and fonts. And a little bit of FOMO.
 
 <a name="tldr"></a> 
-# TL;DR 
+## TL;DR 
 
   - [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
   - [CSS selector reference from w3schools](https://www.w3schools.com/cssref/css_selectors.asp)

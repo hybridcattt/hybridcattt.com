@@ -19,75 +19,12 @@ div.footer-row {
 footer > p {
   text-align: center;
   font-size: 80%;
-  color: $subtle-text-color;
-  a {
-    color: $subtle-text-color;
-    &:visited {
-      color: $subtle-text-color;
-    }
-    &:hover {
-      color: $brand-color;
-      text-decoration: none;
-    }
-  }
 }
 
-.footer_icon {
-  width: 2rem;
-  height: 2rem;
-
+.footer-icon {
   margin: 1.2rem;
-
-  mask-size: contain;
-  -webkit-mask-size: contain;
-  mask-repeat: round;
-  -webkit-mask-repeat: round;
-
-  background-color: $text-color;
 
   @media all and (max-width: $on-medium) {
     margin: 0.8rem;
   }
-}
-
-.footer_icon:hover,
-.footer_icon:focus {
-  background: $brand-color;
-}
-
-.icon-twitter {
-    -webkit-mask-image: url(/static/media/twitter.svg);
-    mask-image: url(/static/media/twitter.svg);
-}
-.icon-github {
-    -webkit-mask-image: url(/static/media/github.svg);
-    mask-image: url(/static/media/github.svg);
-}
-.icon-medium {
-    -webkit-mask-image: url(/static/media/medium.svg);
-    mask-image: url(/static/media/medium.svg);
-}
-.icon-stackoverflow {
-    -webkit-mask-image: url(/static/media/stackoverflow.svg);
-    mask-image: url(/static/media/stackoverflow.svg);
-}
-.icon-speakerdeck {
-    -webkit-mask-image: url(/static/media/speakerdeck.svg);
-    mask-image: url(/static/media/speakerdeck.svg);
-}
-.icon-swift {
-    -webkit-mask-image: url(/static/media/swift.svg);
-    mask-image: url(/static/media/swift.svg);
-}
-.icon-meetup {
-    -webkit-mask-image: url(/static/media/meetup.svg);
-    mask-image: url(/static/media/meetup.svg);
-}
-.icon-linkedin {
-    -webkit-mask-image: url(/static/media/linkedin.svg);
-    mask-image: url(/static/media/linkedin.svg);
-}
-.icon-bmac {
-  -webkit-mask-image: url(/static/media/buymeacoffee.svg);
-  mask-image: url(/static/media/buymeacoffee.svg);
 }

@@ -103,7 +103,7 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: $base-font-weight;
+  font-weight: 300; //$base-font-weight;
 }
 
 
@@ -138,7 +138,7 @@ a {
  * Blockquotes
  */
 blockquote {
-  color: $brand-color;
+  color: $subtle-text-color;
   border-left: 4px solid $border-color-01;
   padding-left: $spacing-unit / 2;
   @include relative-font-size(1.125);
@@ -245,6 +245,23 @@ pre {
   vertical-align: text-bottom;
 }
 
+
+/**
+* Text
+*/
+.subtle-text {
+  color: $subtle-text-color;
+  a {
+    color: $subtle-text-color;
+    &:visited {
+      color: $subtle-text-color;
+    }
+    &:hover {
+      color: $brand-color;
+      text-decoration: none;
+    }
+  }
+}
 
 /**
  * Tables

@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Marina Gornostaeva
-tagline: iOS engineer / mobile development expert / mentor / based in Copenhagen
+tagline: "👋"
 description: >- # this means to ignore newlines until "baseurl:"
   Marina Gornostaeva / iOS engineer / mobile development expert / mentor / based in Copenhagen. 
   Professionally building apps and leading teams since 2011.
@@ -43,6 +43,9 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+feed:
+  excerpt_only: true
+
 # Additional config
 
 permalink: /blog/:title/
@@ -51,9 +54,9 @@ include:
   - _pages/
 
 header_pages:
+  - pages/blog.html
   - pages/mentorship.md
   # - pages/community.md
-  # - pages/blog.md
   - pages/about.md
 
 defaults:
@@ -61,6 +64,7 @@ defaults:
       path: ""
     values:
       image: /static/media/photo_square_for_circle_small.jpg
+      author: Marina Gornostaeva
 
 custom_data:
   twitter_link: https://twitter.com/hybridcattt
@@ -86,6 +90,4 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - README.md
-  - _posts/
-  - pages/blog.md
   - pages/community.md

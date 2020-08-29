@@ -135,6 +135,10 @@
     &:hover {
       border-bottom-color: $brand-color;
     }
+
+    &.active {
+      border-bottom-color: $brand-color;
+    }
   }
 
   @media screen and (min-width: $on-medium) {
@@ -299,19 +303,31 @@
   list-style: none;
 
   > li {
-    margin-bottom: $spacing-unit;
+    padding-top: $spacing-unit * 0.3;
+    padding-bottom: $spacing-unit * 0.3;
   }
 }
 
 .post-meta {
   font-size: $small-font-size;
-  color: $brand-color;
+  // color: $brand-color;
+  margin-top: -$spacing-unit * 0.2;
+}
+
+.post-title {
+  @include relative-font-size(2.5);
+  letter-spacing: -1px;
+  line-height: 1.15;
+  color: $text-color;
+  font-weight: bold;
+
+  &:hover {
+    color: $brand-color;
+    text-decoration: none;
+  }
 }
 
 a.post-link {
-  display: block;
-  @include relative-font-size(2.5);
-
   color: $text-color;
 
   &:hover {
@@ -320,6 +336,20 @@ a.post-link {
   }
 }
 
+a.post-read-more {
+  color: $text-color;
+  
+  border-radius: 0.3em;
+  border: 1px solid;
+  margin: 0.35em 0;
+  padding: 0.5em 0.75em; 
+  display: inline-block;
+
+  &:hover {
+    color: $brand-color;
+    text-decoration: none;
+  }
+}
 
 
 /**
@@ -329,15 +359,16 @@ a.post-link {
   margin-bottom: $spacing-unit;
 }
 
-.post-title,
 .post-content h1 {
   @include relative-font-size(2.625);
   letter-spacing: -1px;
   line-height: 1.15;
 
-  &:hover {
-    color: $brand-color;
-  }
+  // font-weight: bold;
+
+  // &:hover {
+  //   color: $brand-color;
+  // }
 
   @media screen and (min-width: $on-large) {
     @include relative-font-size(2.625);
@@ -345,9 +376,11 @@ a.post-link {
 }
 
 .post-content {
-  margin-bottom: $spacing-unit;
+  // margin-bottom: $spacing-unit;
 
-  h1, h2, h3 { margin-top: $spacing-unit * 2 }
+  h1 { margin-top: $spacing-unit * 1.7 }
+  h2, h3 { margin-top: $spacing-unit * 1 }
+
   h4, h5, h6 { margin-top: $spacing-unit }
 
   h2 {

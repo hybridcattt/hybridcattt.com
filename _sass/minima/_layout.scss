@@ -384,10 +384,10 @@ a.post-read-more {
   h4, h5, h6 { margin-top: $spacing-unit }
 
   h2 {
-    @include relative-font-size(1.75);
+    @include relative-font-size(1.9);
 
     @media screen and (min-width: $on-large) {
-      @include relative-font-size(2);
+      @include relative-font-size(2.625);
     }
   }
 

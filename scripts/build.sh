@@ -2,6 +2,9 @@
 
 git clone https://github.com/johnsundell/splash.git
 cd splash
-make install
 
-jekyll build --drafts
+swift build -c release
+install .build/release/SplashHTMLGen /usr/local/bin/SplashHTMLGen
+
+cd ..
+jekyll build

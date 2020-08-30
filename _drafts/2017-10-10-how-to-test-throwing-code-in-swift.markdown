@@ -5,11 +5,6 @@ date:   2017-10-10 21:00:16 +0200
 excerpt: All you need to know about testing throwing functions with XCTest and keeping test code clean & robust in the process.
 ---
 
-<aside>
-* TOC
-{:toc}
-</aside>
-
 How many times have you had to take over a project where there were unit tests, but they were hard to grasp, desperately failing, or the test target wouldn’t even build?
 
 It is crucial to keep unit test code robust and maintainable, not to let them get abandoned and ignored over time.
@@ -19,6 +14,12 @@ At Storytel we try to make our unit tests short and readable. Due to its nature 
 Code that throws can be tricky to test sometimes, and the resulting test code can end up ugly. In this article I will dive into different scenarios and how to solve them in nice and robust way.
 
 ---
+
+{% splash %}
+guard let user = User(name: "Dohn Joe", emailAddress: validAddress) else {
+    return
+}
+{% endsplash %}
 
 XCTest is a powerful framework. In Xcode 8.3 Apple introduced few new XCTAssert functions in addition to a couple dozen existing ones. While features they provide allow to do most things a developer would desire, some things still require boilerplate code on top of natively provided features.
 Let’s take a look at a few cases and how to solve them.

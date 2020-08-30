@@ -9,9 +9,9 @@ module Jekyll
 
     def render(context)
         input = super.to_s.gsub(%r{\A(\n|\r)+|(\n|\r)+\z}, "")
-        command = Shellwords.join(['SplashHTMLGen', input])
-        # code = `#{command}`
-        code = `#{"pwd"}`
+        command = Shellwords.join(['./SplashHTMLGen', input])
+        code = `#{command}`
+        # code = `#{"pwd"}`
         output = "<pre class=\"splash\"><code>#{code}</code></pre>"
     end
   end

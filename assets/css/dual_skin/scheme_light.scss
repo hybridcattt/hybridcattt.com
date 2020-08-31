@@ -1,11 +1,4 @@
 @mixin scheme-light {
-    
-    $tart-orange:           #FF3333;
-    $raisin-black:          #23282F;
-    $white:                 #FDFDFD;
-    $cultured:              #F3F5F7;
-    $honeydew:              #F1FAEE;
-    $celadon-blue:          #457B9D;
 
     $border:                rgba(190, 190, 190, 0.1);
 
@@ -17,7 +10,7 @@
     
     $text-color:            $raisin-black;
     $background-color:      $white;
-    $code-background-color: $cultured;
+    $code-background-color: darken($cultured, 2%);
     
     $link-base-color:       $brand-color;
     $link-visited-color:    $link-base-color;

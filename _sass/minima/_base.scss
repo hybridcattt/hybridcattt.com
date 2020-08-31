@@ -164,7 +164,6 @@ code {
   font-size: 0.9375em;
   border: 1px solid $border-color-01;
   border-radius: 3px;
-  background-color: $code-background-color;
 }
 
 code {
@@ -179,16 +178,6 @@ pre {
     border: 0;
     padding-right: 0;
     padding-left: 0;
-  }
-}
-
-.highlight {
-  border-radius: 3px;
-  background: $code-background-color;
-  @extend %vertical-rhythm;
-
-  .highlighter-rouge & {
-    background: $code-background-color;
   }
 }
 

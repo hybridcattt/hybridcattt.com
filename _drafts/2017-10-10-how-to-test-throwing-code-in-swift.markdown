@@ -5,11 +5,6 @@ date:   2017-10-10 21:00:16 +0200
 excerpt: All you need to know about testing throwing functions with XCTest and keeping test code clean & robust in the process.
 ---
 
-<aside>
-* TOC
-{:toc}
-</aside>
-
 How many times have you had to take over a project where there were unit tests, but they were hard to grasp, desperately failing, or the test target wouldn’t even build?
 
 It is crucial to keep unit test code robust and maintainable, not to let them get abandoned and ignored over time.

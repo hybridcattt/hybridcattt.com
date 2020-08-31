@@ -1,15 +1,13 @@
-@import "syntax_dark", "syntax_light", "scheme_dark", "scheme_light"; 
+@import "palette", "scheme_dark", "scheme_light"; 
 
 // corresponds to minima/classic
 @media (prefers-color-scheme: light) {
     @include scheme-light;
-    @include syntax-light;
 }
 
 // corresponds to minima/dark
 @media (prefers-color-scheme: dark) {
     @include scheme-dark;
-    @include syntax-dark;
 }
 
 // All customizable colors
@@ -44,3 +42,5 @@ $menu-background-color: var(--menu-background-color) !default;
 $menu-shadow-color: var(--menu-shadow-color) !default;
 $subtitle-color: var(--subtitle-color) !default;
 $subtle-text-color: var(--subtle-text-color) !default;
+
+@import "code_highlighting"

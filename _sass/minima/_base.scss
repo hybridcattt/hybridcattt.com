@@ -103,7 +103,7 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 300; //$base-font-weight;
+  font-weight: 400; //$base-font-weight;
 }
 
 
@@ -161,7 +161,8 @@ blockquote {
 pre,
 code {
   font-family: $code-font-family;
-  font-size: 0.9375em;
+  font-size: 0.9em;
+  line-height: 1.3em;
   border: 1px solid $border-color-01;
   border-radius: 3px;
 }

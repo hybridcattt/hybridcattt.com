@@ -11,4 +11,4 @@ swift build -c release
 install .build/release/SplashHTMLGen ../SplashHTMLGen
 
 cd ..
-JEKYLL_ENVIRONMENT=production jekyll build
+JEKYLL_ENV=production jekyll build

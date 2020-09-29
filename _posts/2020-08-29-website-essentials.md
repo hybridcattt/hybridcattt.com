@@ -4,8 +4,8 @@ title:  "Building a Well-Rounded Website: Essentials"
 medium_link: https://medium.com/@hybridcattt/building-a-well-rounded-website-essentials-822a27a46cad?source=friends_link&sk=e11724a15e3bfa5a61a728397d1dbe0d
 excerpt: A collection of essential links useful for building a well-rounded website, regardless of the stack. While building my personal website, I've gathered 20+ resources that I regularly get back to, and I'm hoping this list will help others who are following a similar path. 
 image: /assets/posts/website-essentials/img_twitter.jpg
-twitter: 
-  card: summary_large_image
+# twitter: 
+#   card: summary_large_image
 ---
 
 ![Woman coding in an IDE](/assets/posts/website-essentials/img.jpg)

@@ -7,8 +7,8 @@ tags:
   - Xcode 
   - iOS 14
 excerpt: Every year we get a new major iOS version to test our apps on. Some apps can't be upgraded to Xcode 12 right away, but they are still expected to work well on iOS 14. With some tricks, we can not only run on iOS 14 but also debug with breakpoints and much more.
-# medium_link: https://medium.com/@hybridcattt/building-a-well-rounded-website-essentials-822a27a46cad?source=friends_link&sk=e11724a15e3bfa5a61a728397d1dbe0d
-# image: /assets/posts/website-essentials/img_twitter.jpg
+# medium_link: 
+image: /assets/posts/debugging-ios14-xcode11/failed_to_start_error.png
 ---
 
 Every year we get a new major iOS version to test our apps on. 

@@ -113,7 +113,7 @@ Device logs can be examined with the possibility to filter by many parameters su
 
 I logged my app's messages with log level `.error` because they have a distinct yellow dot next to each message, making it easier to filter out the majority of system messages.
 
-## Summary
+## Wrapping up
 
 Even those of us who are not so lucky to be able to start using Xcode 12 right away can run and debug apps on devices running iOS 14. 
 I was able to track down my critical bug and fix it. Hope you can too :)

@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Debugging on iOS 14 device with Xcode 11"
+title:  "Debugging on iOS 14 with Xcode 11"
 tag_list: "iOS development, Xcode, iOS 14"
 tags: 
   - iOS development 
   - Xcode 
   - iOS 14
-excerpt: Every year we get a new major iOS version to test our apps on. Some apps can't be upgraded to Xcode 12 right away, but they are still expected to work well on iOS 14. With some tricks, I could not only run on iOS 14 but also debug with breakpoints and much more.
+excerpt: Every year we get a new major iOS version to test our apps on. Some apps can't be upgraded to Xcode 12 right away, but they are still expected to work well on iOS 14. With some tricks, we can not only run on iOS 14 but also debug with breakpoints and much more.
 # medium_link: https://medium.com/@hybridcattt/building-a-well-rounded-website-essentials-822a27a46cad?source=friends_link&sk=e11724a15e3bfa5a61a728397d1dbe0d
 # image: /assets/posts/website-essentials/img_twitter.jpg
 ---
@@ -48,13 +48,13 @@ It's been already widely discussed, so here's a link to the article I like: [How
 With the default setup, a debug app build will automatically try to launch on the selected device after installation. 
 Unfortunately, Xcode 11 doesn't know how to launch apps on iOS 14, so every time we get this annoying error alert: 
 `Failed to start remote service on device. Please check your connection to your device.`
-![Failed to start remote service on device. Please check your connection to your device.](/assets/posts/debugging-ios14-xcode11/failed_to_start_error.png)
+![Error: Failed to start remote service on device. Please check your connection to your device.](/assets/posts/debugging-ios14-xcode11/failed_to_start_error.png)
 
 We can still manually launch the app, though. 
 And we can avoid the error alert popping up every time by disabling auto-launching.
 This behavior can be changed in scheme settings by disabling the "Debug executable" checkbox. 
 
-![](/assets/posts/debugging-ios14-xcode11/scheme_settings_disable_debug.png)
+![Disabling debug executable in scheme settings](/assets/posts/debugging-ios14-xcode11/scheme_settings_disable_debug.png)
 
 This will prevent the app from auto-launching and trying to attach a debugger.
 
@@ -73,7 +73,7 @@ Close Xcode 11, open Xcode 12, and attach the debugger
 by going to menu option Debug > Attach to process and picking your app's process.
 Your app name should appear under "Lucky targets". It might take a couple of attempts, but it works!
 
-![](/assets/posts/debugging-ios14-xcode11/debugger_likely_targets.png)
+![App name shows under Lucky Targets debug menu](/assets/posts/debugging-ios14-xcode11/debugger_likely_targets.png)
 
 With the debugger attached, breakpoints can be navigated as usual. You can pause anywhere, step over, step in, etc. You can also see stack traces normally.
 You can debug view hierarchy, see the memory graph, and even override environment settings such as text size or dark mode, 
@@ -109,10 +109,11 @@ Variables are private by default to prevent leaking sensitive data via logs.
 
 Device logs can be examined with the possibility to filter by many parameters such as app name, log level, and many more:
 
-![](/assets/posts/debugging-ios14-xcode11/console_filters2.png)
+![Console app with various log filters](/assets/posts/debugging-ios14-xcode11/console_filters2.png)
+
+I logged my app's messages with log level `.error` because they have a distinct yellow dot next to each message, making it easier to filter out the majority of system messages.
 
 ## Summary
 
 Even those of us who are not so lucky to be able to start using Xcode 12 right away can run and debug apps on devices running iOS 14. 
-I was able to track down my bug and fix it. Hope you now can too :) 
-
+I was able to track down my critical bug and fix it. Hope you can too :)

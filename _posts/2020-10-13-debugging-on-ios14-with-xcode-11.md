@@ -116,4 +116,4 @@ I logged my app's messages with log level `.error` because they have a distinct 
 ## Wrapping up
 
 Even those of us who are not so lucky to be able to start using Xcode 12 right away can run and debug apps on devices running iOS 14. 
-I was able to track down my critical bug and fix it. Hope you can too :)
+I was able to track down my critical bug and fix it. I hope these tricks can help someone else one day too :)

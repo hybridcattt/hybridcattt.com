@@ -110,7 +110,7 @@ To get breakpoints to work, we have to use Xcode 12 for this step.
 There are two options to get the debugger running for an app already compiled with Xcode 11. 
 We can either attach a debugger to an already running app, or let Xcode 12 also launch the app and attach the debugger for us.
 
-#### Launching from Xcode 12
+### Launching from Xcode 12
 
 After building the target with Xcode 11 (cmd+B), switch to Xcode 12, and do `Run Without Building`
 by going to menu option `Product > Perform Action > Run Without Building` or using cmd+control+R.
@@ -123,7 +123,7 @@ _I would recommend going this way only if you always need breakpoints and the ha
 
 Big thanks to [Geoff Hackworth](https://twitter.com/geoffhackworth) for suggesting this trick!
 
-#### Attaching debugger to a running app
+### Attaching debugger to a running app
 
 If for some reason you don't want to use Xcode 12 for running, 
 it's possible to attach a debugger to an already launched app (a running process) manually.
@@ -134,7 +134,7 @@ The app name should appear under "Lucky targets". It might take a couple of atte
 
 ![App name shows under Lucky Targets debug menu](/assets/posts/debugging-ios14-xcode11/debugger_likely_targets.png)
 
-#### Limitations of debugging on Xcode 12
+### Limitations of debugging on Xcode 12
 
 With the debugger attached (either by running from Xcode 12 or manually attaching), breakpoints can be navigated as usual. 
 We can pause anywhere, step over, step in, etc. We can also see stack traces normally.
@@ -150,7 +150,7 @@ For cases when debugger is failing to access Swift variables, good old logging c
 
 Even though debugging functionality is somewhat limited, often just being able to pause, step through code paths, and see stack frames is more than enough to find the cause of a bug.
 
-#### How to prevent accidental rebuilding with Xcode 12
+### How to prevent accidental rebuilding with Xcode 12
 
 Since we're building with Xcode 11, but running and debugging on Xcode 12, we might accidentally rebuild on Xcode 12 and end up testing a very different build of the app than originally intended. 
 To avoid accidentally building with Xcode 12 while it's used for debugging, we can add a conditional compilation error for that case: 

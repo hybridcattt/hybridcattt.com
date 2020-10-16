@@ -92,7 +92,7 @@ Device logs can be examined with the possibility to filter by many parameters su
 I logged my app's messages with log level `.error` because they have a distinct yellow dot next to each message, making it easier to filter out the majority of system messages.
 
 It's worth mentioning that messages logged with `NSLog` will also show up in Console app. 
-I don't recommend using it in Swift code, as `os_log` is the preferred way of logging on Apple platforms these days.
+I don't recommend using `NSLog` in Swift code, as `os_log` is the preferred way of logging on Apple platforms these days.
 
 ---
 

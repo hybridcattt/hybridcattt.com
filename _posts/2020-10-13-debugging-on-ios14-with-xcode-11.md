@@ -25,7 +25,7 @@ The bug was mission-critical and we couldn't afford to wait until we upgrade to 
 
 Out of the box, older Xcode versions can’t work with iOS 14 at all. However, with some tricks, I could not only run on iOS 14 but also debug with breakpoints and much more.
 
-### Overview
+## Overview
 
 A usual run action in Xcode consists of a few independent steps:
 - building for device
@@ -36,7 +36,7 @@ A usual run action in Xcode consists of a few independent steps:
 These steps rely on Xcode being able to communicate with the physical device, and the communication interface can change between iOS versions.
 So debugging an app built with older an Xcode requires a few tricks. 
 
-### Building and installing a debug build to iOS 14
+## Building and installing a debug build to iOS 14
 
 Being able to run against the newest iOS version is a problem that we have to fix every year. Gladly the same solution works every time. 
 An Xcode application bundle contains support files for each iOS version it knows how to work with.
@@ -45,11 +45,12 @@ Commonly, these device support files can be copied from Xcode 12 installed side-
 or downloaded from a popular shared repo.  
 It's been already widely discussed, so here's a link to the article I like: [How to Fix Xcode: “Could Not Locate Device Support Files” Error](https://faizmokhtar.com/posts/how-to-fix-xcode-could-not-locate-device-support-files-error-without-updating-your-xcode/).
 
-### Launching the app
+## Launching the app
 
 With the default setup, a debug app build will automatically try to launch on the selected device after installation. 
 Unfortunately, Xcode 11 doesn't know how to launch apps on iOS 14, so every time we get this annoying error alert: 
 `Failed to start remote service on device. Please check your connection to your device.`
+
 ![Error: Failed to start remote service on device. Please check your connection to your device.](/assets/posts/debugging-ios14-xcode11/failed_to_start_error.png)
 
 We can still manually launch the app, though. 
@@ -60,39 +61,14 @@ This behavior can be changed in scheme settings by disabling the "Debug executab
 
 This will prevent the app from auto-launching and trying to attach a debugger.
 
-Installing the app will kill the app if it's already running. That's one way to know that it's been re-installed successfully. 
+Installing the app will kill the app if it's already running, still. That's one way to know that it's been re-installed successfully. 
 From there it's just a matter of tapping that icon to launch by hand.
 
-### Breakpoints
+## Logging 
 
 After the app has been built with Xcode 11, installed and manually launched on the device like mentioned above, the app can be tested.
 
-Debugging with breakpoints is often needed for bug investigation. 
-Unfortunately, Xcode 11 doesn't know how to debug apps on iOS 14. But Xcode 12 does!
-Attaching a debugger to a launched app (a running process) is an independent operation that we can do manually on Xcode 12.
-
-Close Xcode 11, open Xcode 12, and attach the debugger 
-by going to menu option Debug > Attach to process and picking your app's process.
-Your app name should appear under "Lucky targets". It might take a couple of attempts, but it works!
-
-![App name shows under Lucky Targets debug menu](/assets/posts/debugging-ios14-xcode11/debugger_likely_targets.png)
-
-With the debugger attached, breakpoints can be navigated as usual. You can pause anywhere, step over, step in, etc. You can also see stack traces normally.
-You can debug view hierarchy, see the memory graph, and even override environment settings such as text size or dark mode, 
-all while running a debug build created with Xcode 11 on an iOS 14 device.
-
-There is one limitation - when paused on a breakpoint, access to variables is quite limited. Most Swift variables can't be looked into, and debugger commands such as `po` don't work. 
-That's because of this error: `Cannot load Swift type information; AST validation error in <...>: The module file format is too old to be used by this version of the debugger`.
-However, `po` seems to work while in UI debugger, and you can write Objective-C there. It's not ideal, but it's something we can work with. 
-
-Even though debugging functionality is somewhat limited, often just being able to pause, step through code paths, and see stack frames is more than enough to find the cause of a bug.
-
-### Logging
-
-If we also want to look at variables, then good old logging can help. Logs can be examined at any time, for example, after pausing on a breakpoint or while using the UI. 
-
-When the debugger is attached to the app process in Xcode 12, print statements are not being output to the usual console.
-Instead, we can look at app logs in the Console app. 
+If we also want to look at logs, we can look at them in the Console app. 
 To have app's logs show up there, we need to log them using the relatively new system `os` framework:
 
 {% splash %}
@@ -115,7 +91,79 @@ Device logs can be examined with the possibility to filter by many parameters su
 
 I logged my app's messages with log level `.error` because they have a distinct yellow dot next to each message, making it easier to filter out the majority of system messages.
 
+It's worth mentioning that messages logged with `NSLog` will also show up in Console app. 
+I don't recommend using `NSLog` in Swift code, as `os_log` is the preferred way of logging on Apple platforms these days.
+
+---
+
+So far we could build, launch, and test the app on iOS 14, and examine the logs using the system Console app, all while using Xcode 11 exclusively.
+
+But sometimes just logs are not enough - debugging with breakpoints is often necessary for bug investigation. 
+
+---
+
+## Breakpoints
+
+Unfortunately, Xcode 11 doesn't know how to debug apps on iOS 14. But Xcode 12 does! 
+To get breakpoints to work, we have to use Xcode 12 for this step. 
+
+There are two options to get the debugger running for an app already compiled with Xcode 11. 
+We can either attach a debugger to an already running app, or let Xcode 12 also launch the app and attach the debugger for us.
+
+#### Launching from Xcode 12
+
+After building the target with Xcode 11 (cmd+B), switch to Xcode 12, and do `Run Without Building`
+by going to menu option `Product > Perform Action > Run Without Building` or using cmd+control+R.
+This will install and launch the app, and attach the debugger. 
+
+Using this method, we don't need to disable auto-launching or debugging in scheme settings, 
+because we're using Xcode 12 for this step and it knows how to talk with iOS 14 devices. 
+There's a downside however, that we would then need to use Xcode 12 for running the app. 
+_I would recommend going this way only if you always need breakpoints and the hassle of switching between Xcode versions all the time is worth it for you._
+
+#### Attaching debugger to a running app
+
+If for some reason you don't want to use Xcode 12 for running, 
+it's possible to attach a debugger to an already launched app (a running process) manually.
+
+At any point of testing the app, we can open the project in Xcode 12 and attach the debugger 
+by going to menu option `Debug > Attach to Process` and picking the app's process.
+The app name should appear under "Lucky targets". It might take a couple of attempts, but it works!
+
+![App name shows under Lucky Targets debug menu](/assets/posts/debugging-ios14-xcode11/debugger_likely_targets.png)
+
+#### Limitations of debugging on Xcode 12
+
+With the debugger attached (either by running from Xcode 12 or manually attaching), breakpoints can be navigated as usual. 
+We can pause anywhere, step over, step in, etc. We can also see stack traces normally.
+We can debug view hierarchy, explore the memory graph, and even override environment settings such as text size or dark mode, 
+all while running a debug build created with Xcode 11 on an iOS 14 device.
+
+There is one limitation - when paused on a breakpoint, access to variables is quite limited. 
+Most Swift variables can't be looked into, and debugger commands such as `po` don't work. 
+That's because of this error: `Cannot load Swift type information; AST validation error in <...>: The module file format is too old to be used by this version of the debugger`.
+However, `po` seems to work while in UI debugger, and we can write any Objective-C code there. It's not ideal, but it's something we can work with. 
+
+For cases when debugger is failing to access Swift variables, good old logging can help, as described above. 
+
+Even though debugging functionality is somewhat limited, often just being able to pause, step through code paths, and see stack frames is more than enough to find the cause of a bug.
+
+#### How to prevent accidental rebuilding with Xcode 12
+
+Since we're building with Xcode 11, but running and debugging on Xcode 12, we might accidentally rebuild on Xcode 12 and end up testing a very different build of the app than originally intended. 
+To avoid accidentally building with Xcode 12 while it's used for debugging, we can add a conditional compilation error for that case: 
+
+{% splash %}
+#if compiler(>=5.3)
+#error("This project should not be built on Xcode 12")
+#endif
+{% endsplash %}
+
+This piece of code can be placed anywhere in the source. `#error` directive is skipped when source code is compiled with Swift compiler versions lower than 5.3, which corresponds to Xcode 11 or older.
+This way it's not even technically possible to accidentally build on Xcode 12.  
+
 ## Wrapping up
 
-Even those of us who are not so lucky to be able to start using Xcode 12 right away can run and debug apps on devices running iOS 14. 
-I was able to track down my critical bug and fix it. I hope these tricks can help someone else one day too :)
+Even those of us who are not so lucky to be able to upgrade to Xcode 12 right away can run and debug apps on devices running iOS 14. 
+It's possible to fully stick to Xcode 11, occasionally resorting to Xcode 12 for breakpoints and extra things such as UI debugger. 
+I was able to track down my critical bug and fix it, and I hope these tricks can help someone else one day too :)

@@ -121,6 +121,8 @@ because we're using Xcode 12 for this step and it knows how to talk with iOS 14 
 There's a downside however, that we would then need to use Xcode 12 for running the app. 
 _I would recommend going this way only if you always need breakpoints and the hassle of switching between Xcode versions all the time is worth it for you._
 
+Big thanks to [Geoff Hackworth](https://twitter.com/geoffhackworth) for suggesting this trick!
+
 #### Attaching debugger to a running app
 
 If for some reason you don't want to use Xcode 12 for running, 

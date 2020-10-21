@@ -130,9 +130,9 @@ it's possible to attach a debugger to an already launched app (a running process
 
 At any point of testing the app, we can open the project in Xcode 12 and attach the debugger 
 by going to menu option `Debug > Attach to Process` and picking the app's process.
-The app name should appear under "Lucky targets". It might take a couple of attempts, but it works!
+The app name should appear under "Likely targets". It might take a couple of attempts, but it works!
 
-![App name shows under Lucky Targets debug menu](/assets/posts/debugging-ios14-xcode11/debugger_likely_targets.png)
+![App name shows under Likely Targets debug menu](/assets/posts/debugging-ios14-xcode11/debugger_likely_targets.png)
 
 ### Limitations of debugging on Xcode 12
 

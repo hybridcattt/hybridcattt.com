@@ -17,7 +17,7 @@ Every year we get a new major iOS version to test our apps on.
 The lucky ones can immediately upgrade to the newest Xcode 12, building against the latest iOS 14 SDK. 
 Some other, larger projects can take a while to get upgraded. 
 Those projects have to be built with Xcode 11 in the meantime. 
-But even though those apps can’t yet be upgraded, they are still expected to work well on the newest iOS. And solving problems and bugs require debugging.
+But even though those apps can’t be upgraded yet, they are still expected to work well on the newest iOS. And solving problems and bugs requires debugging.
 
 I recently faced a rare camera bug that only reproduced on iPhone 11 Pro with iOS 14. 
 The app hasn't been upgraded yet and was built with Xcode 11.
@@ -28,41 +28,41 @@ Out of the box, older Xcode versions can’t work with iOS 14 at all. However, w
 ## Overview
 
 A usual run action in Xcode consists of a few independent steps:
-- building for device
-- installing the app to device
-- launching the app
-- attaching a debugger
+- Building for the device.
+- Installing the app on the device.
+- Launching the app.
+- Attaching a debugger.
 
 These steps rely on Xcode being able to communicate with the physical device, and the communication interface can change between iOS versions.
-So debugging an app built with older an Xcode requires a few tricks. 
+So debugging an app built with an older version of Xcode requires a few tricks. 
 
 ## Building and installing a debug build to iOS 14
 
-Being able to run against the newest iOS version is a problem that we have to fix every year. Gladly the same solution works every time. 
+Being able to run against the newest iOS version is a problem that we have to fix every year. Thankfully, the same solution works every time.
 An Xcode application bundle contains support files for each iOS version it knows how to work with.
 Adding support for iOS 14 to Xcode 11 is a matter of copying device support files for iOS 14 into Xcode 11. 
-Commonly, these device support files can be copied from Xcode 12 installed side-by-side, copied from a coworker's machine, 
+Commonly, these device support files can be copied from Xcode 12 installed side by side, copied from a coworker's machine, 
 or downloaded from a popular shared repo.  
-It's been already widely discussed, so here's a link to the article I like: [How to Fix Xcode: “Could Not Locate Device Support Files” Error](https://faizmokhtar.com/posts/how-to-fix-xcode-could-not-locate-device-support-files-error-without-updating-your-xcode/).
+It's been already widely discussed, so here's (an article I like on the topic)[How to Fix Xcode: “Could Not Locate Device Support Files” Error](https://faizmokhtar.com/posts/how-to-fix-xcode-could-not-locate-device-support-files-error-without-updating-your-xcode/).
 
 ## Launching the app
 
 With the default setup, a debug app build will automatically try to launch on the selected device after installation. 
-Unfortunately, Xcode 11 doesn't know how to launch apps on iOS 14, so every time we get this annoying error alert: 
-`Failed to start remote service on device. Please check your connection to your device.`
+Unfortunately, Xcode 11 doesn't know how to launch apps on iOS 14, so we get this annoying error alert every time:: 
+"Failed to start remote service on device. Please check your connection to your device."
 
 ![Error: Failed to start remote service on device. Please check your connection to your device.](/assets/posts/debugging-ios14-xcode11/failed_to_start_error.png)
 
 We can still manually launch the app, though. 
 And we can avoid the error alert popping up every time by disabling auto-launching.
-This behavior can be changed in scheme settings by disabling the "Debug executable" checkbox. 
+This behavior can be changed in scheme settings by disabling the "Debug executable" checkbox:
 
 ![Disabling debug executable in scheme settings](/assets/posts/debugging-ios14-xcode11/scheme_settings_disable_debug.png)
 
 This will prevent the app from auto-launching and trying to attach a debugger.
 
-Installing the app will kill the app if it's already running, still. That's one way to know that it's been re-installed successfully. 
-From there it's just a matter of tapping that icon to launch by hand.
+Installing the app will kill the app if it's already running. That's one way to know that it's been re-installed successfully. 
+From there, it's just a matter of tapping that icon to launch by hand.
 
 ## Logging 
 
@@ -161,8 +161,8 @@ To avoid accidentally building with Xcode 12 while it's used for debugging, we c
 #endif
 {% endsplash %}
 
-This piece of code can be placed anywhere in the source. `#error` directive is skipped when source code is compiled with Swift compiler versions lower than 5.3, which corresponds to Xcode 11 or older.
-This way it's not even technically possible to accidentally build on Xcode 12.  
+This piece of code can be placed anywhere in the source. The `#error` directive is skipped when the source code is compiled with the Swift compiler of any version lower than 5.3, which corresponds to Xcode 11 or older.
+This way, it's not even technically possible to accidentally build on Xcode 12.  
 
 ## Wrapping up
 

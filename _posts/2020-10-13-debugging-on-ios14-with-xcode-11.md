@@ -48,7 +48,7 @@ It's been already widely discussed, so here's (an article I like on the topic)[H
 ## Launching the app
 
 With the default setup, a debug app build will automatically try to launch on the selected device after installation. 
-Unfortunately, Xcode 11 doesn't know how to launch apps on iOS 14, so we get this annoying error alert every time:: 
+Unfortunately, Xcode 11 doesn't know how to launch apps on iOS 14, so we get this annoying error alert every time: 
 "Failed to start remote service on device. Please check your connection to your device."
 
 ![Error: Failed to start remote service on device. Please check your connection to your device.](/assets/posts/debugging-ios14-xcode11/failed_to_start_error.png)

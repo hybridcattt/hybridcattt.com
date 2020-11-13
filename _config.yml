@@ -47,7 +47,7 @@ plugins:
   - jekyll-last-modified-at
 
 feed:
-  excerpt_only: true
+  excerpt_only: false
 
 # Additional config
 

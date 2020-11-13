@@ -84,6 +84,8 @@ goatcounter_id: hybridcattt
 # their entries' file path in the `include:` list.
 
 exclude:
+  - splash
+  - SplashHTMLGen
   - .sass-cache/
   - .jekyll-cache/
   - Gemfile

@@ -34,6 +34,7 @@ twitter:
   card: summary
 
 author: hybridcattt
+logo: /static/media/photo_square_for_circle_small.jpg
 
 show_excerpts: true
 
@@ -43,9 +44,10 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-last-modified-at
 
 feed:
-  excerpt_only: true
+  excerpt_only: false
 
 # Additional config
 
@@ -82,6 +84,8 @@ goatcounter_id: hybridcattt
 # their entries' file path in the `include:` list.
 
 exclude:
+  - splash
+  - SplashHTMLGen
   - .sass-cache/
   - .jekyll-cache/
   - Gemfile

@@ -43,7 +43,7 @@ An Xcode application bundle contains support files for each iOS version it knows
 Adding support for iOS 14 to Xcode 11 is a matter of copying device support files for iOS 14 into Xcode 11. 
 Commonly, these device support files can be copied from Xcode 12 installed side by side, copied from a coworker's machine, 
 or downloaded from a popular shared repo.  
-It's been already widely discussed, so here's (an article I like on the topic)[How to Fix Xcode: “Could Not Locate Device Support Files” Error](https://faizmokhtar.com/posts/how-to-fix-xcode-could-not-locate-device-support-files-error-without-updating-your-xcode/).
+It's been already widely discussed, so here's an article I like on the topic: [How to Fix Xcode: “Could Not Locate Device Support Files” Error](https://faizmokhtar.com/posts/how-to-fix-xcode-could-not-locate-device-support-files-error-without-updating-your-xcode/).
 
 ## Launching the app
 

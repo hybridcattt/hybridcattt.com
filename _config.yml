@@ -43,6 +43,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-last-modified-at
 
 feed:
   excerpt_only: true

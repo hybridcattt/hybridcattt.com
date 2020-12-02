@@ -431,6 +431,19 @@ a.post-read-more {
   }
 }
 
+h1, h2, h3, h4, h5, h6 {
+  &:hover .toc-anchor-icon {
+    display: inline-flex;
+  }
+}
+
+.toc-anchor-icon {
+  margin-left: 0.2em;
+  margin-top: 0.2em;
+  vertical-align: top; 
+  display: none; // toggled on hover
+}
+
 
 .social-media-list {
   display: table;

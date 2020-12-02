@@ -45,9 +45,13 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-last-modified-at
+  - jekyll-toc
 
 feed:
   excerpt_only: false
+
+toc: 
+  max_level: 3
 
 # Additional config
 
@@ -68,6 +72,7 @@ defaults:
     values:
       image: /static/media/photo_square_for_circle_small.jpg
       author: Marina Gornostaeva
+      toc: true
 
 custom_data:
   twitter_link: https://twitter.com/hybridcattt

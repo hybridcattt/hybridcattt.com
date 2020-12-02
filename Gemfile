@@ -19,6 +19,7 @@ group :jekyll_plugins do
   gem "jekyll-seo-tag", github: 'jekyll/jekyll-seo-tag', :branch => 'master'
   gem "jekyll-sitemap"
   gem "jekyll-last-modified-at"
+  gem 'jekyll-toc', github: 'hybridcattt/jekyll-toc', :branch => 'tweak/toc'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

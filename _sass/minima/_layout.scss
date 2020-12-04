@@ -134,7 +134,7 @@
     border-color: transparent;
     border-width: 4px;
 
-    &:hover {
+    @include hover {
       border-bottom-color: $brand-color;
     }
 
@@ -325,8 +325,8 @@
   color: $text-color;
   font-weight: bold;
 
-  &:hover {
-    color: $brand-color;
+  @include hover {
+    color: $link-hover-color;
     text-decoration: none;
   }
 }
@@ -334,8 +334,8 @@
 a.post-link {
   color: $text-color;
 
-  &:hover {
-    color: $brand-color;
+  @include hover {
+    color: $link-hover-color;
     text-decoration: none;
   }
 }
@@ -442,6 +442,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0.2em;
   vertical-align: top; 
   display: none; // toggled on hover
+  @media (hover: none) {
+    display: inline-flex;
+  }
 }
 
 
@@ -451,14 +454,18 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0px 0px 5px $menu-shadow-color;
 
   margin: $spacing-unit 0;
-  padding: $spacing-unit/2 $spacing-unit;
+  padding: $spacing-unit/2 $spacing-unit/2;
 
+  @media screen and (min-width: $on-large) {
+    padding: $spacing-unit/2 $spacing-unit;
+  }
+    
   p {
     font-weight: 500;
-    @include relative-font-size(1.25);
+    @include relative-font-size(1.125);
     
-    @include media-query($on-laptop) {
-      @include relative-font-size(1.125);
+    @media screen and (min-width: $on-large) {
+      @include relative-font-size(1.25);
     }
   }
 }

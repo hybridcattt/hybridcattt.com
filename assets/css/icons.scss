@@ -81,9 +81,15 @@
   mask-repeat: round;
   -webkit-mask-repeat: round;
 
-  background-color: $text-color;
-  
-  &:hover {
+  background-color: $subtle-text-color;
+
+  @include hover {
     background-color: $brand-color;
+  }
+  
+  @media (hover: none) {
+    &:active {
+      background-color: $brand-color;
+    }
   }
 }

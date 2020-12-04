@@ -119,17 +119,9 @@ a {
     color: $link-visited-color;
   }
 
-  &:hover {
+  @include hover {
     color: $link-hover-color;
     text-decoration: underline;
-  }
-
-  .social-media-list &:hover {
-    text-decoration: none;
-
-    .username {
-      text-decoration: underline;
-    }
   }
 }
 
@@ -246,9 +238,14 @@ pre {
     &:visited {
       color: $subtle-text-color;
     }
-    &:hover {
-      color: $brand-color;
+
+    @include hover {
+      color: $link-hover-color;
       text-decoration: none;
+    }
+
+    @include no-hover-support {
+      text-decoration: underline;
     }
   }
 }

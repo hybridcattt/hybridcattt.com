@@ -363,8 +363,8 @@ a.post-read-more {
   margin-bottom: $spacing-unit;
 }
 
-.post-content {
-  h1 {
+.post-content:not(.toc-container) {
+  h1 { 
     line-height: 1.15;
     margin-top: $spacing-unit * 1.7;
     margin-bottom: $spacing-unit * 0.6;
@@ -445,6 +445,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+.toc-container {
+  background-color: $menu-background-color;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px $menu-shadow-color;
+
+  margin: $spacing-unit 0;
+  padding: $spacing-unit/2 $spacing-unit;
+
+  p {
+    font-weight: 500;
+    @include relative-font-size(1.25);
+    
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.125);
+    }
+  }
+}
 .social-media-list {
   display: table;
   margin: 0 auto;

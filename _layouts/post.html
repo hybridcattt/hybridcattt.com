@@ -40,7 +40,7 @@ layout: default
   </header>
 
   <div class="post-content e-content" >
-    {{ content | inject_anchors }}
+    {{ content | toc }}
     <br>
     <hr>
     {%- include after-post.html -%}

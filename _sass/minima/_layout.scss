@@ -134,7 +134,7 @@
     border-color: transparent;
     border-width: 4px;
 
-    &:hover {
+    @include hover {
       border-bottom-color: $brand-color;
     }
 
@@ -325,8 +325,8 @@
   color: $text-color;
   font-weight: bold;
 
-  &:hover {
-    color: $brand-color;
+  @include hover {
+    color: $link-hover-color;
     text-decoration: none;
   }
 }
@@ -334,8 +334,8 @@
 a.post-link {
   color: $text-color;
 
-  &:hover {
-    color: $brand-color;
+  @include hover {
+    color: $link-hover-color;
     text-decoration: none;
   }
 }
@@ -363,8 +363,8 @@ a.post-read-more {
   margin-bottom: $spacing-unit;
 }
 
-.post-content {
-  h1 {
+.post-content:not(.toc-container) {
+  h1 { 
     line-height: 1.15;
     margin-top: $spacing-unit * 1.7;
     margin-bottom: $spacing-unit * 0.6;
@@ -431,7 +431,44 @@ a.post-read-more {
   }
 }
 
+h1, h2, h3, h4, h5, h6 {
+  &:hover .toc-anchor-icon {
+    display: inline-flex;
+  }
+}
 
+.toc-anchor-icon {
+  margin-left: 0.2em;
+  margin-top: 0.2em;
+  vertical-align: top; 
+  display: none; // toggled on hover
+  @media (hover: none) {
+    display: inline-flex;
+  }
+}
+
+
+.toc-container {
+  background-color: $menu-background-color;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px $menu-shadow-color;
+
+  margin: $spacing-unit 0;
+  padding: $spacing-unit/2 $spacing-unit/2;
+
+  @media screen and (min-width: $on-large) {
+    padding: $spacing-unit/2 $spacing-unit;
+  }
+    
+  p {
+    font-weight: 500;
+    @include relative-font-size(1.125);
+    
+    @media screen and (min-width: $on-large) {
+      @include relative-font-size(1.25);
+    }
+  }
+}
 .social-media-list {
   display: table;
   margin: 0 auto;

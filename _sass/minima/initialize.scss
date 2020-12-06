@@ -43,6 +43,20 @@ $on-large:         $on-laptop !default;
   font-size: #{$ratio}rem;
 }
 
+@mixin hover() {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin no-hover-support() {
+  @media (hover: none) {
+    @content;
+  }
+}
+
 // Import pre-styling-overrides hook and style-partials.
 @import
   "minima/base",             // Defines element resets.

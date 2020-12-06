@@ -11,6 +11,8 @@ medium_link: https://medium.com/@hybridcattt/d332f12f49dd?source=friends_link&sk
 image: /assets/posts/debugging-ios14-xcode11/failed_to_start_error.png
 twitter: 
   card: summary_large_image
+toc_config:
+  max_toc_level: 2
 ---
 
 Every year we get a new major iOS version to test our apps on. 

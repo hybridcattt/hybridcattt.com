@@ -6,6 +6,8 @@ excerpt: A collection of essential links useful for building a well-rounded webs
 image: /assets/posts/website-essentials/img_twitter.jpg
 # twitter: 
 #   card: summary_large_image
+toc_config:
+  only_anchors: true
 ---
 
 ![Woman coding in an IDE](/assets/posts/website-essentials/img.jpg)
@@ -14,11 +16,11 @@ image: /assets/posts/website-essentials/img_twitter.jpg
 <br>
 
 I first learned the basics of web development in the 2000s, and have since contributed to web applications code in my corporate jobs and worked with HTML&CSS in the context of ebooks. 
-But the first real website I made and published from scratch was the first version of my personal site that I built two years ago. 
+Though the first real website I made and published from scratch was the first version of my personal site that I built two years ago. 
 It was a single `index.html` with a static layout and very little content.
-The blog that you are reading right now is built with a static site generator. 
+The blog that you are reading right now is a newer version built with a static site generator. 
 
-During the last couple of years, I have accumulated a large collection of bookmarks that I find helpful when making websites. 
+During the last couple of years working on my personal website, I have accumulated a large collection of bookmarks that I find helpful when making websites. 
 I regularly keep referring to many of them. 
 
 All of these resources are relevant to most kinds of websites, regardless of what stack or framework you use.

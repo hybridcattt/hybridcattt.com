@@ -68,3 +68,28 @@
   -webkit-mask-image: url(/static/media/link.svg);
   mask-image: url(/static/media/link.svg);
 }
+
+.toc-anchor-icon {
+  -webkit-mask-image: url(/static/media/link.svg);
+  mask-image: url(/static/media/link.svg);
+  
+  width: 1rem;
+  height: 1rem;
+
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-repeat: round;
+  -webkit-mask-repeat: round;
+
+  background-color: $subtle-text-color;
+
+  @include hover {
+    background-color: $brand-color;
+  }
+  
+  @media (hover: none) {
+    &:active {
+      background-color: $brand-color;
+    }
+  }
+}

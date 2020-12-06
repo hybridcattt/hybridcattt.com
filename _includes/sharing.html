@@ -4,16 +4,8 @@
 
 <span class="sharing subtle-text">
   Share:&nbsp;&nbsp;
-  <a href="https://twitter.com/intent/tweet?text={{ text }}&url={{ encoded_url }}" title="Share on Twitter">
-    <div class="icon icon-twitter sharing-icon" role="button"></div>
-  </a>
-  <a href="https://reddit.com/submit/?url={{ encoded_url }}&amp;resubmit=true&amp;title={{ text }}" title="Post on Reddit">
-    <div class="icon icon-reddit sharing-icon"></div>
-  </a>
-  <a href="https://telegram.me/share/url?text={{ text }}&amp;{{ encoded_url }}" title="Send in Telegram">
-    <div class="icon icon-telegram sharing-icon"></div>
-  </a>
-  <a onclick="copyLink('{{ url }}')" title="Copy link">
-    <div class="icon icon-link sharing-icon"></div>
-  </a>
+  <a class="icon icon-twitter sharing-icon" href="https://twitter.com/intent/tweet?text={{ text }}&url={{ encoded_url }}" title="Share on Twitter"></a>
+  <a class="icon icon-reddit sharing-icon" href="https://reddit.com/submit/?url={{ encoded_url }}&amp;resubmit=true&amp;title={{ text }}" title="Post on Reddit"></a>
+  <a class="icon icon-telegram sharing-icon" href="https://telegram.me/share/url?text={{ text }}&amp;{{ encoded_url }}" title="Send in Telegram"></a>
+  <a class="icon icon-link sharing-icon" onclick="copyLink('{{ url }}')" title="Copy link" role="button"></a>
 </span>

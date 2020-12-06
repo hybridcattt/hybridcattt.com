@@ -18,11 +18,11 @@ layout: default
     {%- if page.list_title -%}
       <h2 class="post-list-heading">{{ page.list_title }}</h2>
     {%- endif -%}
-    <ul class="post-list">
+    <div class="post-list">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {%- for post in posts -%}
         <hr>
-        <li>
+        <section>
           <h3 class="post-title">
             <a class="post-link" href="{{ post.url | relative_url }}">
               {{ post.title | escape }}
@@ -33,10 +33,10 @@ layout: default
             <p>{{ post.excerpt }}</p>
           {%- endif -%}
           <a class="post-read-more" href="{{ post.url | relative_url }}">Read more</a>
-        </li>
+        </section>
       {%- endfor -%}
       <hr>
-    </ul>
+    </div>
 
     {% if site.paginate %}
       <div class="pager">

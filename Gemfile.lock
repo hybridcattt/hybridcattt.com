@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/hybridcattt/jekyll-toc.git
-  revision: 231b447d26915fcaa6d69cfdf747ef0581daaf75
+  revision: 5515191ac27d3c39f04e97c436fa09569f8ae085
   branch: tweak/toc
   specs:
     jekyll-toc (0.14.0)

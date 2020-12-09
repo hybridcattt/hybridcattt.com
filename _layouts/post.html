@@ -11,7 +11,7 @@ layout: default
       {%- assign mod_date_string = page.last_modified_at | date: date_format -%}
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ pub_date_string }}</time>
       {%- if page.author -%}
-        &#32;• by&#32;
+        &#32;•<span>&#32; by&#32;
         {% for author in page.author %}
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
             <span class="p-author h-card" itemprop="name"><a href="/about">{{ author }}</a></span>
@@ -19,12 +19,12 @@ layout: default
           {%- if forloop.last == false %},
           {% endif -%}
         {% endfor %}
+        </span>
       {%- endif -%}
       {%- if pub_date_string != mod_date_string -%}
         {%- if page.last_modified_at -%}
-          &#32;• Updated on&#32;
-            {%- assign mdate = page.last_modified_at | date_to_xmlschema -%}
-            <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">{{ mdate | date: date_format }}</time>
+          {%- assign mdate = page.last_modified_at | date_to_xmlschema -%}
+          &#32;•<span>&#32;Updated on <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">{{ mdate | date: date_format }}</time></span>
         {%- endif -%}
       {%- endif -%}
     </p>

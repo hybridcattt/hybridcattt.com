@@ -1,11 +1,10 @@
 ---
 layout: post
-title:  "Debugging on iOS 14 with Xcode 11"
+title: "Debugging on iOS 14 with Xcode 11"
 tag_list: "iOS development, Xcode, iOS 14"
 tags: 
-  - iOS development 
-  - Xcode 
-  - iOS 14
+  - Xcode
+  - Debugging
 excerpt: Every year we get a new major iOS version to test our apps on. Some apps can't be upgraded to Xcode 12 right away, but they are still expected to work well on iOS 14. With some tricks, we can not only run on iOS 14 but also debug with breakpoints and much more.
 medium_link: https://medium.com/@hybridcattt/d332f12f49dd?source=friends_link&sk=89454bc213ad54dd3fb773f5f19e3057
 image: /assets/posts/debugging-ios14-xcode11/failed_to_start_error.png

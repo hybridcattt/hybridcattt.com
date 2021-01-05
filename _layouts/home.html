@@ -23,12 +23,21 @@ layout: default
       {%- for post in posts -%}
         <hr>
         <section>
+          <div class="post-meta">
+            <ul>
+              <li class="post-tags-container">
+                {% for tag in post.tags %}
+                <span class="post-tag" rel="tag">{{ tag }}</span>
+                {% endfor %}
+              </li>
+              <li class="subtle-text">{{ post.date | date: date_format }}</li>
+            </ul>
+          </div>
           <h3 class="post-title">
             <a class="post-link" href="{{ post.url | relative_url }}">
               {{ post.title | escape }}
             </a>
           </h3>
-          <p class="post-meta subtle-text">{{ post.date | date: date_format }}</p>
           {%- if site.show_excerpts -%}
             <p>{{ post.excerpt }}</p>
           {%- endif -%}

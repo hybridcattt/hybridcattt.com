@@ -8,32 +8,8 @@ layout: default
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {%- assign pub_date_string = page.date | date: date_format -%}
       {%- assign mod_date_string = page.last_modified_at | date: date_format -%}
-
       <ul>
-        <li class="post-tags-container">
-          {% for tag in page.tags %}
-          <span class="post-tag" rel="tag">{{ tag }}</span>
-          {% endfor %}
-        </li>
-        <li><time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{
-            pub_date_string }}</time></li>
-        {%- if pub_date_string != mod_date_string -%}
-        {%- if page.last_modified_at -%}
-        {%- assign mdate = page.last_modified_at | date_to_xmlschema -%}
-        <li><span>Updated on <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">{{ mdate
-              | date: date_format }}</time></span></li>
-        {%- endif -%}
-        {%- endif -%}
-        <li>
-          by
-          {% for author in page.author %}
-          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <span class="p-author h-card" itemprop="name"><a href="/about">{{ author }}</a></span>&nbsp;
-          </span>
-          {%- if forloop.last == false %},
-          {% endif -%}
-          {% endfor %}
-        </li>
+          {%- include post-metadata-line-li.html post=page show_author=true -%}
       </ul>
     </div>
     <h1 class="post-title p-name" itemprop="name headline"><a class="post-link" href="{{ page.url }}">{{ page.title |

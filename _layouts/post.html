@@ -1,36 +1,22 @@
 ---
 layout: default
 ---
-<article class="post h-entry" >
+<article class="post h-entry">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline"><a class="post-link" href="{{ page.url }}">{{ page.title | escape }}</a></h1>
-    <p class="post-meta subtle-text">
+    <div class="post-meta subtle-text">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {%- assign pub_date_string = page.date | date: date_format -%}
       {%- assign mod_date_string = page.last_modified_at | date: date_format -%}
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ pub_date_string }}</time>
-      {%- if page.author -%}
-        &#32;•<span>&#32; by&#32;
-        {% for author in page.author %}
-          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <span class="p-author h-card" itemprop="name"><a href="/about">{{ author }}</a></span>
-          </span>
-          {%- if forloop.last == false %},
-          {% endif -%}
-        {% endfor %}
-        </span>
-      {%- endif -%}
-      {%- if pub_date_string != mod_date_string -%}
-        {%- if page.last_modified_at -%}
-          {%- assign mdate = page.last_modified_at | date_to_xmlschema -%}
-          &#32;•<span>&#32;Updated on <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">{{ mdate | date: date_format }}</time></span>
-        {%- endif -%}
-      {%- endif -%}
-    </p>
+      <ul>
+          {%- include post-metadata-line-li.html post=page show_author=true -%}
+      </ul>
+    </div>
+    <h1 class="post-title p-name" itemprop="name headline"><a class="post-link" href="{{ page.url }}">{{ page.title |
+        escape }}</a></h1>
   </header>
 
-  <div class="post-content e-content" >
+  <div class="post-content e-content">
     {{ content | toc }}
     <br>
     <hr>
@@ -42,7 +28,7 @@ layout: default
   <hr>
 
   {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
+  {%- include disqus_comments.html -%}
   {%- endif -%}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>

@@ -3,6 +3,9 @@ layout: post
 title:  "How To Test Throwing Code In Swift"
 date:   2017-10-10 21:00:16 +0200
 excerpt: All you need to know about testing throwing functions with XCTest and keeping test code clean & robust in the process.
+tags: 
+  - Swift
+  - Unit testing 
 medium_link: https://medium.com/storyteltech/how-to-test-throwing-code-in-swift-c70a95535ee5?source=friends_link&sk=cfc138c77c5c562ae1beb857a077e065
 image: /assets/posts/throwing/throwing_equatable_many_failures.png
 twitter: 

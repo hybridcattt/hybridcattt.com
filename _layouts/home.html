@@ -23,12 +23,16 @@ layout: default
       {%- for post in posts -%}
         <hr>
         <section>
+          <div class="post-meta subtle-text">
+            <ul>
+              {%- include post-metadata-line-li.html post=post -%}
+            </ul>
+          </div>
           <h3 class="post-title">
             <a class="post-link" href="{{ post.url | relative_url }}">
               {{ post.title | escape }}
             </a>
           </h3>
-          <p class="post-meta subtle-text">{{ post.date | date: date_format }}</p>
           {%- if site.show_excerpts -%}
             <p>{{ post.excerpt }}</p>
           {%- endif -%}

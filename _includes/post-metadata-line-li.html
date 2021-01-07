@@ -1,0 +1,36 @@
+{%- assign obj = include.post -%}
+{%- assign show_author = include.show_author | default: false -%}
+
+{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+{%- assign pub_date_string = obj.date | date: date_format -%}
+{%- assign mod_date_string = obj.last_modified_at | date: date_format -%}
+
+<li class="post-tags-container">
+  {% for tag in obj.tags %}
+  <span class="post-tag" rel="tag">{{ tag }}</span>
+  {% endfor %}
+</li>
+
+<li><time class="dt-published" datetime="{{ obj.date | date_to_xmlschema }}" itemprop="datePublished">{{
+    pub_date_string }}</time></li>
+
+{%- if obj.last_modified_at -%}
+{%- if obj.show_last_modified_at -%}
+{%- assign mdate = obj.last_modified_at | date_to_xmlschema -%}
+<li><span>Updated on <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">{{ mdate | date:
+      date_format }}</time></span></li>
+{%- endif -%}
+{%- endif -%}
+
+{%- if show_author -%}
+<li>
+  by
+  {% for author in obj.author %}
+  <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span class="p-author h-card" itemprop="name"><a href="/about">{{ author }}</a></span>&nbsp;
+  </span>
+  {%- if forloop.last == false %},
+  {% endif -%}
+  {% endfor %}
+</li>
+{% endif -%}

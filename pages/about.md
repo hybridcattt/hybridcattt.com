@@ -29,7 +29,7 @@ I occasionally speak at meetups/conferences and host workshops. Here's the list 
 
 🎙 Take monitoring of your mobile apps to the next level
 @ [Bitrise Webinars, May 2021](https://www.bitrise.io/webinar/monitoring-mobile-apps) \|
-Video coming soon
+[Video](https://www.youtube.com/watch?v=z7J0WbchM8M)
 
 🎙 Detail-oriented UI with Layout Margins
 @ [NSSpain 2019](https://2019.nsspain.com) \|

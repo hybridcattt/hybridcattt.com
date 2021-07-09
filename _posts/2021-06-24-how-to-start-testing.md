@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Unit testing: how to start"
+title:  "Unit testing: a realistic guide on where to start"
 tags: 
 - Unit testing 
 #medium_link: https://medium.com/@hybridcattt/building-a-well-rounded-website-essentials-822a27a46cad?source=friends_link&sk=e11724a15e3bfa5a61a728397d1dbe0d
@@ -13,69 +13,114 @@ toc_config:
   max_toc_level: 2
 ---
 
+So you decided to start unit testing the code in your project. 
+You might be working alone or in a small team. 
+It's possible that you are unsure how to approach it and where to start.
+If you can relate to the feeling, then this article is for you!
 
-So you decided that you want to start unit testing the code in your project. 
-It's possible that you're not sure how to approach it and where to start.
-If you can relate, then you will find this article useful.
+----- 
 
-## Any test is better than none
+So many great resources are out there to learn about testing. 
+You can learn about so many topics: 
+the different kinds of tests (unit tests, integration tests, end-to-end tests, UI tests), 
+how and when to run them,
+how to write tests with XCTest and about all other framewroks you can use,
+different techniques such as TDD,
+how to benefit from test plans, how to leverage generated test results, 
+and so forth. 
 
-First of all, I strongly believe in one simple statement: 
-_any kind and amount of tests is better than no tests at all._ And _any_ includes zero!
+On top of that, you might feel that your code is not exactly easily testable, 
+you might wonder whether it's a good time to refactor your project into 
+a more testable architecture. 
+You might even feel the pressure of having to fully commit to testing all your code. 
 
-When you run a test suite that has zero tests, you already verify that the project compiles. 
-That is so, so much better than nothing. 
+No surprise that figuring out _where to actually start_ can be tricky, and even overwhelming. 
 
-## Why starting testing is so owerwhelming
+So let me help you get you started 🙌  
 
-There's a bunch of reasons why you might feel that 'just adding new tests' hard:
+I'm not here to tell you how you _should_ test your apps. 
+My goal is to offer _realistic_ advice, so you can get started and iterate forward more confidently, at your own pace. 
 
-- the project is not configured for 'just adding new tests'
-- you feel that if you start adding unit tests, you have to commit to it and it will suck your time/resources
-- you feel that your code is not easily testable. you might fear having to refactor everything.
-- TDD. I heard this is a thing. Do I have to follow it?
+## Start from zero, iterate
 
-Let's adress these one by one to get you started 🙌 
+Automating testing of a project is an iterative process. You start with no tests, then add some, bit by bit - either for existing code or along with code that is newly written. 
+As the time goes, the amount of tested code grows.
+Eventually, a significant portion of your code will be tested, although it usually takes a while to get there.
 
+But what if I told you, that **even having zero tests brings value to your project**?
 
-## Setting up the testing infrastructure
+That's right. _Any_ amount (and kind) of tests is better than none.
 
-Iterative improvement is generally easier than getting started.  
-That's why it's so important to get your project configured and ready for tests.
-Then you could start with one, or even zero tests, and add more as you go. 
-Once you have testing infrastructure in place, adding new tests it just a matter of adding a new test class or a new function. 
+When we run a test suite with no tests, we already verify that
+a) the project compiles 
+b) the app doesn't crash immediately on start (only applies when testing apps, not frameworks). 
 
+For example, running tests before every commit makes you confident that the version in git can compile and run. 
+You're saved from accidentally committing a version that doesn't even compile. 
 
-< a sentence about test target in general >
+It only gets better from there - every test you add verifies a tiny path in your code, not only for correctness of the produced result, 
+but also that it doesn't crash or hang. 
 
-Two main reasons the project is not ready to ‘just add tests’:
-- Project is not set up for unit tests at all (there is no test target)
-- Unit test target is there but outdated / not compiling
+## Setting up testing infrastructure
 
-### New project
+So to start benefitting from testing, all you need is to have the testing infrastructure in place. 
+From there, you can continue learning all there is about testing, experimenting with different types of tests, and so on. 
+Adding new tests it just a matter of adding a new test case class or a new function. 
 
-When you create a new project, make sure the 'Include test target' checkbox is checked. 
+Tests are not part of the application, but they are part of the app project. Tests live in a separate target. 
 
-### Adding a test target to your Xcode project
+### Adding a test target to the project
+
+When you create a new project, make sure to enable the **Include tests** checkbox.
+
+If you have pre-existing codebase, a test target can be added with just a few clicks. 
+[This free guide](https://openclassrooms.com/en/courses/4554386-enhance-an-existing-app-using-test-driven-development/5095691-create-your-first-test) illustrates how to add a new test target to a project. (I have no affiliation with the paid course).
 
 ### Managing a broken test target
 
-You might already have a test target in the project, but it fails to compile, or a lot of tests fail. 
-If there's only a couple of errors, you might be able to fix it within reasonable time and use the existing target. 
+If you already have a test target in the project, but it fails to compile or a lot of tests fail, there's still a way forward. 
+If there's only a couple of errors, it makes sense to try to fix them. 
 
-If you're anxious to start though, my recommendation is to create a new test target in the project. 
-There can be as many test targets as you like in the project. Moving test case classes (files) between targets is easy. 
-So you can always consolidate your old and new tests in the future. That shouldn't block you from starting to add new tests.
+It could turn out that fixing the old test target is a larger task and you can't afford to spend the time. In this case, my recommendation is to create a new test target in the project. 
 
-// The easiest way to not have a broken test target is to
+There can be as many test targets as you like in a project. Moving test case classes (files) between targets is easy, and you can consolidate all your tests in one target later. That shouldn't block you from starting to add new tests now!
 
+### When and where to run tests
 
-## Do I have to commit to unit testing everything?  
+Tests can be run locally or on a remote machine. A remote machine is usually managed by a CI (continious integration) system, which pulls the code from the source control system, executes the tests and reports the results. Xcode Cloud will allow to execute tests on remote machines right from within Xcode.  
 
-Absolutely no. You don't have to go all in on testing everything. Any tests is better than none. Do what you can.
+The _when_ also has multiple options: you can run manually on-demand (essentially whenever you remember to do it), 
+before merging a feature branch, on each pull request (if you practice that), or even on or before every commit. 
 
+In my opinion, the optimal setup even for solo developers is to create pull requests for each merge, and to execute tests on every pull request automatically via a CI system.
+
+If learning how to configure a CI system is not on the top of your priorities (which is totally fine), 
+I recommend running tests locally before pushing your changes to remote or at least before merging a branch. 
+
+## Is it _testing_ or _unit testing_?
+
+Testing in general describes the process of verifying correctness of software. 
+Then we distinguish between automated testing and manual testing. 
+
+_Unit tests_ are the kind of automated tests that verify correctness of implementation of individual units of code - classes, structs, functions. If we only have unit tests, we have to trust that the _units_ are put together correctly to make a functioning app. 
+_Integration tests_ verify that units work together correctly. _End-to-end tests_ are even more high-level automated tests that verify the system as a whole, including server-side connection. _UI tests_ verify app's interface. This is what's called _The Testing Pyramid_. If you want to learn more, read [The Practical Test Pyramid by Martin Fowler](https://martinfowler.com/articles/practical-test-pyramid.html).
+
+We write all of these test types with XCTest framework by creating `XCTestCase` subclasses. 
+Writing UI tests requires us to use special `XCUIApplication` API, but the rest of the test types are very semantic.
+Depending on which part of your code you are testing, you call it unit, integration, or end-to-end test. 
+
+Unit tests are small and there are usually many of them, and they usually comprise the majority of the test suite. 
+Because of that, the words _testing_ and _unit testing_ are sometimes used interchangeably.
+
+## Picking what to test
+
+Many articles will tell you which areas of the codebase you should test.
+But do you _have to_ commit to unit testing everything that you _should_?  
+
+Absolutely no. Having some tests is better than having none, as we discussed above.
 You can absolutely limit the scope of your testing efforts, based on your preference, time, deadlines, etc.
-Here are 3 tips on how to find areas to focus on for the testing efforts:
+
+Here are my 3 tips on how to find areas to focus on for the testing efforts:
 
 - logic that is critical to your app
 
@@ -85,32 +130,36 @@ Here are 3 tips on how to find areas to focus on for the testing efforts:
 
 Some examples of such areas: deserializing (parsing) server responses, date arithmetics, custom sorting/filtering logic, saving and reading back user's local data.
 
-## I think my code is not testable. Do I have to refactor everything?
- Remember, having any tests is better than having none.
+## Testing the untestable 
 
-Even when you think all is lost, here's an approach that _always_ works regardless of how untestable you think your code is:
+You might get tempted to refactor your code, especially if unit testing wasn't originally on your mind.  
+Most of the commonly used architectures are well suited for unit testing: MVVM, MVP, etc, and refactoring _will_ make writing tests easier.
+But to _start_ with unit testing, you absolutely don't have to do any major refactoring.
 
-You can extract pieces of code into a separate helper function, where your code can be pure (have no side effects, only use passed in parameters). 
-Then call this function with one line where needed. 
-Even though the rest of the code is still not covered by tests, you can test the extracted function. 
-Sure, you could still call the function in a way that causes a bug, but that's the nature of _unit tests_ - 
-we tests units of code, and trust they are put together correctly.  
+Here's an approach that _always_ works regardless of how untestable you think your code is:
+
+- Extract a piece of code into a completely separate helper function in a helper class. This way your code can be pure: pure code has no side effects and uses only passed in parameters (no singletones, global variables, etc).
+
+- Then call this function with one line where needed. 
+
+Even though the rest of the code would still not be covered by tests, you can test the extracted function. 
+Sure, you can still call the function in a way that causes a bug, but you made it less likely.
 
 Here's a simple example. Let's say we have a view controller class with a piece of logic we want to test:
 
-```swift
+{% splash %}
 class MyViewController: UIViewController {
     // ...
     private func sortData() {
-        self.data = self.data.sorted() // complex logic here
+        self.data = self.data.sorted({.......}) // complex logic here
     }
     // ...
 }
-```
+{% endsplash %}
 
 You can extract this piece of logic into a separate, pure function, and test that function:
 
-```swift
+{% splash %}
 class MyViewController: UIViewController {
     // ...
     private func sortData() {
@@ -121,7 +170,7 @@ class MyViewController: UIViewController {
 
 final class MyViewControllerHelper {
     static func sortData(_ data: [MyObject]) -> [MyObject] {
-         return data.sorted() // complex logic here
+         return data.sorted({......}) // complex logic here
     }
 }
 
@@ -133,29 +182,32 @@ class MyViewControllerHelperTests() {
     }
     // ...
 }
-```
+{% endsplash %}
 
-How many bugs can sneak in when calling `self.data = self.data.sorted()` ? Not a lot.  
-At the same time, we can be sure that our sorting logic works as expected. 
+How many bugs can sneak in when calling `self.data = MyViewControllerHelper.sortData(self.data)` ? Not a lot.  
+At the same time, we can be sure that the sorting logic works as expected. 
 
-You can choose to start refactoring your class to f.ex. MVVM, creating a view model and testing it, instead of moving out independent pieces of code. 
-That's a great approach to improve test coverage _and_ your app's architecture. 
-But if you're not ready to do major refactorings - you still have a way to start tesing your code.
+Later on, you could turn the helper into a view model (shall you go with MVVM). 
+If you're comfortable enough with MVVM already, go with it right away - that's a great way to improve testability _and_ your app's architecture at the same time. 
+But if you're not ready to do major refactorings - you still have a way to start tesing your code. 
 
+## Do we have to TDD?
 
+TDD (Test Driven Development) is a methodology that is commonly associated with unit testing.
+It suggests to write the tests before writing the implementation. Some people believe it's the _one true way_ to write tests. 
 
-## I heard TDD is a thing. Do I have to follow it?
+In reality though, everyone’s brains are wired differently. Coding is a very creative process, and different people prefer different ways of getting to the same result. Most developers who practice testing don't actually follow TDD, most of the time.
 
-TDD (Test Driven Development) is a methodology that is commonly associated with unit testing. Some people believe it's the _one true way_ to write unit tests  - write tests first, and then fill in the implementation to make the tests pass. 
+Let me offer a simple rule of thumb: if you want to have your code be covered by tests, commit to the _outcome_ of having code paired with tests. How you get to that point is personal preference.
+If you work in a team, you could commit to having tests included in each PR along with the code. 
 
-In reality though, everyone’s brains are wired differently. Coding is a very creative process, and different people prefer different ways of getting to the same result. 
-
-Let me offer a simple rule of thumb: if you want to have your code be covered by tests, commit to the _outcome_ of having code paired with tests.
-If you work in a team, you could commit to having tests included in the PR along with the logic code. 
-
-How you get there is personal preference. You should try different things and see what works best for you. 
 You can sketch a draft of the implementation in the playground. Or write/rewrite your code as many times as you like, and write tests when you feel done. 
-Or write tests first against a skeleton of the implementation, and fill in the actual logic to make tests pass. 
+Or write tests first against a skeleton of the implementation, and fill in the actual logic to make tests pass. Try different things and figure out what works best for you!
 
-How and when you write tests is up to you. Try different approaches until you find what works for your style. 
-Don’t listen to anyone who says there is one true way to write code!
+## Wrapping up
+
+Stepping onto unknown territory can be overwhelming. There's enough to learn about automated testing as it is: from different assert APIs to improving app architecture to configuring CI systems. 
+
+I hope my advice on where to start and the answers to common questions and misconceptions have set you on a path where you can feel more confident!
+
+

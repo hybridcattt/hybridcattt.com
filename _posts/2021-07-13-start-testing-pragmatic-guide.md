@@ -6,9 +6,9 @@ tags:
 #medium_link: https://medium.com/@hybridcattt/building-a-well-rounded-website-essentials-822a27a46cad?source=friends_link&sk=e11724a15e3bfa5a61a728397d1dbe0d
 excerpt: So you decided to start unit testing the code in your project. If you feel uncertain about where to start, this article is for you. I cover real questions that arise at the beginning of your testing journey, and you'll get pragmatic advice on how to get going and iterate forward more confidently, at your own pace.
 
-#image: /assets/posts/website-essentials/img_twitter.jpg
-#twitter: 
-#card: summary_large_image
+image: /assets/posts/start-testing/card.png
+twitter: 
+  card: summary_large_image
 toc_config:
   only_anchors: false
   max_toc_level: 3

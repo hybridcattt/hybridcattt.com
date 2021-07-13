@@ -527,8 +527,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.splash {
+  margin-bottom: $spacing-unit;
+}
 
-
+img {
+  margin-bottom: $spacing-unit / 2;
+}
 /**
  * Pagination navbar
  */

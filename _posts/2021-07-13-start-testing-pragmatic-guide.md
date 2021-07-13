@@ -4,7 +4,7 @@ title:  "Unit testing: the pragmatic guide on where to start"
 tags: 
 - Unit testing 
 #medium_link: https://medium.com/@hybridcattt/building-a-well-rounded-website-essentials-822a27a46cad?source=friends_link&sk=e11724a15e3bfa5a61a728397d1dbe0d
-excerpt: So you decided to start unit testing the code in your project. If you feel uncertain about where to start, this article is for you. I cover real questions that arise when you are beginning your testing journey, and you'll get pragmatic advice on how to get going and iterate forward more confidently, at your own pace.
+excerpt: So you decided to start unit testing the code in your project. If you feel uncertain about where to start, this article is for you. I cover real questions that arise at the beginning of your testing journey, and you'll get pragmatic advice on how to get going and iterate forward more confidently, at your own pace.
 
 #image: /assets/posts/website-essentials/img_twitter.jpg
 #twitter: 
@@ -18,7 +18,7 @@ So you decided to start unit testing the code in your project.
 You might be working alone or in a small team. 
 If you feel uncertain about where to start, this article is for you!
 
-I cover real questions that arise when you are beginning your testing journey. You'll get pragmatic advice on how to get going and iterate forward more confidently, at your own pace.
+I cover real questions that arise at the beginning of your testing journey. You'll get pragmatic advice on how to get going and iterate forward more confidently, at your own pace.
 
 ----- 
 
@@ -38,13 +38,13 @@ You might even feel the pressure of having to commit to testing all of your code
 No surprise that figuring out _where to actually start_ can be difficult, and even overwhelming. 
 But the truth is, you don't have to learn all of it beforehand.
 
-So let me help you get started 🙌  
+So let me help you get started 🙌
 
 ## Start from zero, iterate
 
-Automating the testing of a project is an iterative process. You start with no tests, then add some, bit by bit - either for existing code or along with newly written code. 
+Automating the testing of a project is an iterative process. We start with no tests, then add some, bit by bit - either for existing code or along with newly written code. 
 As the time goes, the amount of tested code grows.
-Eventually, a significant portion of your code becomes tested, although it usually takes a while to get there.
+Eventually, a significant portion of the code becomes tested, although it usually takes a while to get there.
 
 But what if I told you that **even having zero tests brings value to your project**?
 
@@ -54,8 +54,8 @@ b) the app doesn't crash immediately on start (though it only applies when testi
 
 For example, running tests before every commit saves you from accidentally committing a version that doesn't even compile. 
 
-It only gets better from there - every test you add verifies a tiny path in your code, not only for correctness of the produced result, 
-but also that it doesn't crash or hang. 
+It only gets better from there - every new test verifies a tiny path in the code code, not only for correctness of the produced result, 
+but also that it doesn't crash or hang the app. 
 
 Don't worry about ramping up the testing slowly - _any_ amount (and kind) of tests is better than none.
 
@@ -63,7 +63,7 @@ Don't worry about ramping up the testing slowly - _any_ amount (and kind) of tes
 
 So to start benefitting from testing, all you need is to have the testing infrastructure in place. 
 From there, you can continue learning all there is about testing, experimenting with different types of tests, and so on. 
-Adding new tests is just a matter of adding a new test case class or a new function. 
+Adding new tests is just a matter of adding a new test case class or a new function. We'll cover that below. 
 
 Tests are a part of the app project, but they are not part of the app itself - tests live in a separate target.
 A target specifies a product to build, such as an iOS, watchOS, macOS app, extension, a framework, test suite, or a UI test suite.
@@ -91,19 +91,19 @@ Try fixing the errors if there are only a few of them.
 It could turn out that fixing the old test target is a bigger task, and you can't afford to spend the time. 
 In this case, my recommendation is to create a new test target in the project. 
 
-There can be as many test targets as you like in a project. Moving test case classes (files) between targets is easy, and you can consolidate all your tests into one target later. That shouldn't block you from starting to add new tests now!
+There can be multiple test targets in one project. Moving test case classes (files) between targets is easy, and you can consolidate all your tests into one target later. That shouldn't block you from starting to add new tests now!
 
 To prevent the newly created test target from getting abandoned and broken, make sure to keep the tests up to date and execute them regularly.
-Read the next section to find out how.
+Read the next section to find out how. 👇
 
-## When, where and how to run tests
+## When, where, and how to run tests
 
-Tests can be run locally or on a remote machine. A remote machine is usually managed by a CI (continuous integration) system. The machine pulls the code from the source control system, executes the tests and reports the results. 
-Not all CI systems support macOS, but many do: GitHub Actions, CircleCI, Bitrise, Travis CI. 
-[Xcode Cloud](https://developer.apple.com/documentation/Xcode/About-Continuous-Integration-and-Delivery-with-Xcode-Cloud) will allow triggering the execution of tests on remote machines right from within Xcode. 
+Tests can be run locally or on a remote machine. A remote machine is usually managed by a CI (continuous integration) system. The machine pulls the code from the source control system, executes the tests, and reports the results. 
+Not all CI systems offer macOS machines, but many do: GitHub Actions, CircleCI, Bitrise, Travis CI. Some CI systems such as Jenkins let you connect your own physical machines, but it's an advanced topic so we won't cover it here.
+Soon [Xcode Cloud](https://developer.apple.com/documentation/Xcode/About-Continuous-Integration-and-Delivery-with-Xcode-Cloud) will allow triggering the execution of tests in the cloud right from within Xcode. 
 
-There are a few ways _how_ to run your test suite. You could run tests manually or via the command line. 
-A test suite can be executed via the command line with the help of the built-in `xcodebuild` tool or the all-powerful  [fastlane](https://docs.fastlane.tools/getting-started/ios/running-tests/). 
+There are a few ways _how_ to run a test suite. You could run tests manually or via the command line. 
+A test suite can be executed via the command line with the help of the built-in `xcodebuild test` command or the all-powerful [fastlane](https://docs.fastlane.tools/getting-started/ios/running-tests/). 
 Usually, you only need to use command-line tools when executing tests remotely via a CI system. 
 
 The _when_ also has multiple options: you can run manually on-demand (essentially whenever you remember to do it), 
@@ -124,7 +124,7 @@ I recommend running tests locally before pushing your changes to remote or at le
 The term _testing_ describes the process of verifying  the correctness of software. 
 Then we distinguish between automated testing and manual testing. 
 
-_Unit tests_ are the kind of automated tests that verifythe correctness of the implementation of individual units of code - such as classes, structs, or functions. If we only have unit tests, we have to trust that the _units_ are put together correctly to make a functioning app. 
+_Unit tests_ are the kind of automated tests that verify the correctness of the implementation of individual units of code - such as classes, structs, or functions. If we only have unit tests, we have to trust that the _units_ are put together correctly to make a functioning app. 
 
 _Integration tests_ verify that units work together correctly. _End-to-end tests_ are even more high-level automated tests that verify the system as a whole, including server-side connection. _UI tests_ verify the app's interface. 
 
@@ -157,7 +157,7 @@ Or write tests first against a skeleton of the implementation, and fill in the a
 
 Treat methodologies and patterns as inspiration, and find what works best for your flow, your team, and your project.
 
-> If you want to learn more about fundamentals of TDD, I find this article from IBM to be a good resource: [Test-driven Development](https://www.ibm.com/garage/method/practices/code/practice_test_driven_development/). 
+> If you want to learn more about the fundamentals of TDD, I find this article from IBM to be a good resource: [Test-driven Development](https://www.ibm.com/garage/method/practices/code/practice_test_driven_development/). 
 
 ## Picking what to test
 

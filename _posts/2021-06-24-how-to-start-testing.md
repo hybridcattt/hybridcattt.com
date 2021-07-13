@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "Unit testing: a pragmatic guide on where to start"
+title:  "Unit testing: the pragmatic guide on where to start"
 tags: 
 - Unit testing 
 #medium_link: https://medium.com/@hybridcattt/building-a-well-rounded-website-essentials-822a27a46cad?source=friends_link&sk=e11724a15e3bfa5a61a728397d1dbe0d
-excerpt: How to start practicing unit tests when you're unsure where to start
+excerpt: So you decided to start unit testing the code in your project. If you feel uncertain about where to start, this article is for you. I cover real questions that arise when you are beginning your testing journey, and you'll get pragmatic advice on how to get going and iterate forward more confidently, at your own pace.
+
 #image: /assets/posts/website-essentials/img_twitter.jpg
 #twitter: 
 #card: summary_large_image
@@ -15,10 +16,9 @@ toc_config:
 
 So you decided to start unit testing the code in your project. 
 You might be working alone or in a small team. 
-It's possible that you feel uncertain about  how to approach it and where to start.
-If you can relate to the feeling, then this article is for you!
+If you feel uncertain about where to start, this article is for you!
 
-In this article, I cover real questions that arise when you are beginning your testing journey. You'll get pragmatic advice on how to get going and iterate forward more confidently, at your own pace.
+I cover real questions that arise when you are beginning your testing journey. You'll get pragmatic advice on how to get going and iterate forward more confidently, at your own pace.
 
 ----- 
 
@@ -26,7 +26,7 @@ So many great resources are out there to learn about testing.
 You can learn about many topics: 
 the different kinds of tests (unit tests, integration tests, end-to-end tests, UI tests), 
 how and when to run them,
-how to write tests with XCTest and about all other frameworks you can use,
+how to write tests with XCTest and about third-party frameworks you can use,
 different techniques such as TDD,
 how to benefit from test plans, how to leverage generated test results, 
 and so on. 
@@ -35,11 +35,10 @@ At the same time, you might feel that your code is not easily testable,
 you might wonder whether it's a good time to refactor your project into a more testable architecture. 
 You might even feel the pressure of having to commit to testing all of your code.
 
-No surprise that figuring out _where to actually start_ can be tricky, and even overwhelming. 
+No surprise that figuring out _where to actually start_ can be difficult, and even overwhelming. 
+But the truth is, you don't have to learn all of it beforehand.
 
 So let me help you get started 🙌  
-
-> Note: this article assumes that you are familiar with overall benefits of automated testing and are already motivated to learn more about different aspects of it.
 
 ## Start from zero, iterate
 
@@ -129,9 +128,9 @@ _Unit tests_ are the kind of automated tests that verifythe correctness of the i
 
 _Integration tests_ verify that units work together correctly. _End-to-end tests_ are even more high-level automated tests that verify the system as a whole, including server-side connection. _UI tests_ verify the app's interface. 
 
-This is what's called _The Testing Pyramid_. 
+![The Testing Pyramid](/assets/posts/start-testing/testing_pyramid.jpg)
 
-> If you want to learn more, read [The Practical Test Pyramid by Martin Fowler](https://martinfowler.com/articles/practical-test-pyramid.html) (warning: a very long article).
+This is what's called _The Testing Pyramid_. (image credit: [Ministry of Testing](https://www.ministryoftesting.com/dojo/lessons/the-mobile-test-pyramid))
 
 We write all of these four test types with the XCTest framework by creating `XCTestCase` subclasses. 
 Writing UI tests requires us to use a special `XCUIApplication` API to interact with the app itself, but the rest of the test types are coded the same way. The distinction is very semantic: depending on which part of your code you are testing, you call it a unit, integration, or an end-to-end test. 
@@ -139,13 +138,34 @@ Writing UI tests requires us to use a special `XCUIApplication` API to interact 
 Unit tests are small, and a test target usually has many of them. Most often, unit tests comprise the majority of the test suite. 
 Because of that, the words _testing_ and _unit testing_ are sometimes used interchangeably.
 
+> If you want to read more about these different kinds of tests, check out [Apple's guide on Testing Your Apps in Xcode](https://developer.apple.com/documentation/xcode/testing-your-apps-in-xcode). 
+> <br>
+> To learn more about writing assertions with XCTest, [XCTest documentation page](https://developer.apple.com/documentation/xctest) is a great starting point.
+
+## Do we have to TDD?
+
+TDD (Test Driven Development) is a methodology that is commonly associated with unit testing.
+TDD dictates that we should write the tests _before_  writing the implementation. 
+
+Some people believe TDD is the _one true way_ to write tests.  However, in reality, everyone's brains are wired differently. Coding is a very creative process, and different people prefer different ways of getting to the same result. **Most developers who practice testing don't actually follow TDD most of the time.**
+
+Let me offer a simple rule of thumb: if you want your code to be covered by tests, commit to the _outcome_ of having code paired with tests. How you get to that point is a personal preference.
+If you practice pull requests, especially in a team, you could commit to having tests included in each PR along with the code. 
+
+To decide when to write tests, try different approaches and figure out what works best for you. You can sketch a draft of the feature implementation in the playground, or write/rewrite your code as many times as you like, and write tests when you feel done with the feature. 
+Or write tests first against a skeleton of the implementation, and fill in the actual logic to make the tests pass. 
+
+Treat methodologies and patterns as inspiration, and find what works best for your flow, your team, and your project.
+
+> If you want to learn more about TDD, I find this article from IBM to be a good resource: [Test-driven Development](https://www.ibm.com/garage/method/practices/code/practice_test_driven_development/). 
+
 ## Picking what to test
 
 Many articles out there will tell you which areas of the codebase you should test.
 But do you _have to_ commit to unit testing everything that you _should_?  
 
 Absolutely no. Having some tests is better than having none, as we discussed above.
-You can limit the scope of your testing efforts based on your preference, time, deadlines, etc.
+You can limit the scope of your testing efforts based on your preference, priorities, and deadlines.
 
 Here are my 3 tips on how to find areas to focus on for the testing efforts:
 
@@ -179,7 +199,7 @@ Here's an example. Let's say we have a view controller class with a piece of log
 class MyViewController: UIViewController {
     // ...
     private func sortData() {
-        self.data = self.data.sorted({.......}) // complex logic here
+        self.data = self.data.sorted({.......}) // complex sorting logic here
     }
     // ...
 }
@@ -198,15 +218,18 @@ class MyViewController: UIViewController {
 
 final class MyViewControllerHelper {
     static func sortData(_ data: [MyObject]) -> [MyObject] {
-         return data.sorted({......}) // complex logic here
+         return data.sorted({......}) // complex sorting logic here
     }
 }
 
 /// In tests:
-class MyViewControllerHelperTests() {
-    func test_sortData() {
+class MyViewControllerHelperTests: XCTestCase {
+    func test_sortDataTrivial() {
         XCTAssertEqual(MyViewControllerHelper.sortData([]), [])
-        XCTAssertEqual(MyViewControllerHelper.sortData([1, 3, 2]), [1, 2, 3])
+    }
+    func test_sortData() {
+        let result = MyViewControllerHelper.sortData([MyObject(value: 1), MyObject(value: 3), MyObject(value: 2)])
+        XCTAssertEqual(result, [MyObject(value: 1), MyObject(value: 2), MyObject(value: 3)])
     }
     // ...
 }
@@ -218,23 +241,6 @@ At the same time, we can be sure that the sorting logic works as expected.
 Later on, you could turn the helper into a view model (shall you go with MVVM). 
 If you're comfortable enough with MVVM already, go with it right away - that's a great way to improve testability _and_ your app's architecture at the same time. 
 But if you're not ready to make a major refactoring - you still have a way to start testing your code. 
-
-## Do we have to TDD?
-
-TDD (Test Driven Development) is a methodology that is commonly associated with unit testing.
-TDD dictates that we should write the tests _before_  writing the implementation. 
-
-Some people believe TDD is the _one true way_ to write tests.  However, in reality, everyone's brains are wired differently. Coding is a very creative process, and different people prefer different ways of getting to the same result. Most developers who practice testing don't actually follow TDD most of the time.
-
-Let me offer a simple rule of thumb: if you want your code to be covered by tests, commit to the _outcome_ of having code paired with tests. How you get to that point is a personal preference.
-If you practice pull requests, especially in a team, you could commit to having tests included in each PR along with the code. 
-
-While you work on your feature, try different approaches and figure out what works best for you. You can sketch a draft of the implementation in the playground, or write/rewrite your code as many times as you like, and write tests when you feel done. 
-Or write tests first against a skeleton of the implementation, and fill in the actual logic to make the tests pass. 
-
-Treat methodologies and patterns as inspiration, and find what works best for your flow, your team, and your project.
-
-> If you want to learn more about TDD, I find this article from IBM to be a good resource: [Test-driven Development](https://www.ibm.com/garage/method/practices/code/practice_test_driven_development/). 
 
 ## Wrapping up
 

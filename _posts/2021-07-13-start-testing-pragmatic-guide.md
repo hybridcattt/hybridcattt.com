@@ -157,7 +157,7 @@ Or write tests first against a skeleton of the implementation, and fill in the a
 
 Treat methodologies and patterns as inspiration, and find what works best for your flow, your team, and your project.
 
-> If you want to learn more about TDD, I find this article from IBM to be a good resource: [Test-driven Development](https://www.ibm.com/garage/method/practices/code/practice_test_driven_development/). 
+> If you want to learn more about fundamentals of TDD, I find this article from IBM to be a good resource: [Test-driven Development](https://www.ibm.com/garage/method/practices/code/practice_test_driven_development/). 
 
 ## Picking what to test
 
@@ -246,6 +246,6 @@ But if you're not ready to make a major refactoring - you still have a way to st
 
 Stepping onto unknown territory can be overwhelming. There's enough to learn about automated testing as it is: from different assert APIs to improving app architecture to configuring CI systems. 
 
-This article covered setting up testing infrastructure, picking what to test, figuring out if TDD is for you, understanding the difference between different kinds of tests, and approaching seemingly untestable code.
+This article covered setting up testing infrastructure, picking what to test, figuring out if TDD is for you, understanding the difference between different kinds of tests, and approaching seemingly untestable code. Missing a good resource on a topic? Ask me on Twitter!
 
-I hope my advice sets you on a path where you feel more confident with testing your apps! 
+I hope my advice sets you on a path where you feel more confident with testing your apps 💚

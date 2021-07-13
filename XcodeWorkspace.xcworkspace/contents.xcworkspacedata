@@ -91,7 +91,7 @@
       location = "group:_posts"
       name = "_posts">
       <FileRef
-         location = "group:2021-06-24-how-to-start-testing.md">
+         location = "group:2021-07-13-start-testing-pragmatic-guide.md">
       </FileRef>
       <FileRef
          location = "group:2020-08-29-website-essentials.md">

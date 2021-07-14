@@ -54,7 +54,7 @@ b) the app doesn't crash immediately on start (though it only applies when testi
 
 For example, running tests before every commit saves you from accidentally committing a version that doesn't even compile. 
 
-It only gets better from there - every new test verifies a tiny path in the code code, not only for correctness of the produced result, 
+It only gets better from there - every new test verifies a tiny path in the code, not only for correctness of the produced result, 
 but also that it doesn't crash or hang the app. 
 
 Don't worry about ramping up the testing slowly - _any_ amount (and kind) of tests is better than none.
@@ -244,7 +244,7 @@ But if you're not ready to make a major refactoring - you still have a way to st
 
 ## Wrapping up
 
-Stepping onto unknown territory can be overwhelming. There's enough to learn about automated testing as it is: from different assert APIs to improving app architecture to configuring CI systems. 
+Stepping into unknown territory can be overwhelming. There's enough to learn about automated testing as it is: from different assert APIs to improving app architecture to configuring CI systems. 
 
 This article covered setting up testing infrastructure, picking what to test, figuring out if TDD is for you, understanding the difference between different kinds of tests, and approaching seemingly untestable code. Missing a good resource on a topic? Ask me on Twitter!
 

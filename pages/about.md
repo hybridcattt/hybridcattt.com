@@ -11,21 +11,19 @@ I've been in tech for almost 15 years. Working with Apple platforms since 2011, 
 
 I'm a Unix geek turned Apple nerd 🤓 Topics I care about include privacy, equal opportunity, and climate change 💚
 
-You can find me in the core iOS team at [Say Their Names project ✊🏽](https://saytheirnames.io), co-organizing
-[CopenhagenCocoa](https://www.meetup.com/CopenhagenCocoa/) meetups, and [mentoring folks](/mentorship/). I also offer
-consulting services - don't hesitate to reach out.
+Besides [offering consulting services](/mentorship/) and building indie products (stay tuned!), 
+you can find me curating <a href="https://ioscodereview.com"> Code Review</a> newsletter, maintaining [Say Their Names project ✊🏽](https://saytheirnames.io) and co-organizing
+[Copenhagen Cocoa](https://www.meetup.com/CopenhagenCocoa/) meetups.
 
 My latest 9-to-5 adventure was leading the iOS team at [Storytel](https://storytel.com) for 4 years, supporting
 company's growth from a small startup to a 500-person company.
-I've also worked at [Citrix/GetGo](https://get.gotoassist.com), [PrimeApp](https://vk.com/primeapp) and [iD East](https://id-east.ru). 
+I've also built B2B products at [Citrix/GetGo](https://get.gotoassist.com), led consumer app development at [PrimeApp](https://vk.com/primeapp) and built apps for over a dozen of companies at Russia's largest agency [iD East](https://id-east.ru). 
 My CV and references can be found on 
 [LinkedIn](https://www.linkedin.com/in/hybridcattt).
 
 <hr>
 
 I occasionally speak at meetups/conferences and host workshops. Here's the list of my past and future speaking engagements:
-
-👩‍💻 TBD Workshop @ [try! Swift World 🌍](https://www.tryswift.co/world/), 2021
 
 🎙 Take monitoring of your mobile apps to the next level
 @ [Bitrise Webinars, May 2021](https://www.bitrise.io/webinar/monitoring-mobile-apps) \|

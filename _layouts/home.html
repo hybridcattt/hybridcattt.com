@@ -21,6 +21,8 @@ layout: default
     <div class="post-list">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {%- for post in posts -%}
+      {%- if post.redirect_to %}
+      {%- else %}
         <hr>
         <section>
           <div class="post-meta subtle-text">
@@ -38,6 +40,7 @@ layout: default
           {%- endif -%}
           <a class="post-read-more" href="{{ post.url | relative_url }}">Read more</a>
         </section>
+      {%- endif %}
       {%- endfor -%}
       <hr>
     </div>

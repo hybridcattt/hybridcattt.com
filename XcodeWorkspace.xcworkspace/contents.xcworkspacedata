@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:netlify.toml">
+   </FileRef>
+   <FileRef
       location = "group:_config.yml">
    </FileRef>
    <FileRef

@@ -1,0 +1,6 @@
+# https://docs.netlify.com/configure-builds/file-based-configuration/
+  
+[[redirects]]
+  from = "/blog/debugging-on-ios14-with-xcode-11"
+  to = "/blog/debugging-on-latest-ios-with-older-xcode"
+  force = true

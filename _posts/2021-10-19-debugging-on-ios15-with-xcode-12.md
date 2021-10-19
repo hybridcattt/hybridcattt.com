@@ -4,7 +4,8 @@ title: "Debugging on iOS 15 with Xcode 12"
 tags: 
   - Xcode
   - Debugging
-excerpt: If your app can't be upgraded to Xcode 13 right away, but still has to run on iOS 15, you're limited in debuging options with Xcode 12. #With some tricks, we can not only run on iOS 15 but also debug with breakpoints and much more.
+permalink: /blog/debugging-on-latest-ios-with-older-xcode
+excerpt: If your app can't be upgraded to Xcode 13 right away, but still has to run on iOS 15, you're limited in debuging options with Xcode 12. This article shows how to debug apps on iOS 15 with Xcode 12.
 medium_link: https://medium.com/@hybridcattt/d332f12f49dd?source=friends_link&sk=89454bc213ad54dd3fb773f5f19e3057
 image: /assets/posts/debugging-ios14-xcode11/failed_to_start_error.png
 twitter: 
@@ -20,6 +21,8 @@ Those projects have to be built with Xcode 12 in the meantime.
 But even though those apps can’t be upgraded yet, they are still expected to work well on the newest iOS. And solving problems and bugs requires debugging.
 
 Out of the box, older Xcode versions can’t work with newer iOS versions. However, with some tricks, I could not only run on iOS 15 but also debug with breakpoints and much more.
+
+If you're looking for the last years post, it's here: [Debugging on iOS 14 with Xcode 11](blog/debugging-on-ios14-with-xcode-11-post/).
 
 ## With Xcode 13 installed
 

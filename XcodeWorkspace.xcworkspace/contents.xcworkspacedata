@@ -4,332 +4,30 @@
    <FileRef
       location = "group:_config.yml">
    </FileRef>
-   <Group
-      location = "group:_data"
-      name = "_data">
-   </Group>
-   <Group
-      location = "group:_drafts"
-      name = "_drafts">
-   </Group>
-   <Group
-      location = "group:_includes"
-      name = "_includes">
-      <FileRef
-         location = "group:goatcounter.html">
-      </FileRef>
-      <FileRef
-         location = "group:blog-subscribe-note.html">
-      </FileRef>
-      <FileRef
-         location = "group:after-post.html">
-      </FileRef>
-      <FileRef
-         location = "group:sharing.html">
-      </FileRef>
-      <FileRef
-         location = "group:favicons.html">
-      </FileRef>
-      <FileRef
-         location = "group:google-analytics.html">
-      </FileRef>
-      <FileRef
-         location = "group:js-selector.html">
-      </FileRef>
-      <FileRef
-         location = "group:social.html">
-      </FileRef>
-      <FileRef
-         location = "group:disqus_comments.html">
-      </FileRef>
-      <FileRef
-         location = "group:head.html">
-      </FileRef>
-      <FileRef
-         location = "group:email_text.html">
-      </FileRef>
-      <FileRef
-         location = "group:footer.html">
-      </FileRef>
-      <FileRef
-         location = "group:post-metadata-line-li.html">
-      </FileRef>
-      <FileRef
-         location = "group:post-license.html">
-      </FileRef>
-      <FileRef
-         location = "group:header.html">
-      </FileRef>
-   </Group>
-   <Group
-      location = "group:_layouts"
-      name = "_layouts">
-      <FileRef
-         location = "group:post.html">
-      </FileRef>
-      <FileRef
-         location = "group:page.html">
-      </FileRef>
-      <FileRef
-         location = "group:home.html">
-      </FileRef>
-      <FileRef
-         location = "group:default.html">
-      </FileRef>
-      <FileRef
-         location = "group:default-100-height.html">
-      </FileRef>
-   </Group>
-   <Group
-      location = "group:_plugins"
-      name = "_plugins">
-      <FileRef
-         location = "group:splashtag.rb">
-      </FileRef>
-   </Group>
-   <Group
-      location = "group:_posts"
-      name = "_posts">
-      <FileRef
-         location = "group:2021-07-13-start-testing-pragmatic-guide.md">
-      </FileRef>
-      <FileRef
-         location = "group:2020-08-29-website-essentials.md">
-      </FileRef>
-      <FileRef
-         location = "group:2017-10-10-how-to-test-throwing-code-in-swift.markdown">
-      </FileRef>
-      <FileRef
-         location = "group:2020-10-12-debugging-on-ios14-with-xcode-11.md">
-      </FileRef>
-   </Group>
-   <Group
-      location = "group:_sass"
-      name = "_sass">
-      <Group
-         location = "group:minima"
-         name = "minima">
-         <FileRef
-            location = "group:initialize.scss">
-         </FileRef>
-         <FileRef
-            location = "group:_layout.scss">
-         </FileRef>
-         <Group
-            location = "group:skins"
-            name = "skins">
-            <FileRef
-               location = "group:dark.scss">
-            </FileRef>
-            <FileRef
-               location = "group:solarized.scss">
-            </FileRef>
-            <FileRef
-               location = "group:solarized-dark.scss">
-            </FileRef>
-            <FileRef
-               location = "group:classic.scss">
-            </FileRef>
-         </Group>
-         <FileRef
-            location = "group:_base.scss">
-         </FileRef>
-      </Group>
-   </Group>
+   <FileRef
+      location = "group:_includes">
+   </FileRef>
+   <FileRef
+      location = "group:_layouts">
+   </FileRef>
+   <FileRef
+      location = "group:_plugins">
+   </FileRef>
+   <FileRef
+      location = "group:_posts">
+   </FileRef>
+   <FileRef
+      location = "group:_sass">
+   </FileRef>
+   <FileRef
+      location = "group:_site">
+   </FileRef>
    <FileRef
       location = "group:404.html">
    </FileRef>
-   <Group
-      location = "group:assets"
-      name = "assets">
-      <Group
-         location = "group:posts"
-         name = "posts">
-         <Group
-            location = "group:throwing"
-            name = "throwing">
-            <FileRef
-               location = "group:throwing_nice_failure_1.png">
-            </FileRef>
-            <FileRef
-               location = "group:throwing_nice_failure_2.png">
-            </FileRef>
-            <FileRef
-               location = "group:throwing_equatable_many_failures.png">
-            </FileRef>
-            <FileRef
-               location = "group:throwing_equatable_failure.png">
-            </FileRef>
-         </Group>
-         <Group
-            location = "group:debugging-ios14-xcode11"
-            name = "debugging-ios14-xcode11">
-            <FileRef
-               location = "group:failed_to_start_error.png">
-            </FileRef>
-            <FileRef
-               location = "group:scheme_settings_disable_debug.png">
-            </FileRef>
-            <FileRef
-               location = "group:debugger_likely_targets.png">
-            </FileRef>
-            <FileRef
-               location = "group:console_filters2.png">
-            </FileRef>
-         </Group>
-         <Group
-            location = "group:website-essentials"
-            name = "website-essentials">
-            <FileRef
-               location = "group:img.jpg">
-            </FileRef>
-            <FileRef
-               location = "group:img_twitter.jpg">
-            </FileRef>
-         </Group>
-      </Group>
-      <Group
-         location = "group:css"
-         name = "css">
-         <FileRef
-            location = "group:sharing.scss">
-         </FileRef>
-         <FileRef
-            location = "group:style.scss">
-         </FileRef>
-         <Group
-            location = "group:dual_skin"
-            name = "dual_skin">
-            <FileRef
-               location = "group:palette.scss">
-            </FileRef>
-            <FileRef
-               location = "group:dual_skin.scss">
-            </FileRef>
-            <FileRef
-               location = "group:code_highlighting.scss">
-            </FileRef>
-            <FileRef
-               location = "group:scheme_dark.scss">
-            </FileRef>
-            <FileRef
-               location = "group:scheme_light.scss">
-            </FileRef>
-         </Group>
-         <FileRef
-            location = "group:icons.scss">
-         </FileRef>
-         <FileRef
-            location = "group:footer.scss">
-         </FileRef>
-      </Group>
-      <Group
-         location = "group:js"
-         name = "js">
-         <FileRef
-            location = "group:sharing.js">
-         </FileRef>
-      </Group>
-      <Group
-         location = "group:img"
-         name = "img">
-         <Group
-            location = "group:favicons"
-            name = "favicons">
-            <FileRef
-               location = "group:favicon-16x16.png">
-            </FileRef>
-            <FileRef
-               location = "group:favicon.ico">
-            </FileRef>
-            <FileRef
-               location = "group:apple-icon.png">
-            </FileRef>
-            <FileRef
-               location = "group:apple-icon-144x144.png">
-            </FileRef>
-            <FileRef
-               location = "group:android-icon-192x192.png">
-            </FileRef>
-            <FileRef
-               location = "group:apple-icon-precomposed.png">
-            </FileRef>
-            <FileRef
-               location = "group:apple-icon-114x114.png">
-            </FileRef>
-            <FileRef
-               location = "group:ms-icon-310x310.png">
-            </FileRef>
-            <FileRef
-               location = "group:ms-icon-144x144.png">
-            </FileRef>
-            <FileRef
-               location = "group:apple-icon-57x57.png">
-            </FileRef>
-            <FileRef
-               location = "group:apple-icon-152x152.png">
-            </FileRef>
-            <FileRef
-               location = "group:favicon-48x48.png">
-            </FileRef>
-            <FileRef
-               location = "group:ms-icon-150x150.png">
-            </FileRef>
-            <FileRef
-               location = "group:android-icon-72x72.png">
-            </FileRef>
-            <FileRef
-               location = "group:android-icon-96x96.png">
-            </FileRef>
-            <FileRef
-               location = "group:android-icon-36x36.png">
-            </FileRef>
-            <FileRef
-               location = "group:apple-icon-180x180.png">
-            </FileRef>
-            <FileRef
-               location = "group:favicon-96x96.png">
-            </FileRef>
-            <FileRef
-               location = "group:manifest.json">
-            </FileRef>
-            <FileRef
-               location = "group:android-icon-48x48.png">
-            </FileRef>
-            <FileRef
-               location = "group:apple-icon-76x76.png">
-            </FileRef>
-            <FileRef
-               location = "group:apple-icon-60x60.png">
-            </FileRef>
-            <FileRef
-               location = "group:browserconfig.xml">
-            </FileRef>
-            <FileRef
-               location = "group:android-icon-144x144.png">
-            </FileRef>
-            <FileRef
-               location = "group:apple-icon-72x72.png">
-            </FileRef>
-            <FileRef
-               location = "group:apple-icon-120x120.png">
-            </FileRef>
-            <FileRef
-               location = "group:favicon-32x32.png">
-            </FileRef>
-            <FileRef
-               location = "group:ms-icon-70x70.png">
-            </FileRef>
-         </Group>
-      </Group>
-      <Group
-         location = "group:pages"
-         name = "pages">
-         <FileRef
-            location = "group:index.scss">
-         </FileRef>
-      </Group>
-   </Group>
+   <FileRef
+      location = "group:assets">
+   </FileRef>
    <FileRef
       location = "group:Gemfile">
    </FileRef>
@@ -342,92 +40,16 @@
    <FileRef
       location = "group:LICENSE">
    </FileRef>
-   <Group
-      location = "group:pages"
-      name = "pages">
-      <FileRef
-         location = "group:blog.html">
-      </FileRef>
-      <FileRef
-         location = "group:community.md">
-      </FileRef>
-      <FileRef
-         location = "group:mentorship.md">
-      </FileRef>
-      <FileRef
-         location = "group:about.md">
-      </FileRef>
-   </Group>
+   <FileRef
+      location = "group:pages">
+   </FileRef>
    <FileRef
       location = "group:README.md">
    </FileRef>
-   <Group
-      location = "group:scripts"
-      name = "scripts">
-      <FileRef
-         location = "group:run.sh">
-      </FileRef>
-      <FileRef
-         location = "group:build.sh">
-      </FileRef>
-   </Group>
-   <Group
-      location = "group:static"
-      name = "static">
-      <Group
-         location = "group:media"
-         name = "media">
-         <FileRef
-            location = "group:medium.svg">
-         </FileRef>
-         <FileRef
-            location = "group:github.svg">
-         </FileRef>
-         <FileRef
-            location = "group:photo_square_for_circle_small.jpg">
-         </FileRef>
-         <FileRef
-            location = "group:link.svg">
-         </FileRef>
-         <FileRef
-            location = "group:photo_circle.png">
-         </FileRef>
-         <FileRef
-            location = "group:buymeacoffee.svg">
-         </FileRef>
-         <FileRef
-            location = "group:telegram.svg">
-         </FileRef>
-         <FileRef
-            location = "group:meetup.svg">
-         </FileRef>
-         <FileRef
-            location = "group:jira.svg">
-         </FileRef>
-         <FileRef
-            location = "group:stackoverflow.svg">
-         </FileRef>
-         <FileRef
-            location = "group:photo_full.jpg">
-         </FileRef>
-         <FileRef
-            location = "group:reddit.svg">
-         </FileRef>
-         <FileRef
-            location = "group:photo_square_for_circle.jpg">
-         </FileRef>
-         <FileRef
-            location = "group:linkedin.svg">
-         </FileRef>
-         <FileRef
-            location = "group:twitter.svg">
-         </FileRef>
-         <FileRef
-            location = "group:swift.svg">
-         </FileRef>
-         <FileRef
-            location = "group:speakerdeck.svg">
-         </FileRef>
-      </Group>
-   </Group>
+   <FileRef
+      location = "group:scripts">
+   </FileRef>
+   <FileRef
+      location = "group:static">
+   </FileRef>
 </Workspace>

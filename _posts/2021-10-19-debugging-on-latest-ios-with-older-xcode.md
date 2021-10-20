@@ -16,18 +16,17 @@ toc_config:
 
 Every year we get a new major iOS version to test our apps on. 
 The lucky ones can immediately upgrade to the newest Xcode 13, building against the latest iOS 15 SDK. 
-Some other, larger projects can take a while to get upgraded. 
-Those projects have to be built with Xcode 12 in the meantime. 
-But even though those apps can’t be upgraded yet, they are still expected to work well on the newest iOS. And solving problems and bugs requires debugging.
+Some other, larger projects can take a while to get upgraded, and have to be built with Xcode 12.5 in the meantime. 
 
 Out of the box, older Xcode versions can’t work with newer iOS versions. 
 If you try to use an iOS 15 device on Xcode 12.5, 
 the device will be marked as unsupported and when running you'll get an error: _The run destination is not valid for running the scheme. Xcode doesn't support iOS 15_.
+
 ![Error: The run destination is not valid for running the scheme. Xcode doesn't support iOS 15.](/assets/posts/debugging-on-latest-ios-with-older-xcode/unsupported_device_error.png)
 
-However, with some tricks, I could not only run on iOS 15 but also debug with breakpoints and much more.
+However, with some tricks, I could not only run on iOS 15 with Xcode 12.5 but also debug with breakpoints and much more.
 
-If you're looking for the last years post, it's here: [Debugging on iOS 14 with Xcode 11](blog/debugging-on-ios14-with-xcode-11-post/).
+> If you're looking for the last years post, it's here: [Debugging on iOS 14 with Xcode 11](blog/debugging-on-ios14-with-xcode-11-post/)
 
 ## With Xcode 13 installed
 
@@ -35,7 +34,9 @@ If you can have both Xcode 13 and Xcode 12 installed on your machine, then you'r
 Due to changes in Xcode 13, Xcode 12 can now pick up device support files for newer iOS versions. 
 There is no need to copy device support files or anything like that anymore. 
 
-Chances are you will need Xcode 13 anyway - for other projects or just for playing around with - so this is a great option.
+Chances are, you will need Xcode 13 anyway - for other projects or just for playing around with - so this is a great option.
+
+Once you have Xcode 13, launch it, install command line tools when prompted, and run any project on your iOS 15 device at least once. Voila, you can now use your device in Xcode 12.5 for running, debuging, etc as normal 🙌
 
 To install Xcode 13 in parallel with Xcode 12, I can think of a few options:
 
@@ -43,8 +44,6 @@ To install Xcode 13 in parallel with Xcode 12, I can think of a few options:
 - download Xcode 13 from [Downloads](https://developer.apple.com/download/all/)
 - if you install your Xcode from App Store, upgrade it and download Xcode 12 again from [Downloads](https://developer.apple.com/download/all/)
 - if you install your Xcode from App Store, zip or move Xcode.app before upgrading the App Store version (just renaming won't help), and unzip/move back to `/Applications` again after App Store update is complete.
-
-Once you have Xcode 13, launch it, install command line tools when prompted, and run any project on your iOS 15 device at least once. Voila, you can now use your device in Xcode 12.5 for running, debuging, etc as normal 🙌
 
 ### How to prevent accidental rebuilding with Xcode 13
 
@@ -57,7 +56,7 @@ To avoid accidentally building with Xcode 13, you can add a conditional compilat
 #endif
 {% endsplash %}
 
-This piece of code can be placed anywhere in the source. The `#error` directive is skipped when the source code is compiled with the Swift compiler of any version lower than 5.5, which corresponds to Xcode 12.5 or older.
+This piece of code can be placed anywhere in the source. The `#error` directive is skipped when the source code is compiled with a Swift compiler of any version lower than 5.5, which corresponds to Xcode 12.5 or older.
 This way, it's not even technically possible to accidentally build on Xcode 13.  
 
 ## Without Xcode 13 installed
@@ -78,7 +77,7 @@ So debugging an app built with an older version of Xcode requires a few tricks.
 Being able to run against the newest iOS version is a problem that we had to previously fix every year. Thankfully, the same solution works every time.
 An Xcode application bundle contains support files for each iOS version it knows how to work with.
 To add support for iOS 15 to Xcode 12.5, we need to copy device support files for iOS 15 into Xcode 12. 
-Commonly, thy are copied from Xcode 13 (from a coworker's machine or downloaded from a popular shared repo).  
+Commonly, they are copied from Xcode 13 (from a coworker's machine or downloaded from a popular shared repo).  
 It's been already widely discussed, so here's an article I like on the topic: [How to Fix Xcode: “Could Not Locate Device Support Files” Error](https://faizmokhtar.com/posts/how-to-fix-xcode-could-not-locate-device-support-files-error-without-updating-your-xcode/).
 
 ### Launching the app

@@ -26,7 +26,7 @@ the device will be marked as unsupported and when running you'll get an error: _
 
 However, with some tricks, I could not only run on iOS 15 with Xcode 12.5 but also debug with breakpoints and much more.
 
-> If you're looking for the last years post, it's here: [Debugging on iOS 14 with Xcode 11](blog/debugging-on-ios14-with-xcode-11-post/)
+> If you're looking for the last years post, it's here: [Debugging on iOS 14 with Xcode 11](/blog/debugging-on-ios14-with-xcode-11-post/)
 
 ## With Xcode 13 installed
 

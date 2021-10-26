@@ -36,7 +36,12 @@ There is no need to copy device support files or anything like that anymore.
 
 Chances are, you will need Xcode 13 anyway - for other projects or just for playing around with - so this is a great option.
 
-Once you have Xcode 13, launch it, install command line tools when prompted, and run any project on your iOS 15 device at least once. Voila, you can now use your device in Xcode 12.5 for running, debuging, etc as normal 🙌
+Once you have Xcode 13:
+- launch it
+- install command line tools when prompted
+- run any project on your iOS 15 device at least once using Xcode 13. This will install device support files on your machine. You can find them in `~/Library/Developer/Xcode/iOS DeviceSupport`.
+
+Voila, you can now use your device in Xcode 12.5 for running, debuging, etc as normal 🙌
 
 To install Xcode 13 in parallel with Xcode 12, I can think of a few options:
 

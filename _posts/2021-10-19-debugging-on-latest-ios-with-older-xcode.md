@@ -39,7 +39,7 @@ Chances are, you will need Xcode 13 anyway - for other projects or just for play
 Once you have Xcode 13:
 - launch it
 - install command line tools when prompted
-- run any project on your iOS 15 device at least once using Xcode 13. This will install device support files on your machine. You can find them in `~/Library/Developer/Xcode/iOS DeviceSupport`.
+- **run any project against your iOS 15 device at least once with Xcode 13**. This will install device support files on your machine. If you're curious, you can see them in `~/Library/Developer/Xcode/iOS DeviceSupport`. Every time you update your device to a new iOS version, redo this step. 
 
 Voila, you can now use your device in Xcode 12.5 for running, debuging, etc as normal 🙌
 
@@ -50,8 +50,7 @@ To install Xcode 13 in parallel with Xcode 12, I can think of a few options:
 - if you install your Xcode from App Store, upgrade it and download Xcode 12 again from [Downloads](https://developer.apple.com/download/all/)
 - if you install your Xcode from App Store, zip or move Xcode.app before upgrading the App Store version (just renaming won't help), and unzip/move back to `/Applications` again after App Store update is complete.
 
-> Note: when installing Xcode 13 to support your iOS 15 device, make sure to install the Xcode version that ships support for that device. Usually they have matching minor versions: if you have a device with iOS 15.1, install Xcode 13.1 or later, etc. 
-> Beta versions of Xcode sometimes don't ship device support for future (beta) iOS versions, so this method is only expected to work for officially released Xcode versions.
+> Note: Using Xcode 13.0 or above should be enough to support any iOS 15.x version. For example, to make Xcode 12 work with a device with iOS 15.1, it's enough to perform the procedure above using Xcode 13.0. No need to upgrade to Xcode 13.1. However this method has not been tested with beta versions of Xcode or iOS.
 
 ### How to prevent accidental rebuilding with Xcode 13
 

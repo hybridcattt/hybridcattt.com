@@ -45,6 +45,9 @@ To install Xcode 13 in parallel with Xcode 12, I can think of a few options:
 - if you install your Xcode from App Store, upgrade it and download Xcode 12 again from [Downloads](https://developer.apple.com/download/all/)
 - if you install your Xcode from App Store, zip or move Xcode.app before upgrading the App Store version (just renaming won't help), and unzip/move back to `/Applications` again after App Store update is complete.
 
+> Note: when installing Xcode 13 to support your iOS 15 device, make sure to install the Xcode version that ships support for that device. Usually they have matching minor versions: if you have a device with iOS 15.1, install Xcode 13.1 or later, etc. 
+> Beta versions of Xcode sometimes don't ship device support for future (beta) iOS versions, so this method is only expected to work for officially released Xcode versions.
+
 ### How to prevent accidental rebuilding with Xcode 13
 
 Since you're building with Xcode 12, but also have Xcode 13 installed, you might accidentally rebuild on Xcode 13 and end up pushing a very different build of the app than originally intended. 

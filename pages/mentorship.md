@@ -6,7 +6,7 @@ permalink: /mentorship/
 ---
 
 I've been working in the tech industry for almost 15 years, growing from an apprentice
-to a seasoned developer who has held lead positions in multiple companies. I've trained and mentored dozens of developers.
+to a seasoned developer who has held lead positions in multiple companies. I've trained and mentored dozens of developers. Let's see how I can help you? 
 
 ### 👩‍👩‍👧‍👦 For startups 
 

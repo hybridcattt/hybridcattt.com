@@ -5,6 +5,8 @@ excerpt: This guide will help you create a meaningful online presence and get be
 
 tags: 
   - Career 
+toc_config:
+  only_anchors: true
 # image: /assets/posts/throwing/throwing_equatable_many_failures.png
 # twitter: 
 #   card: summary_large_image
@@ -28,7 +30,7 @@ I've also hired a lot during the last decade, and seen hundreds of resumes of de
 
 I hope this guide helps you as much as these bits helped me 🙌
 
-## 🪞 Step 1: Describe yourself - your TL;DR
+## 🪞 Step 1: Describe yourself - your TL;DR
 
 Many describe themselves by their job - 'xxx at YYY Co'. That is the easiest way to go, but it doesn't describe YOU.
 

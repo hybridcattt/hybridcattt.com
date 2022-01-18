@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How to build credibility online"
-excerpt: This guide will help you create a meaningful online presence and get better job opportunities, freelance clients, and a curious audience.
+excerpt: This guide will help you create a meaningful online presence and take your career to the next level.
 
 tags: 
   - Career 
@@ -26,7 +26,7 @@ By then my public GitHub had a few tiny contributions, I had one article on Medi
 
 It wasn't until I started using Twitter in January 2019, that I started getting noticed and even invited to speak at conferences. That was totally unexpected. Apparently, an online presence made a huge difference! Eventually it played a big role in me going independent and working with some awesome companies.
 
-In the last decade I've seen hundreds of resumes of devs from all backgrounds and experience levels. As someone screening incoming applications, you definitely pay more attention to profiles that stand out. This is because most resumes look very similar. I also regularly get questions from my mentees about getting the first job as a junior developer. 
+In the last decade I've seen hundreds of resumes of devs from various backgrounds and experience levels. As someone screening incoming applications, you definitely pay more attention to profiles that stand out. This is because most resumes look very similar. I also regularly get questions from my mentees about getting the first job as a junior developer. 
 
 I hope these steps help you take your career to the next level 🙌
 

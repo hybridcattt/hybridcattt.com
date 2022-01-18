@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "How to build credibility online"
-excerpt: This guide will help you create a meaningful online presence and take your career to the next level.
+excerpt: This guide will help you create a meaningful online presence and take your career to the next level 🚀
 
 tags: 
   - Career 
 toc_config:
   only_anchors: true
-# image: /assets/posts/throwing/throwing_equatable_many_failures.png
+image: /assets/posts/default.png
 # twitter: 
 #   card: summary_large_image
 ---

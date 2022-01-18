@@ -12,14 +12,14 @@ toc_config:
 #   card: summary_large_image
 ---
 
-You have credibility online when someone looks at your profile and thinks: 
+You have credibility online when someone looks at your profile and thinks: 
 this person knows their stuff!
 
 Even when you're an expert in your field, if people can't see that from your online profile, they won't reach out.
 
 This guide will help you create a meaningful online presence and get better job opportunities, freelance clients, and a curious audience.
 
-## A bit on why I wrote this
+## Why I wrote this guide
 
 I've been working in tech since 2008, but until 2019 I didn't even have a personal website. 
 By then my public GitHub had a few tiny contributions, I had one article on Medium and gave two talks at local meetups.

@@ -12,7 +12,7 @@ I've been in tech for almost 15 years. Working with Apple platforms since 2011, 
 I'm a Unix geek turned Apple nerd 🤓 Topics I care about include privacy, equal opportunity, and climate change 💚
 
 Besides [offering consulting services](/mentorship/) and building indie products (stay tuned!), 
-you can find me curating <a href="https://ioscodereview.com"> Code Review</a> newsletter, maintaining [Say Their Names project ✊🏽](https://saytheirnames.io) and co-organizing
+you can find me curating <a href="https://ioscodereview.com"> iOS Code Review newsletter</a>, maintaining [Say Their Names project ✊🏽](https://saytheirnames.io) and co-organizing
 [Copenhagen Cocoa](https://www.meetup.com/CopenhagenCocoa/) meetups.
 
 My latest 9-to-5 adventure was leading the iOS team at [Storytel](https://storytel.com) for 4 years, supporting

@@ -1,0 +1,94 @@
+
+#pricing{
+  width: 100%;
+  margin: 50px auto;
+  font-family: 'Open Sans', Helvetica;
+  display: flex;
+}
+
+.price_card{
+  width: 33%;
+  background: rgb(255, 255, 255);
+  display: inline-table;
+  top: 0;
+}
+.price_card:not(:last-child){
+  margin-right: 2%;
+}
+.header{
+  color: rgb(255, 255, 255);
+}
+.alpha .header{
+  background: rgb(245, 166, 35);
+}
+.bravo .header{
+  background: rgb(246, 77, 77);
+}
+.charlie .header{
+  background: rgb(48, 219, 181);
+}
+.name{
+  width: 100%;
+  font-size: 30px;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+  padding: 30px 0 0px;
+}
+.description{
+  width: 100%;
+  font-size: 14px;
+  font-weight: 300;
+  display: block;
+  text-align: center;
+  padding: 0 0 10px;
+}
+.price{
+  width: 100%;
+  font-size: 20px;
+  font-weight: 300;
+  display: block;
+  text-align: center;
+  padding: 0 0 30px;
+}
+
+.features{
+  list-style: none;
+  text-align: left;
+  color: rgb(138, 138, 138);
+  margin: 10px 0px;
+  padding: 0;
+  font-size: 13px;
+}
+.features li{
+  margin: 0 10px;
+  padding: 10px 15px;
+  /* width: 200px; */
+}
+.features li:not(:last-child){
+  border: 1px solid rgb(242, 242, 242);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+button{
+  color: rgb(255, 255, 255);
+  border: 0;
+  border-radius: 5px;
+  height: 40px;
+  width: 90%;
+  display: block;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin: 20px auto 35px;
+}
+.alpha button{
+  background: rgb(245, 166, 35);
+}
+.bravo button{
+  background: rgb(246, 77, 77);
+}
+.charlie button{
+  background: rgb(48, 219, 181);
+}

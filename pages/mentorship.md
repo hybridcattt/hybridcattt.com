@@ -34,7 +34,7 @@ What's included:
 
 If you have any questions, reach out via _hello@hybridcattt.com_.
 
-To book the package right away, click here: [Buy iOS career coaching package](https://buy.stripe.com/7sIaG00sl9cS5DG144).
+To book the package, click here: [Book iOS career coaching package](mailto:hello@hybridcattt.com?subject=I%20want%20to%20book%20iOS%20career%20coaching%20package).
 
 
 ### 👩‍💻 Free mentorship program
@@ -43,12 +43,12 @@ Two years ago I decided to actively give back to the community by mentoring and 
 iOS developers.
 
 I have 2-3 mentees at any given time. It's a number where I can offer reasonable level of support. 
-Private mentorship is completely free, no strings attached.
+Private mentorship is completely free, no strings attached. I'm more likely to take you on if you are from a group that's underrepresented in tech.
+Diversity means not only gender or race, but also education and even country of origin.
 
 I'm not taking new mentees at the moment, but don't hesitate to reach out
-and I will do my best to help. 
-I'm more likely to take you on if you are from a group that's underrepresented in tech.
-Diversity means not only gender or race, but also education and even country of origin.
+and I will try to refer you to another mentor. 
+
 
 <!-- <style>.bmc-button img{height: 34px !important;width: 35px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{padding: 7px 15px 7px 10px !important;line-height: 35px !important;height:51px !important;text-decoration: none !important;display:inline-flex !important;color:#000000 !important;background-color:#FFFFFF !important;border-radius: 5px !important;border: 1px solid transparent !important;padding: 7px 15px 7px 10px !important;font-size: 22px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#000000 !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" href="https://www.buymeacoffee.com/hybridcattt"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:5px;font-size:28px !important;">Buy me a coffee</span></a> -->
 

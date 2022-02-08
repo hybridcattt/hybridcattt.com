@@ -18,10 +18,14 @@
   
   #pricing{
     display: inline-table;
+    margin: 20px auto;
   }
   
   .price_card {
     width: 100%;
+  }
+
+  .price_card:not(:first-child){
     margin-top: 1rem;
   }
 }

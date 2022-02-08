@@ -12,6 +12,20 @@
   display: inline-table;
   top: 0;
 }
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  
+  #pricing{
+    display: inline-table;
+  }
+  
+  .price_card {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+
 .price_card:not(:last-child){
   margin-right: 2%;
 }

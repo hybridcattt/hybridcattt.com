@@ -75,7 +75,7 @@ defaults:
 
 custom_data:
   twitter_link: https://twitter.com/hybridcattt
-  contact_email_text: marina at hybridcattt.com
+  contact_email_text: <a href='mailto:hello@hybridcattt.com'>hello@hybridcattt.com</a>
 
 goatcounter_id: hybridcattt
 

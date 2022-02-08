@@ -149,4 +149,4 @@ Soon enough you end up with a complex online presence that is authentic.
 
 The steps mentioned in this article worked well for me and they will work for you 💪 I'm very curious to hear how this helps you. Let me know!
 
-If you'd like to take this even further, I offer personalized coaching to help take your career to the next level. [Learn more about Career Coaching Packages](/mentorship/#-career-coaching-package).
+> If you'd like to take this even further, I offer personalized coaching to help take your career to the next level. [Learn more about Career Coaching Packages](/mentorship/#-career-coaching-package).

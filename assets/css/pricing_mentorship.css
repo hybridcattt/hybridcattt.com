@@ -14,17 +14,14 @@
 }
 
 /* On screens that are 600px or less, set the background color to olive */
-@media screen and (max-width: 600px) {
-  
+@media screen and (max-width: 650px) {
   #pricing{
     display: inline-table;
     margin: 20px auto;
   }
-  
   .price_card {
     width: 100%;
   }
-
   .price_card:not(:first-child){
     margin-top: 1rem;
   }
@@ -33,27 +30,34 @@
 .price_card:not(:last-child){
   margin-right: 2%;
 }
-.header{
+.pack_header{
   color: rgb(255, 255, 255);
 }
-.alpha .header{
+.alpha .pack_header{
   background: rgb(245, 166, 35);
 }
-.bravo .header{
+.bravo .pack_header{
   background: rgb(246, 77, 77);
 }
-.charlie .header{
+.charlie .pack_header{
   background: rgb(48, 219, 181);
 }
-.name{
+.pack_name{
   width: 100%;
-  font-size: 30px;
+  font-size: 1.4rem;
   font-weight: 500;
   display: block;
   text-align: center;
   padding: 30px 0 0px;
 }
-.description{
+
+@media screen and (max-width: 800px) and (min-width: 650px) {
+ .pack_name{
+  font-size: 1rem;
+}
+}
+
+.pack_description{
   width: 100%;
   font-size: 14px;
   font-weight: 300;
@@ -61,7 +65,7 @@
   text-align: center;
   padding: 0 0 10px;
 }
-.price{
+.pack_price{
   width: 100%;
   font-size: 20px;
   font-weight: 300;
@@ -70,7 +74,7 @@
   padding: 0 0 30px;
 }
 
-.features{
+.pack_features{
   list-style: none;
   text-align: left;
   color: rgb(138, 138, 138);
@@ -78,18 +82,17 @@
   padding: 0;
   font-size: 13px;
 }
-.features li{
-  margin: 0 10px;
-  padding: 10px 15px;
-  /* width: 200px; */
+.pack_features li{
+  margin: 0 0px;
+  padding: 10px 20px;
 }
-.features li:not(:last-child){
+.pack_features li:not(:last-child){
   border: 1px solid rgb(242, 242, 242);
   border-top: 0;
   border-left: 0;
   border-right: 0;
 }
-button{
+.pack_button{
   color: rgb(255, 255, 255);
   border: 0;
   border-radius: 5px;
@@ -99,7 +102,8 @@ button{
   font-weight: 700;
   font-size: 15px;
   text-transform: uppercase;
-  margin: 20px auto 35px;
+  margin: 20px auto;
+  height: 50px;
 }
 .alpha button{
   background: rgb(245, 166, 35);
@@ -109,4 +113,11 @@ button{
 }
 .charlie button{
   background: rgb(48, 219, 181);
+}
+
+@media screen and (max-width: 800px) and (min-width: 650px) {
+ .pack_button{
+    font-weight: 500;
+  font-size: 14px;
+}
 }

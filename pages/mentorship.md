@@ -4,6 +4,9 @@ title: Mentorship & Coaching
 tab_title: Mentorship
 permalink: /mentorship/
 custom_css: pricing_mentorship
+
+toc_config:
+  only_anchors: true
 ---
 
 I've been working in the tech industry for almost 15 years, growing from an apprentice
@@ -47,50 +50,50 @@ If you have any questions about the packages, [send me a quick email](mailto:hel
 
 <div id="pricing">
 <div class="price_card alpha">
-    <div class="header">
-      <span class="name">Code Only Pack</span>
-      <span class="description">written feedback</span>
-      <span class="price">$59</span>
+    <div class="pack_header">
+      <span class="pack_name">Code Only Pack</span>
+      <span class="pack_description">written feedback</span>
+      <span class="pack_price">$59</span>
     </div>
-    <ul class="features">
+    <ul class="pack_features">
       <li>✅ code review of any 1 project</li>
       <li>❌ CV & LinkedIn feedback</li>
       <li>❌ online presence feedback</li>
       <li>❌ live sessions</li>
     </ul>
     <!-- 'mailto:hello@hybridcattt.com?subject=Hello,%20I%20want%20to%20book%20the%20Code%20Only%20Package' -->
-    <button data-goatcounter-click="Book Code Only Pack" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSe4rSvymxZvizaDIKbu8icQJ4nnKnQJcAAVy6EmRD80_PvDxQ/viewform?usp=sf_link','_blank')">Book Code Only Pack</button>
+    <button class="pack_button" data-goatcounter-click="Book Code Only Pack" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSe4rSvymxZvizaDIKbu8icQJ4nnKnQJcAAVy6EmRD80_PvDxQ/viewform?usp=sf_link','_blank')">Book Code Only Pack</button>
   </div>
   <div class="price_card bravo">
-    <div class="header">
-      <span class="name">Async Pack</span>
-      <span class="description">written feedback</span>
-      <span class="price"><del>$119</del> $99</span>
+    <div class="pack_header">
+      <span class="pack_name">Async Pack</span>
+      <span class="pack_description">written feedback</span>
+      <span class="pack_price"><del>$119</del> $99</span>
     </div>
-    <ul class="features">
+    <ul class="pack_features">
       <li>✅ code review of 2 test assignments</li>
       <li>✅ CV and LinkedIn feedback</li>
       <li>✅ online presence feedback</li>
       <li>❌ live sessions</li>
     </ul>
     <!-- 'mailto:hello@hybridcattt.com?subject=Hello,%20I%20want%20to%20book%20the%20Async%20Package' -->
-      <button data-goatcounter-click="Book Async Pack" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSe4rSvymxZvizaDIKbu8icQJ4nnKnQJcAAVy6EmRD80_PvDxQ/viewform?usp=sf_link','_blank')">Book Async Pack</button>
+      <button class="pack_button" data-goatcounter-click="Book Async Pack" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSe4rSvymxZvizaDIKbu8icQJ4nnKnQJcAAVy6EmRD80_PvDxQ/viewform?usp=sf_link','_blank')">Book Async Pack</button>
   </div>
   
   <div class="price_card bravo">
-    <div class="header">
-      <span class="name">Async + Live Pack</span>
-      <span class="description">written feedback + live</span>
-      <span class="price">$199</span>
+    <div class="pack_header">
+      <span class="pack_name">Async + Live Pack</span>
+      <span class="pack_description">written feedback + live</span>
+      <span class="pack_price">$199</span>
     </div>
-    <ul class="features">
+    <ul class="pack_features">
       <li>✅ code review of 2 test assignments</li>
       <li>✅ CV and LinkedIn feedback</li>
       <li>✅ online presence feedback</li>
       <li>✅ 2x30 min live sessions</li>
     </ul>
     <!-- 'mailto:hello@hybridcattt.com?subject=Hello,%20I%20want%20to%20book%20the%20Async+Live%20Package' -->
-    <button data-goatcounter-click="Book Async + Live Pack" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSe4rSvymxZvizaDIKbu8icQJ4nnKnQJcAAVy6EmRD80_PvDxQ/viewform?usp=sf_link','_blank')" >Book Async + Live Pack</button>
+    <button class="pack_button" data-goatcounter-click="Book Async + Live Pack" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSe4rSvymxZvizaDIKbu8icQJ4nnKnQJcAAVy6EmRD80_PvDxQ/viewform?usp=sf_link','_blank')" >Book Async + Live Pack</button>
   </div>
 </div>
 

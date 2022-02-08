@@ -1,0 +1,123 @@
+
+#pricing{
+  width: 100%;
+  margin: 50px auto;
+  font-family: 'Open Sans', Helvetica;
+  display: flex;
+}
+
+.price_card{
+  width: 33%;
+  background: rgb(255, 255, 255);
+  display: inline-table;
+  top: 0;
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 650px) {
+  #pricing{
+    display: inline-table;
+    margin: 20px auto;
+  }
+  .price_card {
+    width: 100%;
+  }
+  .price_card:not(:first-child){
+    margin-top: 1rem;
+  }
+}
+
+.price_card:not(:last-child){
+  margin-right: 2%;
+}
+.pack_header{
+  color: rgb(255, 255, 255);
+}
+.alpha .pack_header{
+  background: rgb(245, 166, 35);
+}
+.bravo .pack_header{
+  background: rgb(246, 77, 77);
+}
+.charlie .pack_header{
+  background: rgb(48, 219, 181);
+}
+.pack_name{
+  width: 100%;
+  font-size: 1.4rem;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+  padding: 30px 0 0px;
+}
+
+@media screen and (max-width: 800px) and (min-width: 650px) {
+ .pack_name{
+  font-size: 1rem;
+}
+}
+
+.pack_description{
+  width: 100%;
+  font-size: 14px;
+  font-weight: 300;
+  display: block;
+  text-align: center;
+  padding: 0 0 10px;
+}
+.pack_price{
+  width: 100%;
+  font-size: 20px;
+  font-weight: 300;
+  display: block;
+  text-align: center;
+  padding: 0 0 30px;
+}
+
+.pack_features{
+  list-style: none;
+  text-align: left;
+  color: rgb(138, 138, 138);
+  margin: 10px 0px;
+  padding: 0;
+  font-size: 13px;
+}
+.pack_features li{
+  margin: 0 0px;
+  padding: 10px 20px;
+}
+.pack_features li:not(:last-child){
+  border: 1px solid rgb(242, 242, 242);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+.pack_button{
+  color: rgb(255, 255, 255);
+  border: 0;
+  border-radius: 5px;
+  height: 40px;
+  width: 90%;
+  display: block;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin: 20px auto;
+  height: 50px;
+}
+.alpha button{
+  background: rgb(245, 166, 35);
+}
+.bravo button{
+  background: rgb(246, 77, 77);
+}
+.charlie button{
+  background: rgb(48, 219, 181);
+}
+
+@media screen and (max-width: 800px) and (min-width: 650px) {
+ .pack_button{
+    font-weight: 500;
+  font-size: 14px;
+}
+}

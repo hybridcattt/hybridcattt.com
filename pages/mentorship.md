@@ -59,7 +59,7 @@ If you have any questions about the packages, [send me a quick email](mailto:hel
       <li>❌ live sessions</li>
     </ul>
     <!-- 'mailto:hello@hybridcattt.com?subject=Hello,%20I%20want%20to%20book%20the%20Code%20Only%20Package' -->
-    <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSe4rSvymxZvizaDIKbu8icQJ4nnKnQJcAAVy6EmRD80_PvDxQ/viewform?usp=sf_link','_blank')">Book Code Only Pack</button>
+    <button data-goatcounter-click="Book Code Only Pack" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSe4rSvymxZvizaDIKbu8icQJ4nnKnQJcAAVy6EmRD80_PvDxQ/viewform?usp=sf_link','_blank')">Book Code Only Pack</button>
   </div>
   <div class="price_card bravo">
     <div class="header">
@@ -74,7 +74,7 @@ If you have any questions about the packages, [send me a quick email](mailto:hel
       <li>❌ live sessions</li>
     </ul>
     <!-- 'mailto:hello@hybridcattt.com?subject=Hello,%20I%20want%20to%20book%20the%20Async%20Package' -->
-      <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSe4rSvymxZvizaDIKbu8icQJ4nnKnQJcAAVy6EmRD80_PvDxQ/viewform?usp=sf_link','_blank')">Book Async Pack</button>
+      <button data-goatcounter-click="Book Async Pack" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSe4rSvymxZvizaDIKbu8icQJ4nnKnQJcAAVy6EmRD80_PvDxQ/viewform?usp=sf_link','_blank')">Book Async Pack</button>
   </div>
   
   <div class="price_card bravo">
@@ -90,7 +90,7 @@ If you have any questions about the packages, [send me a quick email](mailto:hel
       <li>✅ 2x30 min live sessions</li>
     </ul>
     <!-- 'mailto:hello@hybridcattt.com?subject=Hello,%20I%20want%20to%20book%20the%20Async+Live%20Package' -->
-    <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSe4rSvymxZvizaDIKbu8icQJ4nnKnQJcAAVy6EmRD80_PvDxQ/viewform?usp=sf_link','_blank')" >Book Async + Live Pack</button>
+    <button data-goatcounter-click="Book Async + Live Pack" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSe4rSvymxZvizaDIKbu8icQJ4nnKnQJcAAVy6EmRD80_PvDxQ/viewform?usp=sf_link','_blank')" >Book Async + Live Pack</button>
   </div>
 </div>
 

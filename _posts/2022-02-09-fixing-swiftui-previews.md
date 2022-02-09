@@ -5,10 +5,8 @@ excerpt: Understand why SwiftUI previews keep getting paused and how to improve 
 
 tags: 
   - SwiftUI
-  - Swift
   - Xcode 
-# toc_config:
-  # only_anchors: true
+
 image: /assets/posts/fixing-swiftui-previews/header.png
 twitter: 
   card: summary_large_image

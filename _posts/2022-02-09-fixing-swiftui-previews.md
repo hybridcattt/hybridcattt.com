@@ -101,7 +101,7 @@ var color = Color.red // change to Color.green, previews are paused
 
 This applies to any variables in the current file - global or instance variables. 
 
-To fix it, change the variable to be computed. That way, it can be dynamically repaced when edited:
+To fix it, change the variable to be computed. That way, it can be dynamically replaced when edited:
 
 {% splash %}
 var color: Color { Color.red }
@@ -112,7 +112,7 @@ I haven't run into it myself, but if you get unexplained pauses - it's a directi
 
 ### Automatically resume previews 
 
-Imagine this - you're making changes to the code, and previews get paused. You try to resume previews - they fail. Possibly due to build errors, but erros are not always properly surfaced. 
+Imagine this - you're making changes to the code, and previews get paused. You try to resume previews - they fail. Possibly due to build errors, but errors are not always properly surfaced. 
 Maybe you forgot to change test code - errors there also cause previews to fail (because previews are built for testing). 
 
 To figure the best way to solve this, I took a step back. What do we do to verify our code changes normally? We build or run. Then we either get more compilation errors and continue fixing them, or all succeeds and we're happy. 

@@ -76,7 +76,9 @@ Any other changes are not supported by dynamic replacement. For example:
 
 And since these changes don't fall under dynamic replacement, the previews have to get paused until the next proper rebuild.
 
-For me, understanding why things are happening already helps with the frustration. But let's fix it!
+> If you want to learn more about the under-the-hood workings of SwiftUI previews, I like [Behind SwiftUI Previews](https://www.guardsquare.com/blog/behind-swiftui-previews) by Damian Malarczyk.
+
+For me, understanding why things are happening already helps with the frustration. But let's see how to fix it 🙌
 
 ## Fixing it
 

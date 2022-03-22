@@ -44,19 +44,14 @@ What's included:
 - feedback on your Github profile and online presence
 - 1,5h live session where you can ask any questions including tips on interview process or finding a job abroad.
 
-To book or find out more about the different options, click here: [Private Career Coaching](/private-coaching)
+To book or find out more about the different options, check out my [career coaching page](/private-coaching).
 
 ## 👩‍💻 Free mentorship program
 
-A few years ago I decided to actively give back to the community by mentoring iOS developers.
-
-I have 2-3 mentees at any given time. It's a number where I can offer reasonable level of support. 
+I have 2-3 mentees in the program at any given time - it's a number where I can offer reasonable level of support. 
 Private mentorship is completely free, no strings attached. 
-I'm more likely to take you on if you are from a group that's underrepresented in tech.
-Diversity means not only gender or race, but also education and even country of origin.
 
-I'm not taking new mentees at the moment, but don't hesitate to reach out
-and I will try to refer you to another mentor. 
+I don't have free slots for new mentees at the moment, though you can still book the career coaching packages above.
 
 
 <!-- <style>.bmc-button img{height: 34px !important;width: 35px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{padding: 7px 15px 7px 10px !important;line-height: 35px !important;height:51px !important;text-decoration: none !important;display:inline-flex !important;color:#000000 !important;background-color:#FFFFFF !important;border-radius: 5px !important;border: 1px solid transparent !important;padding: 7px 15px 7px 10px !important;font-size: 22px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#000000 !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" href="https://www.buymeacoffee.com/hybridcattt"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:5px;font-size:28px !important;">Buy me a coffee</span></a> -->

@@ -44,7 +44,7 @@ What's included:
 - feedback on your Github profile and online presence
 - 1,5h live session where you can ask any questions including tips on interview process or finding a job abroad.
 
-To book or find out more about the different options, check out my [career coaching page](/private-coaching).
+To book or find out more about the different options, check out my [career coaching page](/private-career-coaching).
 
 ## 👩‍💻 Free mentorship program
 

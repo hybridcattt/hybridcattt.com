@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Private Career Coaching
-permalink: /private-coaching/
+permalink: /private-career-coaching/
 custom_css: pricing_mentorship
 
 toc_config:

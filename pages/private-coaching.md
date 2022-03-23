@@ -12,7 +12,7 @@ If you're looking to take your career to the next level, I'm here to help.
 
 I will review your profile and code from the point of view of a hiring company, and give generous and honest feedback.
 You'll get **_actionable advice_** on what to improve in your code and CV to make it more attractive to employers.
-You'll also egt tips on showing your best self in interviews and on searching for jobs abroad.
+You'll also get tips on showing your best self in interviews and on searching for jobs abroad.
 
 What's included in the career coaching packages:
 - technical feedback on test assignments that you did during interview process with other companies (at least 10

@@ -46,16 +46,16 @@ This feature did not go through the formal evolution process - it was [pitched](
 
 {% splash %}
 struct MyStruct {
-  dynamic func x() {
-    print("x")
-  }
+    dynamic func x() {
+        print("x")
+    }
 }
 
 extension MyStruct {
-  @_dynamicReplacement(for: x())
-  func y() {
-    print("y - replaced dynamically")
-  }
+    @_dynamicReplacement(for: x())
+    func y() {
+        print("y - replaced dynamically")
+    }
 }
 {% endsplash %}
 

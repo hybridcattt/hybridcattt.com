@@ -113,7 +113,7 @@ At any point of testing the app, we can attach the debugger
 by going to menu option `Debug > Attach to Process` and picking the app's process.
 The app name should appear under "Likely targets". It might take a couple of seconds to connect. 
 
-![App name shows under Likely Targets debug menu](/assets/posts/debugging-on-latest-ios-with-older-xcode/debugger_likely_targets.png)
+![App name shows under Likely Targets debug menu](/assets/posts/debugging-on-latest-ios-with-older-xcode/debugger_likely_targets.jpg)
 
 It will say `already being debugged` next to the process name once it's been attached successfully. 
 
@@ -142,7 +142,7 @@ Variables are private by default to prevent leaking sensitive data via logs.
 
 Device logs can be examined with the possibility to filter by many parameters such as app name, log level, and many more:
 
-![Console app with various log filters](/assets/posts/debugging-on-latest-ios-with-older-xcode/console_filters2.png)
+![Console app with various log filters](/assets/posts/debugging-on-latest-ios-with-older-xcode/console_filters2.jpg)
 
 I logged my app's messages with log level `.error` because they have a distinct yellow dot next to each message, making it easier to filter out the majority of system messages.
 

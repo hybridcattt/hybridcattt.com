@@ -14,14 +14,15 @@ I will review your profile and code from the point of view of a hiring company, 
 You'll get **_actionable advice_** on what to improve in your code and CV to make it more attractive to employers.
 You'll also get tips on showing your best self in interviews and on searching for jobs abroad.
 
-What's included in the career coaching packages:
+What's included in the coaching packages:
 - technical feedback on test assignments that you did during interview process with other companies (at least 10
 feedback points per project)
 - feedback and improvement suggestions on your resume (CV) and LinkedIn
 - feedback on your online presence
-- 2 x 30 min live sessions where you can ask any questions: about your code, career next steps, about interview
+- live sessions where you can ask any questions: about your code, career next steps, about interview
 processes, finding a job abroad
-- choose if you want two sessions by 30 min or one session for 60 min
+- choose how you want to arrange the live sessions
+- option to arrange a mock interview or additional live sessions
 
 There's also a Code Only package, in case you don't need feedback on your CV and profiles.
 
@@ -47,7 +48,7 @@ There's also a Code Only package, in case you don't need feedback on your CV and
     <div class="pack_header">
       <span class="pack_name">Async Pack</span>
       <span class="pack_description">written feedback</span>
-      <span class="pack_price"><del>$119</del> $99</span>
+      <span class="pack_price">$99</span>
     </div>
     <ul class="pack_features">
       <li>✅ code review of 2 test assignments</li>
@@ -71,7 +72,7 @@ There's also a Code Only package, in case you don't need feedback on your CV and
       <li>✅ code review of 2 test assignments</li>
       <li>✅ CV and LinkedIn feedback</li>
       <li>✅ online presence feedback</li>
-      <li>✅ 2x30 min live sessions</li>
+      <li>✅ live sessions (60 min)</li>
     </ul>
     <!-- 'mailto:hello@hybridcattt.com?subject=Hello,%20I%20want%20to%20book%20the%20Async+Live%20Package' -->
     <button class="pack_button" data-goatcounter-click="Book Async + Live Pack"
@@ -79,6 +80,7 @@ There's also a Code Only package, in case you don't need feedback on your CV and
       Async + Live Pack</button>
   </div>
 </div>
+
 
 <blockquote>
 You'll receive written feedback within 7 days after I receive all of your details and pre-payment.

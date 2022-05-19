@@ -62,7 +62,7 @@ email:&#32;{%- include email_text.html -%}.
 
 <hr>
 
-I'm always open to chat about building products and helping engineers & teams grow. If you'd like to talk, reach out on
+I'm always open to chat about building products and helping engineers & teams grow. Drop a line on
 [Twitter]({{ site.custom_data.twitter_link }}) or via email:&#32;
 {%- include email_text.html -%}.
 

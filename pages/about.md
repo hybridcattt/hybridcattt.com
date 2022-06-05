@@ -12,7 +12,7 @@ I've been in tech for almost 15 years. Working with Apple platforms since 2011, 
 
 I'm a Unix geek turned Apple nerd 🤓 Topics I care about include privacy, equal opportunity, and climate change 💚
 
-Besides [offering consulting services](/mentorship/) and building indie products (stay tuned!), 
+Besides [offering consulting services](/mentorship/), 
 you can find me curating <a href="https://ioscodereview.com"> iOS Code Review newsletter</a>, building [Away for Twitter app](https://awayfortwitter.com), and co-organizing
 [Copenhagen Cocoa](https://www.meetup.com/CopenhagenCocoa/) meetups.
 

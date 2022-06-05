@@ -13,18 +13,26 @@ I've been in tech for almost 15 years. Working with Apple platforms since 2011, 
 I'm a Unix geek turned Apple nerd 🤓 Topics I care about include privacy, equal opportunity, and climate change 💚
 
 Besides [offering consulting services](/mentorship/) and building indie products (stay tuned!), 
-you can find me curating <a href="https://ioscodereview.com"> iOS Code Review newsletter</a>, maintaining [Say Their Names project ✊🏽](https://saytheirnames.io) and co-organizing
+you can find me curating <a href="https://ioscodereview.com"> iOS Code Review newsletter</a>, building [Away for Twitter app](https://awayfortwitter.com), and co-organizing
 [Copenhagen Cocoa](https://www.meetup.com/CopenhagenCocoa/) meetups.
 
 My latest 9-to-5 adventure was leading the iOS team at [Storytel](https://storytel.com) for 4 years, supporting
 company's growth from a small startup to a 500-person company.
 I've also built B2B products at [Citrix/GetGo](https://get.gotoassist.com), led consumer app development at [PrimeApp](https://vk.com/primeapp) and built apps for over a dozen of companies at Russia's largest agency [iD East](https://id-east.ru). 
+I've also maintained and ran the iOS efforts of open-source [Say Their Names project ✊🏽](https://saytheirnames.io).
 My CV and references can be found on 
 [LinkedIn](https://www.linkedin.com/in/hybridcattt).
+
+I've recently been interviewed on [AppForce1 podcast](https://www.buzzsprout.com/1414396/10721946) - check it out if you're curious about my journey.
 
 <hr>
 
 I occasionally speak at meetups/conferences and host workshops. Here's the list of my past and future speaking engagements:
+
+🎙 Demystifying SwiftUI previews 
+@ [CopenhagenCocoa, March 2022](https://www.meetup.com/copenhagencocoa/events/283603891/) \|
+not recorded, 
+[Slides](https://speakerdeck.com/hybridcattt/demystifying-swiftui-previews)
 
 🎙 Take monitoring of your mobile apps to the next level
 @ [Bitrise Webinars, May 2021](https://www.bitrise.io/webinar/monitoring-mobile-apps) \|

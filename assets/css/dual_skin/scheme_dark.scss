@@ -31,7 +31,7 @@
   $menu-background-color: $secondary-background !default;
   $menu-shadow-color:     darken($menu-background-color, 10%) !default;
   $subtitle-color:        $powder-blue;
-  $subtle-text-color:     rgba($text-color, 0.3)
+  $subtle-text-color:     rgba($text-color, 0.3);
   
   :root {
     --brand-color:           #{$brand-color};

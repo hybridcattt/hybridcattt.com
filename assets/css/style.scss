@@ -1,12 +1,10 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
-
 @import
 //   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
-  "assets/css/dual_skin/dual_skin",
+  "dual_skin/dual_skin",
   "minima/initialize",
-  "assets/css/icons",
-  "assets/css/footer",
-  "assets/css/sharing",
-  "assets/pages/index";
+  "icons",
+  "footer",
+  "sharing",
+  "../pages/index";

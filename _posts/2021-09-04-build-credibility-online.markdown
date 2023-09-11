@@ -68,7 +68,7 @@ Have the image file ready for upload. It'll surprise you how often you'll end up
 
 Use the same, unique username on platforms where you want people to find you.
 
-## ✍️ Step 4: Write articles
+## 🖊️ Step 4: Write articles
 
 Articles are a good way to showcase that you're knowledgeable in an area. 
 

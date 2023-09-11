@@ -29,6 +29,12 @@ I've recently been interviewed on [AppForce1 podcast](https://www.buzzsprout.com
 
 I occasionally speak at meetups/conferences and host workshops. Here's the list of my past and future speaking engagements:
 
+🎙 Bug-Free by Design: Crafting Swift Code That Never Stings @ [NSSpain, Sept 2023](https://2023.nsspain.com) - see you there!
+
+🎙 Protecting your app from malicious code in a third party library
+@ [Mobile DevOps Summit, Nov 2022](https://yo.bitrise.io/Summit-2022-on-demand-registration.html) \|
+[Video](https://www.youtube.com/watch?v=8jnizu04w-s)
+
 🎙 Demystifying SwiftUI previews 
 @ [CopenhagenCocoa, March 2022](https://www.meetup.com/copenhagencocoa/events/283603891/) \|
 not recorded, 

@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Marina Gornostaeva
+title: Marina Vatmakhter (Gornostaeva)
 tagline: "👋"
 description: >- # this means to ignore newlines until "baseurl:"
-  Marina Gornostaeva / iOS engineer / mobile development expert / mentor / based in Copenhagen. 
+  Marina Vatmakhter (Gornostaeva) / iOS engineer / mobile development expert / mentor / based in Copenhagen. 
   Professionally building apps and leading teams since 2011.
   Consulting and mentorship services within software development from an industry expert. 
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -70,7 +70,7 @@ defaults:
       path: ""
     values:
       image: /static/media/photo_square_for_circle_small.jpg
-      author: Marina Gornostaeva
+      author: Marina Vatmakhter (Gornostaeva)
       toc: true
 
 custom_data:

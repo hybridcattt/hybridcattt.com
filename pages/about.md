@@ -29,7 +29,7 @@ I've recently been interviewed on [AppForce1 podcast](https://www.buzzsprout.com
 
 <hr>
 
-I occasionally speak at meetups/conferences and host workshops. Here's the list of my past speaking engagements:
+I occasionally speak at meetups/conferences and host workshops. Below is the list of my past speaking engagements. [Youtube playlist of all my talks](https://www.youtube.com/playlist?list=PLg15rYeMC3RncAauNTOULfZp719AveMrU)
 
 🎙 Bug-Free by Design: Crafting Swift Code That Never Stings @ [NSSpain, 2023](https://2023.nsspain.com) \| [Video](https://vimeo.com/showcase/10672108/video/865647957)
 

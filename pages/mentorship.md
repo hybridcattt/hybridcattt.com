@@ -9,8 +9,7 @@ toc_config:
   only_anchors: true
 ---
 
-I've been working in the tech industry for almost 15 years, growing from an apprentice
-to a seasoned developer who has held lead positions in multiple companies. I've trained and mentored dozens of developers. Let's see how I can help you? 
+With over 15 years in the tech industry as a developer and a leader, I've trained and mentored dozens of developers. Let's see how I can help you?
 
 ## 👩‍👩‍👧‍👦 For startups 
 
@@ -28,12 +27,12 @@ What I can do for you:
 
 You'll sleep tight knowing that your tech is in safe hands.
 
-[Send me a quick email](mailto:hello@hybridcattt.com?subject=Marina,%20let's%20collaborate!) if you'd like me to help you take your company to the next level 🚀 
+[Send me a quick email](mailto:hello@hybridcattt.com?subject=Marina,%20let's%20collaborate!) if you'd like me to help you take your team to the next level.
 
 ## 🌏 Career coaching package
 
 You can book a career coaching package with me. 
-I will review your profile and code from the point of view of a hiring company. 
+I will review your profile and code from the POV of a hiring company. 
 
 You'll get actionable advice on what to improve in your profile and code to make it more attractive to employers.
 I will also give you tips on going through interviews and on searching for jobs abroad. 

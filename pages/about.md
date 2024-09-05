@@ -31,7 +31,11 @@ I've recently been interviewed on [AppForce1 podcast](https://www.buzzsprout.com
 
 I occasionally speak at meetups/conferences and host workshops. Below is the list of my past speaking engagements. [Youtube playlist of all my talks](https://www.youtube.com/playlist?list=PLg15rYeMC3RncAauNTOULfZp719AveMrU)
 
+👯‍♂️ How to become a Senior iOS Developer in 2024 @ The Mayank Show \| [Video](https://www.youtube.com/watch?v=3yBUoJD2ZxM)
+
 🎙 Bug-Free by Design: Crafting Swift Code That Never Stings @ [NSSpain, 2023](https://2023.nsspain.com) \| [Video](https://vimeo.com/showcase/10672108/video/865647957)
+
+👯‍♂️ 5 Expert Tips to Improve Your Swift Code @ Vincent Pradeilles, 2022 \| [Video](https://www.youtube.com/watch?v=Frpnb_aqkX4)
 
 🎙 Protecting your app from malicious code in a third party library
 @ [Mobile DevOps Summit, 2022](https://yo.bitrise.io/Summit-2022-on-demand-registration.html) \|

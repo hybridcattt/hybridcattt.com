@@ -12,11 +12,13 @@ I've been in tech for almost 15 years. Working with Apple platforms since 2011, 
 
 I'm a Unix geek turned Apple nerd 🤓 Topics I care about include privacy, equal opportunity, and climate change 💚
 
-Besides [offering consulting services](/mentorship/), 
-you can find me curating <a href="https://ioscodereview.com"> iOS Code Review newsletter</a>, building [Away for Twitter app](https://awayfortwitter.com), and co-organizing
+Nowadays I work as an engineering manager at [Lun](https://lun.energy), helping decarbonize homes faster.
+
+Besides occasionally [consulting startups and individuals](/mentorship/), 
+you can find me curating <a href="https://ioscodereview.com"> iOS Code Review newsletter</a> and co-organizing
 [Copenhagen Cocoa](https://www.meetup.com/CopenhagenCocoa/) meetups.
 
-My latest 9-to-5 adventure was leading the iOS team at [Storytel](https://storytel.com) for 4 years, supporting
+My my past 9-to-5 adventures include leading the iOS team at [Storytel](https://storytel.com) for 4 years, supporting
 company's growth from a small startup to a 500-person company.
 I've also built B2B products at [Citrix/GetGo](https://get.gotoassist.com), led consumer app development at [PrimeApp](https://vk.com/primeapp) and built apps for over a dozen of companies at Russia's largest agency [iD East](https://id-east.ru). 
 I've also maintained and ran the iOS efforts of open-source [Say Their Names project ✊🏽](https://saytheirnames.io).
@@ -27,25 +29,25 @@ I've recently been interviewed on [AppForce1 podcast](https://www.buzzsprout.com
 
 <hr>
 
-I occasionally speak at meetups/conferences and host workshops. Here's the list of my past and future speaking engagements:
+I occasionally speak at meetups/conferences and host workshops. Here's the list of my past speaking engagements:
 
-🎙 Bug-Free by Design: Crafting Swift Code That Never Stings @ [NSSpain, Sept 2023](https://2023.nsspain.com) - see you there!
+🎙 Bug-Free by Design: Crafting Swift Code That Never Stings @ [NSSpain, 2023](https://2023.nsspain.com) \| [Video](https://vimeo.com/showcase/10672108/video/865647957)
 
 🎙 Protecting your app from malicious code in a third party library
-@ [Mobile DevOps Summit, Nov 2022](https://yo.bitrise.io/Summit-2022-on-demand-registration.html) \|
+@ [Mobile DevOps Summit, 2022](https://yo.bitrise.io/Summit-2022-on-demand-registration.html) \|
 [Video](https://www.youtube.com/watch?v=8jnizu04w-s)
 
 🎙 Demystifying SwiftUI previews 
-@ [CopenhagenCocoa, March 2022](https://www.meetup.com/copenhagencocoa/events/283603891/) \|
+@ [CopenhagenCocoa, 2022](https://www.meetup.com/copenhagencocoa/events/283603891/) \|
 not recorded, 
 [Slides](https://speakerdeck.com/hybridcattt/demystifying-swiftui-previews)
 
 🎙 Take monitoring of your mobile apps to the next level
-@ [Bitrise Webinars, May 2021](https://www.bitrise.io/webinar/monitoring-mobile-apps) \|
+@ [Bitrise Webinars, 2021](https://www.bitrise.io/webinar/monitoring-mobile-apps) \|
 [Video](https://www.youtube.com/watch?v=z7J0WbchM8M)
 
 🎙 Detail-oriented UI with Layout Margins
-@ [NSSpain 2019](https://2019.nsspain.com) \|
+@ [NSSpain, 2019](https://2019.nsspain.com) \|
 [Video](https://vimeo.com/362202970),
 [Slides](https://speakerdeck.com/hybridcattt/detail-oriented-ui-with-layout-margins-at-nsspain-2019),
 [Code on Github](https://github.com/hybridcattt/LayoutMarginsDemo)
@@ -56,17 +58,17 @@ not recorded,
 [Code on Github](https://github.com/hybridcattt/IslandGuideSample)
 
 🎙 Detail-oriented UI with Layout Margins
-@ [CopenhagenCocoa, May 2019](https://www.meetup.com/CopenhagenCocoa/events/261653761/) \|
+@ [CopenhagenCocoa, 2019](https://www.meetup.com/CopenhagenCocoa/events/261653761/) \|
 not recorded, 
 [Slides](https://speakerdeck.com/hybridcattt/detail-oriented-ui-with-layout-margins)
 
 🎙 Flow Coordinators IRL
-@ [CopenhagenCocoa, March 2017](https://www.meetup.com/CopenhagenCocoa/events/238236118/) \|
+@ [CopenhagenCocoa, 2017](https://www.meetup.com/CopenhagenCocoa/events/238236118/) \|
 not recorded, 
 [Slides](https://speakerdeck.com/hybridcattt/flow-coordinators-irl)
 
 🎙 SaaS: SDK as a Service
-@ [CopenhagenCocoa, Feb 2016](https://www.meetup.com/CopenhagenCocoa/events/228632520/) \|
+@ [CopenhagenCocoa, 2016](https://www.meetup.com/CopenhagenCocoa/events/228632520/) \|
 not recorded, 
 [Slides](https://speakerdeck.com/hybridcattt/saas-sdk-as-a-service)
 
@@ -77,7 +79,7 @@ email:&#32;{%- include email_text.html -%}.
 <hr>
 
 I'm always open to chat about building products and helping engineers & teams grow. Drop a line on
-[Twitter]({{ site.custom_data.twitter_link }}) or via email:&#32;
+[X/Twitter]({{ site.custom_data.twitter_link }}) or via email:&#32;
 {%- include email_text.html -%}.
 
 <i>Hybrid Cat ApS<br>
